@@ -61,34 +61,7 @@ const TeamMembers = () => {
                         </p>
                     </div>
                 </li>
-                <li>
-                    <div className="slide">
-                        <div className="user-info">
-                        <img src={user_3} alt="" />
-                            <div>
-                                <h3>XXXXXX XXX</h3>
-                                <span>XXXXXX XXXX</span>
-                            </div>
-                        </div>
-                        <p>
-                            XXXX XX XXX XX XXX XX 
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div className="slide">
-                        <div className="user-info">
-                        <img src={user_4} alt="" />
-                            <div>
-                                <h3>XXX X X X X XXX</h3>
-                                <span>XXX X XX X X XXXX</span>
-                            </div>
-                        </div>
-                        <p>
-                           XXXXXXXXXX  XXXXXXXXXXXX XXX
-                        </p>
-                    </div>
-                </li>
+
             </ul>
         </div>
     </div>
