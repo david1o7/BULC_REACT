@@ -1,3700 +1,1090 @@
-// Array of questions grouped by category (25 questions each)
 
-const questions = [
-  {
-    category: "programming",
-    questions: [
-      {
-        question: "What does HTML stand for?",
-        options: ["Hyper Text Pre Processor", "Hyper Text Markup Language", "Hyper Text Multiple Language", "Hyper Tool Multi Language"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which of the following is a correct way to declare a variable in JavaScript?",
-        options: ["var x = 10;", "variable x = 10;", "int x = 10;", "let 10 = x;"],
-        correctAnswer: 0,
-      },
-      {
-        question: "How do you write comment in Python?",
-        options: ["// This is a comment", "# This is a comment", "/* This is a comment */", "<!-- This is a comment -->"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What does CSS stand for?",
-        options: ["Cascading Style Sheets", "Colorful Style Sheets", "Computer Style Sheets", "Cascading Simple Sheets"],
-        correctAnswer: 0,
-      },
-      {
-        question: "In JavaScript, how do you create a function?",
-        options: ["create function myFunction()", "def function myFunction()", "func myFunction()", "function myFunction()"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What does the 'typeof' operator do in JavaScript?",
-        options: ["Checks the type of a variable", "Declares a variable", "Assigns a value to a variable", "Converts a variable to another type"],
-        correctAnswer: 0,
-      },
-      {
-        question: "In C, how do you define a function?",
-        options: ["function myFunction()", "def myFunction()", "void myFunction()", "func myFunction()"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which of the following is a characteristic of Python?",
-        options: ["Compiled language", "Dynamic typing", "Low-level language", "Static typing"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which language is used for Android development?",
-        options: ["Python", "Java", "JavaScript", "C++"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the purpose of the 'forEach()' method in JavaScript?",
-        options: ["Removes duplicate elements from an array", "Filters elements in an array", "Sorts an array", "Iterates through each element in an array"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What does the 'return' keyword do in a function?",
-        options: ["Ends the function and returns a value", "Continues the function", "Exits the function without value", "Ends the program execution"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which of the following is NOT a semantic HTML element?",
-        options: ["<header>", "<footer>", "<div>", "<article>"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the primary purpose of a 'for' loop in programming?",
-        options: ["Repeat code for a specified number of times", "Repeat code until a condition is true", "Define a function", "Evaluate conditions in the loop"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which data structure is ideal for LIFO (Last In First Out)?",
-        options: ["Queue", "Stack", "Linked list", "Array"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which command is used in Git to store changes in the repository?",
-        options: ["git commit", "git push", "git pull", "git add"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What does the 'map()' function do in JavaScript?",
-        options: ["Sorts an array", "Filters out items", "Creates a new array", "Modifies the original array"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is an IDE?",
-        options: ["An Integrated Development Environment", "A function for code execution", "An interpreter", "An input method for writing code"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which of the following is a feature of object-oriented programming?",
-        options: ["Encapsulation", "Modularity", "Recursion", "Memory Management"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What does SQL stand for?",
-        options: ["Simple Question Language", "Systematic Query Language", "Standard Question Language", "Structured Query Language"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which of these is an example of a non-relational database?",
-        options: ["MongoDB", "MySQL", "PostgreSQL", "Oracle"],
-        correctAnswer: 0,
-      },
-      {
-        question: "How do you write comment in CSS?",
-        options: ["// This is a comment", "/* This is a comment */", "# This is a comment", "<!-- This is a comment -->"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which of the following algorithms is used to sort an array by comparing elements?",
-        options: ["Bubble sort", "Insertion sort", "Quick sort", "Merge sort"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What does the 'finally' block in Java do?",
-        options: ["Handles all exceptions", "Attempts to handle runtime exceptions", "Executes code after try-catch", "Defines execution start point"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which data structure is best for searching elements quickly?",
-        options: ["Binary search tree", "Array", "Linked list", "Queue"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the correct syntax for a JavaScript if statement?",
-        options: ["if (condition) {}", "if condition {}", "if {} else", "if {condition}"],
-        correctAnswer: 0,
-      },
-    ],
-  },
-
-  {
-    category: "geography",
-    questions: [
-      {
-        question: "Which is the longest river in the world?",
-        options: ["Amazon River", "Nile River", "Yangtze River", "Mississippi River"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which country is known as the Land of the Rising Sun?",
-        options: ["China", "South Korea", "Japan", "Thailand"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the largest ocean in the world?",
-        options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which country has the largest population in the world?",
-        options: ["India", "China", "United States", "Indonesia"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which country is known for the Great Barrier Reef?",
-        options: ["Australia", "United States", "South Africa", "New Zealand"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which is the smallest country in the world?",
-        options: ["Monaco", "Liechtenstein", "Vatican City", "San Marino"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which is the tallest mountain in the world?",
-        options: ["K2", "Mount Kilimanjaro", "Mount Everest", "Mount Fuji"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the capital of Canada?",
-        options: ["Ottawa", "Toronto", "Vancouver", "Montreal"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which desert is the largest hot desert in the world?",
-        options: ["Gobi Desert", "Atacama Desert", "Sahara Desert", "Karakum Desert"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which country is known as the Land of the Midnight Sun?",
-        options: ["Sweden", "Finland", "Norway", "Denmark"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the longest mountain range in the world?",
-        options: ["Himalayas", "Rocky Mountains", "Andes", "Alps"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which river flows through Egypt?",
-        options: ["Amazon River", "Yangtze River", "Nile River", "Ganges River"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which is the largest island in the world?",
-        options: ["Greenland", "New Guinea", "Borneo", "Madagascar"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the capital of Japan?",
-        options: ["Beijing", "Seoul", "Tokyo", "Hong Kong"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which country has the most time zones?",
-        options: ["United States", "Russia", "Canada", "Australia"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which country is known for the Eiffel Tower?",
-        options: ["Germany", "Italy", "Spain", "France"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which is the most populous city in the world?",
-        options: ["Tokyo", "Shanghai", "New York City", "Delhi"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which mountain range is located in South America?",
-        options: ["Himalayas", "Rocky Mountains", "Appalachian Mountains", "Andes"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which continent is known as the 'Dark Continent'?",
-        options: ["Asia", "Africa", "South America", "Europe"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the capital of Brazil?",
-        options: ["Buenos Aires", "Rio de Janeiro", "Brasília", "Sao Paulo"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the official language of Brazil?",
-        options: ["Spanish", "English", "Portuguese", "French"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which country has the most volcanoes?",
-        options: ["Japan", "Indonesia", "United States", "Italy"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which city is known as the Big Apple?",
-        options: ["Los Angeles", "New York City", "Chicago", "San Francisco"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which ocean is located to the east of Africa?",
-        options: ["Indian Ocean", "Pacific Ocean", "Southern Ocean", "Atlantic Ocean"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which is the second largest continent by area?",
-        options: ["Asia", "Africa", "North America", "Europe"],
-        correctAnswer: 1,
-      },
-    ],
-  },
-
-  {
-    category: "mathematics",
-    questions: [
-      {
-        question: "What is the square root of 144?",
-        options: ["10", "11", "12", "13"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is 15 × 13?",
-        options: ["180", "185", "195", "200"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the value of 8³?",
-        options: ["512", "216", "256", "128"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is 48 ÷ 6?",
-        options: ["7", "8", "9", "10"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the value of 3 + 5 × 4?",
-        options: ["20", "22", "24", "23"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the sum of the angles in a triangle?",
-        options: ["180°", "360°", "90°", "270°"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the perimeter of a square with a side length of 4 cm?",
-        options: ["12 cm", "16 cm", "20 cm", "24 cm"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is 11²?",
-        options: ["121", "131", "141", "111"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is 9 × 12?",
-        options: ["105", "110", "108", "120"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the value of 16 ÷ 4?",
-        options: ["2", "3", "4", "5"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is 25% of 200?",
-        options: ["30", "40", "50", "60"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the area of a rectangle with length 5 cm and width 8 cm?",
-        options: ["40 cm²", "50 cm²", "55 cm²", "60 cm²"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of 10 ÷ 2 + 3?",
-        options: ["8", "7", "9", "6"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is 3 × 7 + 2?",
-        options: ["20", "21", "22", "23"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the greatest common divisor (GCD) of 24 and 36?",
-        options: ["4", "6", "8", "12"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the least common multiple (LCM) of 6 and 8?",
-        options: ["24", "32", "48", "56"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of 2³ × 3?",
-        options: ["12", "15", "18", "24"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of 10 × (5 + 3)?",
-        options: ["80", "70", "60", "50"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the value of 14 × 14?",
-        options: ["186", "196", "206", "216"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is the sum of the first 10 positive integers?",
-        options: ["50", "55", "60", "65"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is 12 × 15?",
-        options: ["150", "160", "170", "180"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the area of a circle with a radius of 3 cm? (Use π = 3.14)",
-        options: ["28.26 cm²", "31.42 cm²", "36.14 cm²", "39.14 cm²"],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is the value of (8 + 2) × 3?",
-        options: ["30", "32", "34", "28"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What is the value of 50% of 80?",
-        options: ["30", "35", "40", "45"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the value of 25 ÷ 5 × 3?",
-        options: ["12", "15", "18", "20"],
-        correctAnswer: 1,
-      },
-    ],
-  },
-
-  {
-    category: "trivia",
-    questions: [
-      {
-        question: "Who won the Academy Award for Best Actor in 2022?",
-        options: ["Leonardo DiCaprio", "Will Smith", "Joaquin Phoenix", "Matthew McConaughey"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which movie won the Academy Award for Best Picture in 2021?",
-        options: ["Parasite", "1917", "The Shape of Water", "Nomadland"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Who played the character of Jack Dawson in the movie Titanic?",
-        options: ["Leonardo DiCaprio", "Brad Pitt", "Johnny Depp", "Tom Hanks"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which TV show featured the characters Daenerys Targaryen and Jon Snow?",
-        options: ["Breaking Bad", "Game of Thrones", "The Witcher", "Vikings"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Who is known as the 'King of Pop'?",
-        options: ["Michael Jackson", "Prince", "Whitney Houston", "Elvis Presley"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which superhero is known for saying, 'I am Iron Man'?",
-        options: ["Black Panther", "Captain America", "Thor", "Iron Man"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which movie franchise includes a character named Luke Skywalker?",
-        options: ["Guardians of the Galaxy", "Star Wars", "The Matrix", "Star Trek"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Who played the character of Hermione Granger in the Harry Potter film series?",
-        options: ["Emma Watson", "Anne Hathaway", "Maggie Smith", "Natalie Portman"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Who directed the movie 'Inception'?",
-        options: ["James Cameron", "Steven Spielberg", "Christopher Nolan", "Martin Scorsese"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which artist released the album 'Lover' in 2019?",
-        options: ["Billie Eilish", "Taylor Swift", "Ed Sheeran", "Ariana Grande"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What was the first video game to feature Mario?",
-        options: ["Mario Kart", "Super Mario Bros.", "Donkey Kong", "The Legend of Zelda"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which movie features the famous line, 'Here's looking at you, kid'?",
-        options: ["Casablanca", "Citizen Kane", "The Godfather", "Gone with the Wind"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which country won the FIFA World Cup in 2018?",
-        options: ["France", "Germany", "Argentina", "Brazil"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Who created the comic book character Spider-Man?",
-        options: ["Jack Kirby", "Stan Lee", "Steve Ditko", "John Romita"],
-        correctAnswer: 1,
-      },
-      {
-        question: "In which movie did Heath Ledger portray the Joker?",
-        options: ["The Dark Knight", "Batman Begins", "The Dark Knight Rises", "Joker"],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which band is known for the hit song 'Bohemian Rhapsody'?",
-        options: ["The Rolling Stones", "Led Zeppelin", "Queen", "The Beatles"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which actress starred as Katniss Everdeen in 'The Hunger Games'?",
-        options: ["Kristen Stewart", "Shailene Woodley", "Jennifer Lawrence", "Emma Stone"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Who played the role of the Joker in the 2019 movie 'Joker'?",
-        options: ["Heath Ledger", "Johnny Depp", "Joaquin Phoenix", "Jared Leto"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which Disney animated film features the song 'A Whole New World'?",
-        options: ["Cinderella", "Aladdin", "Beauty and the Beast", "The Little Mermaid"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which TV series features the characters of Walter White and Jesse Pinkman?",
-        options: ["Narcos", "Better Call Saul", "The Sopranos", "Breaking Bad"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Who sang the hit song 'Shape of You'?",
-        options: ["Justin Bieber", "Ariana Grande", "Sam Smith", "Ed Sheeran"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which film won the Academy Award for Best Picture in 2020?",
-        options: ["The Irishman", "Once Upon a Time in Hollywood", "Parasite", "1917"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What year did the movie 'The Matrix' release?",
-        options: ["1997", "1998", "2000", "1999"],
-        correctAnswer: 3,
-      },
-      {
-        question: "Which actor played Tony Stark/Iron Man in the Marvel Cinematic Universe?",
-        options: ["Mark Ruffalo", "Chris Evans", "Robert Downey Jr.", "Chris Hemsworth"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which singer is known as the 'Queen of Pop'?",
-        options: ["Mariah Carey", "Lady Gaga", "Whitney Houston", "Madonna"],
-        correctAnswer: 3,
-      },
-    ],
-  },
-
-  {
-    "category": "html",
-    "questions": [
-        {
-            "question": "Which HTML element is used to declare metadata that is not visually displayed on the page?",
-            "options": ["<meta>", "<data>", "<info>", "<head>"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "In HTML5, which attribute of the <script> tag ensures the script executes only after the document has fully loaded?",
-            "options": ["async", "defer", "load", "delay"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which HTML element is used for rendering mathematical expressions?",
-            "options": ["<math>", "<mexp>", "<formula>", "<equation>"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which attribute in an HTML form input field is used for client-side validation to ensure the user enters a value?",
-            "options": ["validate", "required", "check", "notnull"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What is the default display property of a <span> element?",
-            "options": ["block", "inline-block", "flex", "inline"],
-            "correctAnswer": 3
-        },
-        {
-            "question": "Which HTML element is used to group related options within a <select> dropdown?",
-            "options": ["<option>", "<optgroup>", "<fieldset>", "<legend>"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which HTML5 API allows storing data in the user's browser for offline access?",
-            "options": ["SessionStorage", "LocalStorage", "IndexedDB", "WebStorage"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which HTML attribute specifies that an input field should auto-focus when the page loads?",
-            "options": ["autofocus", "focus", "default", "start"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which HTML tag is used for defining embedded SVG graphics?",
-            "options": ["<vector>", "<svg>", "<graphics>", "<draw>"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which HTML element is used for indicating computer code within a webpage?",
-            "options": ["<pre>", "<code>", "<kbd>", "<cmd>"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What is the purpose of the HTML5 <mark> element?",
-            "options": ["Defines highlighted text", "Creates a bookmark link", "Marks important sections", "Displays text in bold"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which HTML attribute specifies whether an input field should autocomplete values?",
-            "options": ["autocomplete", "autofill", "autosuggest", "fill"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which HTML tag is used to embed an external CSS file into a document?",
-            "options": ["<css>", "<link>", "<style>", "<import>"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which attribute of the <iframe> element prevents the embedded page from accessing the parent document?",
-            "options": ["sandbox", "secure", "isolate", "restrict"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which HTML event attribute is triggered when an element's content is copied to the clipboard?",
-            "options": ["oncopy", "oncut", "onpaste", "onsave"],
-            "correctAnswer": 0
-        }
-    ]
-  },
-
-  {
-    "category": "css",
-    "questions": [
-        {
-            "question": "Which CSS property is used to control the stacking order of elements?",
-            "options": ["order", "position", "z-index", "layer"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "What does the 'contain' property in CSS do?",
-            "options": ["Controls element visibility", "Prevents layout shifts in an element", "Defines scroll containment", "Restricts rendering outside the element"],
-            "correctAnswer": 3
-        },
-        {
-            "question": "Which CSS pseudo-class selects the first element of its type within a parent?",
-            "options": [":first-child", ":nth-of-type(1)", ":first-of-type", ":only-child"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "What is the difference between relative and absolute positioning in CSS?",
-            "options": ["Relative moves an element based on itself, absolute positions it relative to its nearest positioned ancestor", "Absolute positions an element relative to the viewport, relative ignores parent elements", "Both behave the same", "Relative moves the element to the left, absolute moves it to the right"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which CSS property allows an element to be automatically scaled while maintaining its aspect ratio?",
-            "options": ["transform", "object-fit", "resize", "scale-ratio"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which CSS feature allows you to define reusable variables?",
-            "options": ["@variables", "CSS functions", "Custom properties (CSS variables)", "inheritance rules"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "What does the 'will-change' property do in CSS?",
-            "options": ["Prevents elements from being changed", "Optimizes performance by hinting at upcoming changes", "Allows animations on hover", "Modifies z-index dynamically"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which CSS function allows complex calculations within styles?",
-            "options": ["math()", "calc()", "compute()", "formula()"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What is the default position value in CSS?",
-            "options": ["relative", "absolute", "static", "fixed"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which CSS property enables creating a smooth scroll experience?",
-            "options": ["scroll-behavior", "scroll-action", "smooth-scroll", "scrolling-mode"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What is the difference between the 'vw' and 'vh' units in CSS?",
-            "options": ["vw is viewport width, vh is viewport height", "vh is viewport width, vw is viewport height", "They are the same", "vw refers to vertical scrolling only"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What happens when you set 'display: flex' on a parent element?",
-            "options": ["Children are placed in a grid", "Children align in a horizontal row by default", "All elements disappear", "The parent becomes invisible"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which CSS property is used to control the transparency of an element?",
-            "options": ["opacity", "visibility", "alpha", "filter"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which CSS function allows for custom cubic-bezier transitions?",
-            "options": ["ease()", "transition()", "cubic-bezier()", "animate()"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which CSS property is used to clip an element to a specific shape?",
-            "options": ["mask", "clip-path", "crop", "outline"],
-            "correctAnswer": 1
-        },
-        
-        // Easy CSS Questions
-        {
-            "question": "Which CSS property is used to change text color?",
-            "options": ["font-color", "text-style", "color", "background"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which CSS unit is relative to the size of the parent element?",
-            "options": ["px", "em", "vh", "vw"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which CSS property changes the background color of an element?",
-            "options": ["background", "bg-color", "background-color", "fill"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which CSS property makes text bold?",
-            "options": ["font-weight", "text-bold", "bold", "strong"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which CSS property is used to change font size?",
-            "options": ["text-size", "font-style", "font-size", "size"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which CSS property controls the spacing between lines?",
-            "options": ["letter-spacing", "line-height", "spacing", "text-gap"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which property is used to add space inside an element?",
-            "options": ["margin", "padding", "gap", "border"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which CSS selector targets all elements in a document?",
-            "options": ["*", "body", "html", "all"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which CSS property controls the space outside an element?",
-            "options": ["padding", "margin", "border", "outline"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which property is used to hide an element but keep its space?",
-            "options": ["opacity", "display: none", "visibility: hidden", "hidden"],
-            "correctAnswer": 2
-        }
-    ]
-  },
-
-  {
-    "category": "frontend",
-    "questions": [
-        {
-            "question": "What does HTML stand for?",
-            "options": ["Hyper Transfer Markup Language", "Hyper Text Markup Language", "High Tech Markup Language", "Hyperlink Text Management Language"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which CSS property is used to change text color?",
-            "options": ["font-color", "text-style", "color", "background"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which HTML element is used to create a hyperlink?",
-            "options": ["<link>", "<href>", "<a>", "<hyperlink>"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "What is JavaScript used for in web development?",
-            "options": ["Styling web pages", "Adding interactivity to web pages", "Creating database connections", "Defining HTML structure"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which HTTP method is used to send data to the server?",
-            "options": ["GET", "POST", "DELETE", "UPDATE"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which programming language is used for styling web pages?",
-            "options": ["JavaScript", "HTML", "CSS", "Python"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "What does the `<title>` tag in HTML do?",
-            "options": ["Defines the page heading", "Defines the page footer", "Sets the webpage title in the browser tab", "Adds a tooltip to the page"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which HTML element is used for creating a numbered list?",
-            "options": ["<list>", "<ol>", "<ul>", "<li>"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which CSS property is used to add space inside an element?",
-            "options": ["margin", "padding", "gap", "border"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which HTML tag is used to insert an image?",
-            "options": ["<img>", "<image>", "<picture>", "<photo>"],
-            "correctAnswer": 0
-        },
-        
-        // Advanced Questions (15 Remaining)
-        {
-            "question": "Which HTTP header prevents clickjacking attacks?",
-            "options": ["X-Frame-Options", "Strict-Transport-Security", "Content-Security-Policy", "X-XSS-Protection"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What is the purpose of the Event Loop in JavaScript?",
-            "options": ["It handles synchronous function execution", "It enables asynchronous operations by managing the execution stack", "It stores variables in heap memory", "It prevents race conditions in multi-threaded applications"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which Web API allows a service worker to cache resources for offline use?",
-            "options": ["Cache API", "Storage API", "LocalStorage", "SessionStorage"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What is the key advantage of using WebSockets over HTTP?",
-            "options": ["WebSockets use encryption by default", "WebSockets maintain a persistent connection for real-time communication", "WebSockets are faster than HTTP in all cases", "WebSockets handle only GET and POST requests"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which design pattern is commonly used for handling global application state in frontend frameworks?",
-            "options": ["Singleton", "Observer", "Factory", "Redux-style State Management"],
-            "correctAnswer": 3
-        },
-        {
-            "question": "Which browser feature enables rendering of web pages in a separate memory process for security?",
-            "options": ["Site Isolation", "WebAssembly", "Shadow DOM", "Content Security Policy"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What is the primary function of WebAssembly in modern web development?",
-            "options": ["To replace JavaScript", "To execute high-performance, compiled code in the browser", "To improve database queries", "To enable AI computations in the frontend"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which caching strategy ensures that the latest version of an asset is fetched while keeping older versions available?",
-            "options": ["Cache First", "Stale-While-Revalidate", "Network First", "Lazy Loading"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which CSS technique is used to efficiently render a complex web page layout without excessive DOM manipulations?",
-            "options": ["CSS Grid", "Flexbox", "CSS Regions", "Contain Property"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What is the primary benefit of using HTTP/3 over HTTP/2?",
-            "options": ["It replaces TCP with QUIC for faster and more reliable connections", "It increases server response time by 50%", "It reduces bandwidth consumption", "It supports only JSON requests"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which JavaScript feature enables lazy loading of modules?",
-            "options": ["setTimeout()", "Dynamic Imports using `import()`", "Promise.resolve()", "Web Workers"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which protocol enables encrypted and authenticated communication between a web browser and a server?",
-            "options": ["HTTPS", "HTTP/2", "WebRTC", "SOAP"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What does Content Security Policy (CSP) do in a web application?",
-            "options": ["Prevents unauthorized database queries", "Mitigates XSS attacks by restricting script execution sources", "Enhances server response time", "Boosts SEO rankings"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which JavaScript feature prevents unintended variable hoisting?",
-            "options": ["use strict", "Hoisting Prevention API", "Scopes and Closures", "Event Bubbling"],
-            "correctAnswer": 0
-        }
-    ]
-  },
-
-  {
-    "category": "java",
-    "questions": [
-        // Very Difficult Java Questions (Senior Level)
-        {
-            "question": "Which Java feature allows multiple threads to safely modify shared data concurrently?",
-            "options": ["volatile keyword", "synchronized block", "CopyOnWriteArrayList", "ThreadLocal"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "What is the primary purpose of the Fork/Join framework in Java?",
-            "options": ["To manage I/O operations", "To divide large tasks into smaller subtasks and process them in parallel", "To optimize database queries", "To control memory allocation"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which garbage collection algorithm in Java uses region-based memory management?",
-            "options": ["G1 Garbage Collector", "Serial GC", "Parallel GC", "Z Garbage Collector"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What is the purpose of the Java Memory Model (JMM)?",
-            "options": ["To improve performance of graphical applications", "To define how threads interact through shared memory", "To regulate heap allocation", "To enhance Java security features"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which Java interface is designed for handling large streams of data in a lazy and functional manner?",
-            "options": ["Spliterator", "Stream", "Collector", "LambdaProcessor"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which technique ensures an object remains immutable in Java?",
-            "options": ["Using final variables only", "Removing setter methods and using defensive copies", "Using volatile keyword", "Declaring the class as static"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What does the CompletableFuture class in Java provide?",
-            "options": ["Efficient recursion", "Asynchronous programming with non-blocking calls", "Enhanced object serialization", "Thread-safe global state management"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which Java construct is used to implement a lock-free thread-safe queue?",
-            "options": ["PriorityQueue", "ConcurrentLinkedQueue", "BlockingQueue", "ArrayDeque"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What is the role of a 'volatile' variable in Java concurrency?",
-            "options": ["To prevent accidental overwriting of memory", "To ensure visibility of changes to variables across threads", "To optimize CPU usage", "To store immutable objects"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which Java framework is built for reactive programming with event-driven architecture?",
-            "options": ["Spring WebFlux", "JPA", "Struts", "Hibernate"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What is the main difference between shallow copy and deep copy in Java?",
-            "options": ["Shallow copy duplicates primitive values only, while deep copy also clones object references", "Shallow copy is faster than deep copy", "Deep copy is only applicable to collections", "Shallow copy is used only for performance optimizations"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which Java method is used to optimize string performance by interning duplicate string literals?",
-            "options": ["concat()", "stringPool()", "intern()", "optimize()"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "What does the term 'ClassLoader Delegation Model' refer to in Java?",
-            "options": ["A mechanism that ensures classes are loaded in a hierarchical order starting from the parent class loader", "A method for managing serialization", "A way to enforce Singleton patterns in classes", "A technique for controlling memory allocation"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which Java concurrency class provides atomic operations for variables?",
-            "options": ["ThreadLocal", "ReentrantLock", "AtomicInteger", "ExecutorService"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which Java design pattern is best suited for controlling object instantiation in a multi-threaded environment?",
-            "options": ["Factory Pattern", "Singleton Pattern with double-checked locking", "Builder Pattern", "Prototype Pattern"],
-            "correctAnswer": 1
-        },
-
-        // Easy Java Questions
-        {
-            "question": "Which keyword is used to declare a class in Java?",
-            "options": ["class", "public", "struct", "define"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What is the entry point of a Java program?",
-            "options": ["main()", "start()", "execute()", "run()"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which operator is used for addition in Java?",
-            "options": ["+", "-", "*", "/"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which Java data type is used to store whole numbers?",
-            "options": ["float", "String", "int", "boolean"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which keyword is used to define a method in Java?",
-            "options": ["function", "method", "void", "return"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "What does 'println()' do in Java?",
-            "options": ["Prints text on the console with a newline", "Defines a function", "Declares a variable", "Saves data to a file"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which symbol is used to represent comments in Java?",
-            "options": ["//", "/* */", "#", "--"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which loop structure is used to repeatedly execute a block of code?",
-            "options": ["if", "switch", "for", "case"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which Java keyword is used to create a new object?",
-            "options": ["new", "object", "create", "init"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which Java package is automatically imported in every Java program?",
-            "options": ["java.util", "java.lang", "java.io", "java.math"],
-            "correctAnswer": 1
-        }
-    ]
-  },
-
-  {
-    "category": "python",
-    "questions": [
-        // Very Difficult Python Questions (Senior Level)
-        {
-            "question": "Which Python feature allows multiple coroutines to run concurrently using event loops?",
-            "options": ["Threading", "Multiprocessing", "Asyncio", "Subprocess"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "What is the main advantage of using Python's `__slots__` attribute in a class?",
-            "options": ["Allows dynamic attribute creation", "Reduces memory usage by preventing dynamic dictionary creation", "Improves object serialization performance", "Allows private variables"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which Python module is used for implementing caching mechanisms efficiently?",
-            "options": ["CacheControl", "functools.lru_cache", "pickle", "multiprocessing.Manager"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which method is used to serialize and save Python objects to disk?",
-            "options": ["json.dumps()", "pickle.dump()", "marshal.save()", "os.write()"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What is the purpose of the Python Global Interpreter Lock (GIL)?",
-            "options": ["To speed up multi-threaded execution", "To prevent multiple threads from executing bytecode simultaneously", "To enhance memory allocation", "To improve multiprocessing performance"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which Python decorator is used to convert a method into a static method?",
-            "options": ["@classmethod", "@staticmethod", "@property", "@abstractmethod"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which Python feature enables lazy evaluation of sequences?",
-            "options": ["Iterators", "Closures", "Generators", "Lambda functions"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "What is the purpose of the `__new__` method in Python classes?",
-            "options": ["To initialize class attributes", "To modify instance attributes", "To control instance creation before `__init__` is called", "To enforce access control"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which Python module provides precise control over floating-point arithmetic?",
-            "options": ["math", "decimal", "fractions", "numpy"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which Python feature supports function composition by transforming one function into another?",
-            "options": ["Currying", "Memoization", "Decorators", "Introspection"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which Python framework or library is primarily used for building asynchronous web applications?",
-            "options": ["Django", "Flask", "FastAPI", "Pyramid"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "What is the primary advantage of using Python's `multiprocessing` module over `threading`?",
-            "options": ["Better I/O handling", "Improved concurrency with the Global Interpreter Lock (GIL)", "True parallelism by spawning separate processes", "Reduced memory usage"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "What does the `__call__` method do when defined in a Python class?",
-            "options": ["Allows an instance to behave like a function", "Creates a private method", "Optimizes object creation", "Restricts attribute modification"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which method in Python's built-in `unittest` module is used to define setup logic before each test?",
-            "options": ["setUp()", "tearDown()", "beforeTest()", "initTest()"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which Python library is most suitable for high-performance numerical computing and vectorized operations?",
-            "options": ["Pandas", "NumPy", "Scipy", "TensorFlow"],
-            "correctAnswer": 1
-        },
-
-        // Easy Python Questions
-        {
-            "question": "Which keyword is used to define a function in Python?",
-            "options": ["func", "def", "lambda", "function"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which Python data type is used to store textual data?",
-            "options": ["int", "string", "float", "bool"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "How do you print 'Hello, World!' in Python?",
-            "options": ["echo 'Hello, World!'", "print('Hello, World!')", "console.log('Hello, World!')", "write('Hello, World!')"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which operator is used for multiplication in Python?",
-            "options": ["+", "-", "*", "/"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which data type is used to store True or False values?",
-            "options": ["int", "bool", "char", "string"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "How do you start a loop that executes a block of code repeatedly in Python?",
-            "options": ["while", "for", "repeat", "loop"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which Python function is used to get the length of a list?",
-            "options": ["size()", "count()", "len()", "length()"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which method is used to add an item to the end of a Python list?",
-            "options": ["push()", "append()", "insert()", "add()"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What will `type(5.0)` return in Python?",
-            "options": ["int", "float", "str", "bool"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which Python keyword is used to create a conditional statement?",
-            "options": ["when", "if", "switch", "case"],
-            "correctAnswer": 1
-        }
-    ]
-  },
-
-  {
-    "category": "javascript",
-    "questions": [
-        // Easy JavaScript Questions
-        {
-            "question": "Which keyword is used to declare a variable in JavaScript?",
-            "options": ["var", "let", "const", "All of the above"],
-            "correctAnswer": 3
-        },
-        {
-            "question": "What is the correct way to write an arrow function in JavaScript?",
-            "options": ["function() => {}", "() => {}", "=> () {}", "arrow function() {}"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which JavaScript method is used to remove the last element from an array?",
-            "options": ["pop()", "push()", "shift()", "splice()"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which data type is used to store multiple values in JavaScript?",
-            "options": ["Array", "Object", "String", "Boolean"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "How do you display data in the browser console?",
-            "options": ["print()", "console.log()", "display()", "write()"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which symbol is used to access properties of an object?",
-            "options": [".", ":", "#", "@@"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "How do you write a comment in JavaScript?",
-            "options": ["# This is a comment", "// This is a comment", "<!-- This is a comment -->", "* This is a comment *"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which JavaScript function is used to convert a string to an integer?",
-            "options": ["parseInt()", "parseFloat()", "toInteger()", "toNumber()"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which loop is used to iterate over array elements?",
-            "options": ["for loop", "while loop", "do-while loop", "All of the above"],
-            "correctAnswer": 3
-        },
-        {
-            "question": "What does the `typeof` operator return?",
-            "options": ["The type of a variable", "The size of a variable", "The value of a variable", "The memory address of a variable"],
-            "correctAnswer": 0
-        },
-
-        // Very Difficult JavaScript Questions (Senior Level)
-        {
-            "question": "What is the purpose of JavaScript closures?",
-            "options": ["To secure private variables in a function scope", "To improve execution speed", "To allow multiple inheritance", "To enable asynchronous operations"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What is the primary difference between `null` and `undefined` in JavaScript?",
-            "options": ["null is an intentional absence of value, undefined means a variable hasn't been assigned a value", "null is the same as undefined", "undefined is an intentional absence of value", "There is no difference"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which JavaScript feature enables lazy evaluation of functions?",
-            "options": ["Generators", "Closures", "Promises", "Callbacks"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What is the purpose of the Event Loop in JavaScript?",
-            "options": ["To handle asynchronous operations in the browser", "To optimize memory allocation", "To manage inheritance", "To create custom events"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which method allows deep cloning of JavaScript objects?",
-            "options": ["Object.assign()", "JSON.parse(JSON.stringify())", "cloneObject()", "Object.clone()"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What does the `async` keyword do when used with a function?",
-            "options": ["Turns a function into a Promise", "Makes a function run in a separate thread", "Blocks execution until resolved", "Triggers an automatic retry mechanism"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which technique is used to optimize performance of large-scale JavaScript applications?",
-            "options": ["Memoization", "Polling", "Callbacks", "Recompilation"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What is the purpose of JavaScript Proxies?",
-            "options": ["To intercept and redefine operations on objects", "To optimize execution speed", "To enable multi-threading", "To create immutable objects"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which JavaScript feature allows dynamic property access on objects?",
-            "options": ["Computed properties", "Static typing", "Function overloading", "Type inference"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which method is best for handling multiple asynchronous tasks efficiently?",
-            "options": ["Promise.all()", "async/await", "setTimeout()", "Event delegation"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What does JavaScript's `Symbol` type primarily enable?",
-            "options": ["Unique property keys", "Improved memory efficiency", "Faster computations", "Automatic type conversion"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which JavaScript feature allows functions to be composed dynamically?",
-            "options": ["Currying", "Memoization", "Decorator pattern", "Closures"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What is the difference between shallow copy and deep copy?",
-            "options": ["Shallow copy only copies references, deep copy duplicates the entire structure", "They are the same", "Deep copy is faster", "Shallow copy copies everything including nested objects"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which ECMAScript feature introduced private class fields?",
-            "options": ["ES6", "ES2020", "ES2018", "ES2015"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which JavaScript function allows dynamic module imports?",
-            "options": ["import()", "require()", "fetchModule()", "loadModule()"],
-            "correctAnswer": 0
-        }
-    ]
-  },
-
-  {
-    "category": "C",
-    "questions": [
-        // Easy C Questions
-        {
-            "question": "Which keyword is used to define a constant variable in C?",
-            "options": ["const", "define", "static", "final"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What is the correct syntax for printing 'Hello, World!' in C?",
-            "options": ["print('Hello, World!');", "printf('Hello, World!');", "console.log('Hello, World!');", "System.out.println('Hello, World!');"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which format specifier is used to print an integer in C?",
-            "options": ["%d", "%f", "%c", "%s"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which operator is used for logical AND in C?",
-            "options": ["&&", "||", "&", "|"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which function is used to get user input in C?",
-            "options": ["gets()", "scanf()", "read()", "input()"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "How do you declare an array of 10 integers in C?",
-            "options": ["int arr(10);", "array<int> arr[10];", "int arr[10];", "int[10] arr;"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which symbol is used to dereference a pointer in C?",
-            "options": ["*", "&", "@", "#"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What does the `sizeof` operator return?",
-            "options": ["Size of memory location", "Size of variable in bytes", "Size of function execution time", "Size of integer limits"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which loop structure is used for iterating a fixed number of times in C?",
-            "options": ["while", "for", "do-while", "goto"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which keyword is used to exit a loop prematurely in C?",
-            "options": ["exit", "end", "stop", "break"],
-            "correctAnswer": 3
-        },
-
-        // Very Difficult C Questions (Senior Level)
-        {
-            "question": "What is the primary difference between stack and heap memory allocation in C?",
-            "options": ["Stack is used for dynamic memory allocation, heap is for static variables", "Stack is faster but has limited space, heap is slower but has more flexibility", "Heap memory is limited, stack memory is unlimited", "Stack memory is persistent across function calls"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which technique is used to prevent memory leaks in C?",
-            "options": ["Using malloc() carefully", "Using smart pointers", "Using garbage collection", "Manually freeing allocated memory using free()"],
-            "correctAnswer": 3
-        },
-        {
-            "question": "What happens if a pointer is dereferenced without being initialized?",
-            "options": ["It will hold a default value", "It will cause undefined behavior", "It will automatically point to NULL", "It will produce a segmentation fault"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which function is used for dynamic memory allocation in C?",
-            "options": ["malloc()", "new()", "allocate()", "create()"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which C feature allows creating new data types using existing ones?",
-            "options": ["typedef", "union", "macro", "enum"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What does the term 'dangling pointer' mean in C?",
-            "options": ["A pointer that no longer points to valid memory", "A pointer pointing to a static variable", "A pointer automatically freed by the compiler", "A pointer used for recursion"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which C function is used to compare two strings?",
-            "options": ["strcomp()", "strcmp()", "compare()", "cmpstr()"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What is the purpose of a header file in C?",
-            "options": ["To define main() function", "To include function declarations and macros", "To execute program logic", "To store output of a program"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which data structure is commonly implemented using pointers in C?",
-            "options": ["Array", "Linked List", "Enum", "Struct"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What happens if `free()` is called twice on the same pointer?",
-            "options": ["It deallocates memory twice", "It leads to undefined behavior", "The pointer is set to NULL", "Nothing happens"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which concept allows passing functions as arguments in C?",
-            "options": ["Function pointers", "Macros", "Global variables", "Templates"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "How do you avoid buffer overflow vulnerabilities in C?",
-            "options": ["Use gets() instead of fgets()", "Use strncpy() instead of strcpy()", "Store all data in global variables", "Disable runtime checks"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What is the effect of using 'volatile' keyword in C?",
-            "options": ["Prevents compiler optimizations", "Improves code execution speed", "Enables parallel execution", "Ensures automatic memory allocation"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which feature allows defining functions with variable arguments in C?",
-            "options": ["Function overloading", "Variadic functions using `va_list`", "Macros", "Inline functions"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What does the 'restrict' keyword do in C?",
-            "options": ["Ensures that pointers do not alias", "Limits memory allocation", "Restricts function execution", "Enhances integer precision"],
-            "correctAnswer": 0
-        }
-    ]
-  },
-
-  {
-    "category": "c++",
-    "questions": [
-        // Easy C++ Questions
-        {
-            "question": "Which keyword is used to define a constant variable in C++?",
-            "options": ["const", "define", "static", "final"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What is the correct syntax for outputting text in C++?",
-            "options": ["print('Hello, World!');", "cout << 'Hello, World!';", "System.out.println('Hello, World!');", "console.log('Hello, World!');"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which format specifier is used to print an integer in C++?",
-            "options": ["%d", "%f", "%c", "%s"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which operator is used for logical AND in C++?",
-            "options": ["&&", "||", "&", "|"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which function is used to get user input in C++?",
-            "options": ["gets()", "cin", "read()", "input()"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "How do you declare an array of 10 integers in C++?",
-            "options": ["int arr(10);", "array<int> arr[10];", "int arr[10];", "int[10] arr;"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "Which symbol is used to dereference a pointer in C++?",
-            "options": ["*", "&", "@", "#"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What does the `sizeof` operator return?",
-            "options": ["Size of memory location", "Size of variable in bytes", "Size of function execution time", "Size of integer limits"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which loop structure is used for iterating a fixed number of times in C++?",
-            "options": ["while", "for", "do-while", "goto"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which keyword is used to exit a loop prematurely in C++?",
-            "options": ["exit", "end", "stop", "break"],
-            "correctAnswer": 3
-        },
-
-        // Very Difficult C++ Questions (Senior Level)
-        {
-            "question": "What is the primary difference between stack and heap memory allocation in C++?",
-            "options": ["Stack is used for dynamic memory allocation, heap is for static variables", "Stack is faster but has limited space, heap is slower but has more flexibility", "Heap memory is limited, stack memory is unlimited", "Stack memory is persistent across function calls"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which technique is used to prevent memory leaks in C++?",
-            "options": ["Using malloc() carefully", "Using smart pointers", "Using garbage collection", "Manually freeing allocated memory using free()"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What happens if a pointer is dereferenced without being initialized?",
-            "options": ["It will hold a default value", "It will cause undefined behavior", "It will automatically point to NULL", "It will produce a segmentation fault"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which function is used for dynamic memory allocation in C++?",
-            "options": ["malloc()", "new()", "allocate()", "create()"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which C++ feature allows creating new data types using existing ones?",
-            "options": ["typedef", "union", "macro", "enum"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "What does the term 'dangling pointer' mean in C++?",
-            "options": ["A pointer that no longer points to valid memory", "A pointer pointing to a static variable", "A pointer automatically freed by the compiler", "A pointer used for recursion"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which C++ function is used to compare two strings?",
-            "options": ["strcomp()", "strcmp()", "compare()", "cmpstr()"],
-            "correctAnswer": 2
-        },
-        {
-            "question": "What is the purpose of a header file in C++?",
-            "options": ["To define main() function", "To include function declarations and macros", "To execute program logic", "To store output of a program"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which data structure is commonly implemented using pointers in C++?",
-            "options": ["Array", "Linked List", "Enum", "Struct"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What happens if `delete` is called twice on the same pointer?",
-            "options": ["It deallocates memory twice", "It leads to undefined behavior", "The pointer is set to NULL", "Nothing happens"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "Which concept allows passing functions as arguments in C++?",
-            "options": ["Function pointers", "Macros", "Global variables", "Templates"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "How do you avoid buffer overflow vulnerabilities in C++?",
-            "options": ["Use gets() instead of fgets()", "Use strncpy() instead of strcpy()", "Store all data in global variables", "Disable runtime checks"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What is the effect of using 'volatile' keyword in C++?",
-            "options": ["Prevents compiler optimizations", "Improves code execution speed", "Enables parallel execution", "Ensures automatic memory allocation"],
-            "correctAnswer": 0
-        },
-        {
-            "question": "Which feature allows defining functions with variable arguments in C++?",
-            "options": ["Function overloading", "Variadic functions using `va_list`", "Macros", "Inline functions"],
-            "correctAnswer": 1
-        },
-        {
-            "question": "What does the 'restrict' keyword do in C++?",
-            "options": ["Ensures that pointers do not alias", "Limits memory allocation", "Restricts function execution", "Enhances integer precision"],
-            "correctAnswer": 0
-        }
-    ]
-  },
-
-  {
-    "category": "jesus the messiah 1",
-    "questions": [
-      {
-        "question": "What is another name for the Inter-testamental Period?",
-        "options": [
-          "400 Silent Years",
-          "Deuterocanonical Period",
-          "Intertestamental Years",
-          "The Fading Prophetic Era"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How long was the Inter-testamental Period?",
-        "options": [
-          "400 years",
-          "200 years",
-          "100 years",
-          "500 years"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What are the six periods that the Inter-testamental period can be separated into?",
-        "options": [
-          "Restoration, Persian, Hellenistic, Maccabean, Hasmonean, and Herodian periods",
-          "Babylonian, Persian, Greek, Roman, Byzantine, and Islamic periods",
-          "Exilic, Post-Exilic, Persian, Hellenistic, Hasmonean, and Herodian periods",
-          "Pre-Exilic, Exilic, Post-Exilic, Hellenistic, Hasmonean, and Roman periods"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "By the time Christ was born, which period was the world under?",
-        "options": [
-          "Persian Period",
-          "Hellenistic Period",
-          "Hasmonean Period",
-          "Herodian Period"
-        ],
-        "correctAnswer": 3
-      },
-      {
-        "question": "In A.D. 70, what did the Romans do to Jerusalem?",
-        "options": [
-          "They appointed a new king",
-          "They besieged and destroyed the city and the Second Temple",
-          "They established a trade agreement",
-          "They rebuilt the city walls"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "How many provinces was the entire Roman Empire made up of?",
-        "options": [
-          "30",
-          "40",
-          "48",
-          "60"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Who appointed governors to administer the provinces?",
-        "options": [
-          "Local city councils",
-          "The Roman Senate",
-          "Provincial assemblies",
-          "Hereditary succession"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "Why was Pontius Pilate appointed to oversee Palestine?",
-        "options": [
-          "Because he was a native of the region",
-          "Because of his experience in managing volatile provinces and maintaining order for Rome",
-          "Because he was elected by the local Jewish population",
-          "Because he was a military general with no civil duties"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "Under whose rule was Christ executed?",
-        "options": [
-          "Under Jewish rule",
-          "Under Roman rule",
-          "Under Persian rule",
-          "Under Greek rule"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "What were those who ruled as kings in Palestine generally referred to as in the New Testament?",
-        "options": [
-          "Client kings",
-          "Tetrarchs",
-          "Herods",
-          "Ethnarchs"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "How long did Herod the Great rule?",
-        "options": [
-          "33 years",
-          "40 years",
-          "25 years",
-          "50 years"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What nationality was Herod the Great?",
-        "options": [
-          "Roman",
-          "Hebrew",
-          "Idumean (of Arab descent)",
-          "Greek"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "What did Herod the Great order after the visit of the wise men from the East?",
-        "options": [
-          "He ordered a festival of rejoicing",
-          "He ordered the massacre of the infants in Bethlehem",
-          "He ordered a temple renovation",
-          "He ordered a census of the population"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "After Herod's death, how did Rome divide Palestine?",
-        "options": [
-          "They unified it as a single province",
-          "They divided it among his sons into client kingdoms (tetrarchies and ethnarchies)",
-          "It was given entirely to the Jewish state",
-          "It merged with Syria"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "How long did Herod Archelaus reign?",
-        "options": [
-          "Approximately 10 years",
-          "20 years",
-          "5 years",
-          "15 years"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Where did Herod Archelaus reign?",
-        "options": [
-          "Galilee and Perea",
-          "Judea, Samaria, and Idumea",
-          "The entire region of Palestine",
-          "Judea only"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "What was Herod Archelaus known for?",
-        "options": [
-          "For his benevolent and popular rule",
-          "For his oppressive and tyrannical governance that led to unrest",
-          "For his extensive building projects",
-          "For his military conquests"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "How long did Herod Philip reign?",
-        "options": [
-          "38 years",
-          "20 years",
-          "10 years",
-          "50 years"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Where did Herod Philip reign?",
-        "options": [
-          "Galilee and Perea",
-          "Judea, Samaria, and Idumea",
-          "The northeastern part of his father's kingdom including Iturea, Trachonitis, Batanea, and Auranitis",
-          "The entirety of Roman Syria"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "How long did Herod Antipas reign?",
-        "options": [
-          "20 years",
-          "10 years",
-          "40 years",
-          "50 years"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Where did Herod Antipas reign?",
-        "options": [
-          "Judea",
-          "Galilee and Perea",
-          "Idumea",
-          "Greece"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "Who did Herod Antipas imprison and kill?",
-        "options": [
-          "Jesus",
-          "John the Baptist",
-          "Peter",
-          "James"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "What did Herod Antipas expect Christ to perform?",
-        "options": [
-          "A miracle",
-          "A legal judgment",
-          "A defeat of the Roman army",
-          "A new law"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Where was Jesus born and raised?",
-        "options": [
-          "Born in Jerusalem and raised in Nazareth",
-          "Born in Nazareth and raised in Bethlehem",
-          "Born in Bethlehem and raised in Nazareth",
-          "Born and raised in Capernaum"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "What is the Hebrew word for Palestine?",
-        "options": [
-          "Eretz Yisrael",
-          "Plishtim",
-          "Canaan",
-          "Judea"
-        ],
-        "correctAnswer": 1
-      }
-    ]
-  },
-
-  {
-    "category": "jesus the messiah 2",
-    "questions": [
-      {
-        "question": "How many times is the word Pelesheth translated as Palestina in the King James Version Bible?",
-        "options": [
-          "3 times",
-          "4 times",
-          "5 times",
-          "6 times"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "When did the area become a Roman province and officially designated Palestine?",
-        "options": [
-          "6 AD",
-          "70 AD",
-          "135 AD",
-          "136 AD"
-        ],
-        "correctAnswer": 3
-      },
-      {
-        "question": "How many political regions was Palestine organized into for ease of administration?",
-        "options": [
-          "Two",
-          "Three",
-          "Four",
-          "Five"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "Where was Jesus born?",
-        "options": [
-          "Nazareth",
-          "Jerusalem",
-          "Bethlehem",
-          "Capernaum"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Where did Jesus grow up and live?",
-        "options": [
-          "Bethlehem",
-          "Jerusalem",
-          "Nazareth",
-          "Bethany"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "What was the main occupation in Galilee?",
-        "options": [
-          "Farming",
-          "Fishing",
-          "Trading",
-          "Carpentry"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "What lake in Galilee was famous for its fishing?",
-        "options": [
-          "Sea of Galilee",
-          "Dead Sea",
-          "Lake Tiberias",
-          "Lake Gennesaret"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What surrounded Galilee in the time of Jesus?",
-        "options": [
-          "It was an isolated island",
-          "It was mainly flat and surrounded by deserts",
-          "It was bordered by mountains, hills, and valleys, with the Jordan River on its eastern edge",
-          "It was surrounded by dense forests"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "What was the most prominent group of Greek towns known as?",
-        "options": [
-          "The Decapolis",
-          "The Peloponnese",
-          "The Cyclades",
-          "The Dodecapolis"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Where was Samaria located?",
-        "options": [
-          "In southern Judea",
-          "In northern Galilee",
-          "In the central region of ancient Israel, between Judea and Galilee (modern West Bank)",
-          "On the eastern coast of the Mediterranean Sea"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "What was the relationship like between the Samaritans and the Jews?",
-        "options": [
-          "They were harmonious allies",
-          "They were indifferent toward each other",
-          "They coexisted peacefully",
-          "They had deep-seated hostility and enmity"
-        ],
-        "correctAnswer": 3
-      },
-      {
-        "question": "What was the chief city of Judea?",
-        "options": [
-          "Jerusalem",
-          "Bethlehem",
-          "Hebron",
-          "Jericho"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What was the official language at the time of Jesus Christ?",
-        "options": [
-          "Hebrew",
-          "Latin",
-          "Aramaic",
-          "Greek"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "What was the major religious practice of the Jews?",
-        "options": [
-          "Worshipping Greek gods",
-          "Temple worship and observance of Mosaic Law, including sacrifices",
-          "Buddhist meditation",
-          "Christian sacraments"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "What did the Pharisees adhere to?",
-        "options": [
-          "Only the written Torah",
-          "Only the Oral Law",
-          "Both the written Torah and Oral traditions",
-          "Roman legal principles"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Which Jewish group was elitist and influential, with better connections?",
-        "options": [
-          "Pharisees",
-          "Sadducees",
-          "Essenes",
-          "Zealots"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "What does the word \"Sadducees\" come from?",
-        "options": [
-          "From the Greek word for 'wise'",
-          "From the Aramaic word for 'teacher'",
-          "From the Hebrew name Zadok, meaning 'righteous'",
-          "From the Latin word for 'lawful'"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "What were the Priests and Levites responsible for?",
-        "options": [
-          "Collecting taxes",
-          "Leading military campaigns",
-          "Maintaining the sanctuary and performing sacrifices in the temple",
-          "Writing poetry"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "What were some of the categories of Priests?",
-        "options": [
-          "High priests, chief priests, and ordinary priests",
-          "Elders, prophets, and teachers",
-          "Scribes, rabbis, and prophets",
-          "Kings, generals, and magistrates"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What did the Scribes do?",
-        "options": [
-          "They were architects",
-          "They copied and interpreted the scriptures",
-          "They were fishermen",
-          "They were merchants"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "Where did the Essenes live?",
-        "options": [
-          "In the city of Jerusalem",
-          "In urban centers across Galilee",
-          "In desert communities near the Dead Sea, such as Qumran",
-          "On the coast of the Mediterranean"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "What was a faction that supported the policies and government of the Herodian family?",
-        "options": [
-          "Zealots",
-          "Pharisees",
-          "Sadducees",
-          "Herodians"
-        ],
-        "correctAnswer": 3
-      },
-      {
-        "question": "What was one of the several different \"revolutionary\" groups that sought the downfall of the Romans?",
-        "options": [
-          "Sadducees",
-          "Pharisees",
-          "Zealots",
-          "Herodians"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "What are the books that give the story of the life of Christ?",
-        "options": [
-          "The Epistles",
-          "The Gospels",
-          "The Acts of the Apostles",
-          "The Book of Revelation"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "What does the word \"gospel\" mean?",
-        "options": [
-          "Good news",
-          "Sacred law",
-          "Divine judgment",
-          "Holy ritual"
-        ],
-        "correctAnswer": 0
-      }
-    ]
-  },
-
-  {
-    "category": "jesus the messiah 3",
-    "questions": [
-      {
-        "question": "What is the significance of the Inter-testamental Period for understanding the New Testament context?",
-        "options": [
-          "It bridged the Old and New Testaments, influencing the religious, political, and cultural background",
-          "It was a time of decline and fragmentation",
-          "It was merely a historical gap with little impact",
-          "It marked the beginning of the Roman era"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How did Herod's rule impact the socio-political environment during Jesus' time?",
-        "options": [
-          "It created a tense environment marked by political maneuvering and oppression",
-          "It ushered in an era of stability and prosperity",
-          "It had little to no influence on Jewish expectations",
-          "It was solely focused on grand architectural projects"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What were the main factors contributing to tensions between the Jews and the Samaritans?",
-        "options": [
-          "Different historical origins, religious practices, and disputes over sacred sites",
-          "Economic rivalry exclusively",
-          "Political alliances between governing entities",
-          "Differences in language and dress only"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How did the beliefs and practices of the Pharisees and the Sadducees differ, and how did these differences influence their interactions with Jesus?",
-        "options": [
-          "Pharisees emphasized oral traditions and the resurrection, while Sadducees rejected these beliefs, leading to theological debates with Jesus",
-          "Both groups held virtually identical views on the law and the afterlife",
-          "Sadducees were more concerned with prophecy, while Pharisees focused on established ritual",
-          "Their differences were only for show and had no real effect on their debates"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What was the role of the Scribes in Jewish society and how did their approach affect their relationship with other religious groups?",
-        "options": [
-          "They were law scholars often aligned with the Pharisees and were criticized for their strict adherence to legalism",
-          "They functioned primarily as political advisors with little religious influence",
-          "They served as temple musicians and ritual custodians",
-          "They were largely irrelevant in everyday religious debates"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What possible connection exists between the Essenes, John the Baptist, and Jesus?",
-        "options": [
-          "Their ascetic lifestyle and apocalyptic beliefs may have influenced John the Baptist, establishing thematic links to Jesus' ministry",
-          "The Essenes were a Roman sect with no relevance to early Christianity",
-          "They operated in completely different regions and eras",
-          "John the Baptist was a high priest within the Essene community"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What was the significance of the Herodians in the political landscape of the New Testament, and how did they interact with Jesus?",
-        "options": [
-          "They supported Herod's dynasty and collaborated with the Pharisees to challenge Jesus over issues such as Roman taxation",
-          "They were early followers of Jesus who later turned against him",
-          "They were a minor group with no political influence",
-          "They only dealt with economic policies, not religious debates"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "In what ways is the term \"gospel\" used in the New Testament?",
-        "options": [
-          "It denotes the good news of Jesus' kingdom and salvation, being used both in personal proclamation and in written accounts",
-          "It exclusively refers to miraculous healings",
-          "It is just another term for prophecy",
-          "It is a label for all poetic literature in the Bible"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How did the canonization process influence the authority of the New Testament texts?",
-        "options": [
-          "It established doctrinal consistency and anchored the texts in apostolic tradition through a gradual, community-driven selection process",
-          "It was an arbitrary process that had little impact",
-          "It diminished the diversity of early Christian thought",
-          "It was imposed overnight by political powers"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What is the theological significance of Jesus being called \"Immanuel\"?",
-        "options": [
-          "It means \"God with us,\" signifying his divine presence among humanity and fulfilling Old Testament prophecy",
-          "It highlights his role solely as a moral teacher",
-          "It refers only to his earthly lineage",
-          "It was a title later adopted by church leaders"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How can Psalm 2:7 be interpreted in relation to Jesus as the Son of God?",
-        "options": [
-          "As a messianic prophecy affirming divine sonship and prefiguring Jesus' unique role in redemption",
-          "As a statement with purely historical context relevant only to ancient kings",
-          "As a passage with no connection to the New Testament",
-          "As an illustration of human lineage rather than divinity"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What impact did the various Jewish groups in Jesus' time (Pharisees, Sadducees, Essenes, Zealots) have on the religious landscape?",
-        "options": [
-          "They helped shape religious debates, expectations, and practices through their distinct beliefs and traditions",
-          "They were fragmented and had little collective influence",
-          "Only one group, the Pharisees, affected the religious climate",
-          "Their roles were entirely symbolic and did not affect actual practice"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How do the portrayals of Jesus differ between the Synoptic Gospels and the Gospel of John?",
-        "options": [
-          "The Synoptic Gospels emphasize his teachings, actions, and miracles, while John focuses on his divine nature and theological meaning",
-          "They are essentially identical in content and tone",
-          "John excludes any mention of miracles",
-          "The Synoptics focus only on historical events without deeper theological insight"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How did the political climate of the time influence the perception of the Messiah?",
-        "options": [
-          "Roman oppression, coupled with Jewish hopes for liberation, led to mixed reception—viewing the Messiah as both a potential liberator and a threat",
-          "Political factors had no role in shaping messianic expectations",
-          "It resulted in a uniform, widely accepted view of the Messiah",
-          "The idea of Messiah was influenced solely by ancient prophecy, independent of politics"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What teaching methods did Jesus employ to engage diverse audiences?",
-        "options": [
-          "He used parables, direct instructions, and symbolic acts to make his message accessible and memorable",
-          "He relied exclusively on long, academic discourses",
-          "He taught only using written texts",
-          "He favored dramatic public debates over storytelling"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Why did Jesus use figurative and symbolic language in his teachings?",
-        "options": [
-          "To convey deeper spiritual truths and encourage reflection, rather than merely presenting literal facts",
-          "Because he was unable to articulate his ideas clearly",
-          "To obscure meaning from those who were unworthy",
-          "Simply to follow the literary style of his time without deeper intent"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What challenges arise in interpreting the Sermon on the Mount in today's context?",
-        "options": [
-          "Modern cultural diversity and evolving values make it hard to apply its radical teachings in the same way as in ancient times",
-          "There are no significant challenges as its message is timeless and universally clear",
-          "Contemporary society has fully embraced all its teachings without conflict",
-          "The text has been completely reinterpreted by modern scholars, eliminating historical challenges"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What deeper meaning is behind Jesus' teachings on anger and adultery in the Sermon on the Mount?",
-        "options": [
-          "He redefined sin by emphasizing internal attitudes over mere external actions",
-          "He intended his listeners to focus only on external legal compliance",
-          "His teachings were purely symbolic with no practical consequences",
-          "They were meant to be interpreted metaphorically without moral weight"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How is the balance between physical healing and spiritual teaching portrayed in Jesus' ministry?",
-        "options": [
-          "He combined miraculous healings with profound spiritual instruction to address both bodily and soul needs",
-          "He completely separated physical healing from his spiritual message",
-          "His ministry was focused exclusively on either physical or spiritual matters, not both",
-          "There is no clear balance; the emphasis shifts randomly"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How can the organizational structure of Jesus' ministry be characterized?",
-        "options": [
-          "It was centered around discipleship, teaching, and service, allowing for an effective spread of his message",
-          "It was chaotic and lacked clear direction",
-          "It was modeled strictly after contemporary political organizations",
-          "It relied solely on spontaneous gatherings without any consistent structure"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "In what ways did Jesus challenge prevailing social and cultural norms?",
-        "options": [
-          "By associating with outcasts, redefining leadership, and promoting love and inclusion over strict legalism",
-          "He simply maintained existing norms without criticism",
-          "He focused only on spiritual issues without addressing social norms",
-          "His actions reinforced the prevailing social standards of his time"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How did Jesus' teachings address issues of social justice and human relations?",
-        "options": [
-          "They emphasized compassion, equity, and care for the marginalized as central to the kingdom of God",
-          "They primarily focused on personal salvation with little reference to social issues",
-          "They promoted a strict hierarchical order that minimized social justice concerns",
-          "They were indifferent to matters of human relations, focusing solely on abstract theology"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What key events led up to Jesus' arrest, and what is their theological significance?",
-        "options": [
-          "Betrayal, trial, and sacrifice that fulfilled prophecy and demonstrated obedience to God's redemptive plan",
-          "A series of random events with no deeper theological meaning",
-          "Political maneuvering unrelated to divine prophecy",
-          "Events that were later exaggerated by his followers"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "What are the emotional and spiritual dimensions of Jesus' experience in Gethsemane?",
-        "options": [
-          "They reveal his profound human anguish and submission to God's will in the face of impending sacrifice",
-          "They are minor details that have been overemphasized by tradition",
-          "They indicate a state of calm and detachment before his arrest",
-          "They serve only as a narrative device without real emotional depth"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How are the crucifixion and resurrection connected to Old Testament prophecy and Christ's overall mission?",
-        "options": [
-          "They are viewed as the fulfillment of prophecy, confirming Jesus' messianic identity and the means of salvation",
-          "They are largely independent events with no prophetic connection",
-          "They only have symbolic value and do not fulfill any prophecy",
-          "They contradict the expectations set forth in the Old Testament"
-        ],
-        "correctAnswer": 0
-      }
-    ]
-  },
-
-  {
-    "category": "jesus the messiah 4",
-    "questions": [
-      {
-        "question": "Analyze the significance of the various titles given to Jesus in the New Testament and how they contribute to our understanding of his identity and mission.",
-        "options": [
-          "They reflect His multifaceted divine identity and highlight His role as Redeemer, Savior, and King.",
-          "They are only honorific labels without deep theological meaning.",
-          "They are borrowed from Old Testament traditions without adding new insight.",
-          "They serve primarily a liturgical purpose and do not impact our understanding of His mission."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Discuss the implications of Jesus' rejection of the devil's temptations in the wilderness for his ministry and message.",
-        "options": [
-          "It demonstrates His unwavering commitment to God's will and shows how Scripture guided Him against temptation.",
-          "It reveals that Jesus was indifferent to physical challenges during his ministry.",
-          "It was a minor event that had little influence on his overall message.",
-          "It underscores a human struggle that did not affect his divine nature."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Explain how Jesus' concept of the Kingdom of God differed from the prevailing Jewish expectations of a Messiah.",
-        "options": [
-          "Jesus presented a spiritual kingdom based on repentance and grace rather than a political, military deliverer.",
-          "He promised an immediate political revolution to restore national sovereignty.",
-          "He avoided the topic altogether, leaving the Jewish expectations unchallenged.",
-          "He fully embraced the traditional Jewish view without offering any new perspective."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Evaluate the effectiveness of Jesus' teaching methods in communicating complex spiritual truths to diverse audiences.",
-        "options": [
-          "His use of parables, everyday examples, and direct challenges made His teachings accessible and enduring.",
-          "He relied solely on scholarly debate, which was not understood by common people.",
-          "His methods were overly ambiguous and required later interpretations to be understood.",
-          "He used techniques that catered only to a select, educated group of listeners."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How did Jesus' teachings on anger and reconciliation challenge the traditional interpretations of the Law of Moses?",
-        "options": [
-          "He emphasized inner transformation and the condition of the heart over mere external ritual obedience.",
-          "He simply reinforced the literal requirements of the Law of Moses.",
-          "He ignored the issues of anger entirely, leaving reconciliation unaddressed.",
-          "He proposed minor adjustments that did not impact traditional interpretations significantly."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Discuss the social and ethical implications of Jesus' teachings on love for one's enemies.",
-        "options": [
-          "They call for radical empathy and reconciliation, urging believers to overcome retaliation with love.",
-          "They mandate passive acceptance of injustice without resistance.",
-          "They limit love to only those within one's immediate community.",
-          "They have no real impact on modern social or ethical thought."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Analyze the reasons behind the opposition Jesus faced from various Jewish groups, such as the Pharisees and Sadducees.",
-        "options": [
-          "They opposed Him because His teachings radically reinterpreted the Law and threatened their established authority and understanding of prophecy.",
-          "They rejected Him solely because of ethnic differences.",
-          "They were universally supportive, and any opposition was later exaggeration.",
-          "They opposed Him only for political reasons unrelated to his religious message."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Explain the importance of the Sermon on the Mount in understanding Jesus' ethical teachings and their relevance for contemporary Christians.",
-        "options": [
-          "It provides a comprehensive ethical framework emphasizing humility, mercy, and inner righteousness that remains relevant today.",
-          "It is an outdated set of rules that applies only to first-century followers.",
-          "It focuses solely on ceremonial laws without offering moral guidance.",
-          "It was intended only for a select group and has limited contemporary applications."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Discuss the significance of Jesus' miracles in validating his claims about the Kingdom of God and his divine authority.",
-        "options": [
-          "They serve as powerful signs of divine authority and the in-breaking of God's kingdom, confirming His identity as the Son of God.",
-          "They are merely symbolic acts with no deeper theological import.",
-          "They were limited acts of healing that do not speak to his divine nature.",
-          "They are embellishments added by later followers and hold little weight today."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How did Jesus' approach to ministry differ from that of other religious leaders of his time?",
-        "options": [
-          "He combined spiritual authority with servant leadership, inclusivity, and a focus on internal transformation rather than external ritual.",
-          "He emphasized strict adherence to established religious customs.",
-          "He was primarily a political activist rather than a spiritual guide.",
-          "He maintained a distance from ordinary people, focusing only on elite circles."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Analyze the strategic importance of Jesus' structural organization of his ministry.",
-        "options": [
-          "His intentional selection of disciples, emphasis on oral teaching, and delegation of ministries ensured the long-term spread of his message.",
-          "His ministry was entirely spontaneous with no clear organizational strategy.",
-          "He focused solely on miracles, leaving little room for structured teaching.",
-          "His organization was improvised and did not contribute meaningfully to his mission."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "In what ways did Jesus' teachings on forgiveness and reconciliation challenge the prevailing social norms of his time?",
-        "options": [
-          "He promoted radical forgiveness that countered the common practice of strict retributive justice, calling for personal and communal healing.",
-          "He reinforced the traditional cycle of revenge.",
-          "He only addressed forgiveness in private settings without public implications.",
-          "He temporarily set aside forgiveness in favor of strict law enforcement."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Discuss the events leading up to the Last Supper and their theological significance.",
-        "options": [
-          "They include betrayal, mounting tension with religious authorities, and prophetic warnings, all of which set the stage for instituting the new covenant.",
-          "They are described as routine happenings with little deeper meaning.",
-          "They reflect purely human failings without any theological purpose.",
-          "They were episodes that were later added and do not tie into the core message."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Explain the emotional and spiritual significance of Jesus' experience in the Garden of Gethsemane.",
-        "options": [
-          "It reveals His deep human vulnerability, intense inner struggle, and ultimate submission to God's will as a model for believers facing trials.",
-          "It shows that His emotions overwhelmed Him to the point of weakness.",
-          "It suggests that He hesitated in fulfilling His mission.",
-          "It is portrayed as a moment of anxiety that undermines His divine plan."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How does the text portray the crucifixion of Jesus as both a historical event and a theological turning point?",
-        "options": [
-          "It is depicted as a genuine historical occurrence that fulfilled prophecy, provided atonement, and marked the transformative moment of divine redemption.",
-          "It is presented as a mere accident in history with no lasting theological impact.",
-          "It is shown as an event overshadowed by later miracle claims.",
-          "It is depicted as a purely symbolic narrative without historical basis."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Analyze the accounts of Jesus' resurrection in the Gospels and their implications for Christian faith and theology.",
-        "options": [
-          "They consistently affirm Jesus' victory over death and validate the hope of eternal life, forming the cornerstone of Christian belief.",
-          "They are contradictory accounts that create more questions than answers.",
-          "They serve as allegories with no real promise of resurrection.",
-          "They are secondary narratives with limited influence on Christian doctrine."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Discuss the evidence for the reliability of the Gospel accounts, considering the challenges posed by the Synoptic Problem.",
-        "options": [
-          "Multiple attestations, early sources, and internal consistency offer strong evidence for the overall reliability of the Gospels despite minor variations.",
-          "The differences render the Gospels entirely historically unreliable.",
-          "There is no scholarly basis that supports the historical accuracy of any Gospel account.",
-          "The Synoptic Problem completely disproves any coherent narrative."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How does the text explain the relationship between the Old Testament prophecies and the life and ministry of Jesus?",
-        "options": [
-          "It shows that Jesus fulfills numerous prophecies, thereby validating His messianic identity and establishing continuity with God's redemptive plan.",
-          "It suggests that the prophecies are vague and unrelated to Jesus' actions.",
-          "It downplays the importance of prophecy in shaping His ministry.",
-          "It argues that Old Testament prophecies were misinterpreted by later audiences."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Evaluate the role of the Holy Spirit in Jesus' ministry and its continuing significance for the church today.",
-        "options": [
-          "The Holy Spirit empowered Jesus throughout His ministry and continues to guide, inspire, and strengthen the church in fulfilling its mission.",
-          "The Holy Spirit played a minimal role during His ministry and is largely irrelevant today.",
-          "Jesus operated independently of the Holy Spirit, whose role began only after His ascension.",
-          "The influence of the Holy Spirit was a later theological addition with little basis in the Gospel accounts."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Explain how Jesus' teachings on wealth and possessions challenge both ancient and modern perspectives on materialism.",
-        "options": [
-          "He taught that true wealth is found in spiritual treasures rather than accumulation of material goods, warning that greed leads to spiritual emptiness.",
-          "He promoted the idea that material success is the key to divine favor.",
-          "He largely ignored the issue of wealth in favor of discussing other social matters.",
-          "He encouraged the hoarding of wealth as a sign of blessing from God."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Discuss the importance of understanding the historical and cultural context of Jesus' teachings for their accurate interpretation.",
-        "options": [
-          "Context illuminates the original intent of His words and allows modern readers to apply His teachings appropriately in today's diverse cultural settings.",
-          "Historical context is unnecessary because His words are universally clear without it.",
-          "Cultural background only serves to overcomplicate or obscure His simple message.",
-          "It is irrelevant since the teachings are timeless and require no contextual analysis."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How did Jesus address the issue of hypocrisy among religious leaders, and what are the implications for contemporary religious practice?",
-        "options": [
-          "He openly condemned the hypocrisy of the religious elite, calling for integrity and authenticity in leadership—a challenge that remains relevant for modern faith communities.",
-          "He overlooked hypocrisy, focusing solely on personal salvation.",
-          "He merely hinted at the problem without offering any direct criticism.",
-          "He endorsed certain traditional practices that later generations would later reinterpret."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Analyze the ways in which Jesus used parables to convey spiritual truths, and discuss the challenges of interpreting them.",
-        "options": [
-          "Jesus used everyday imagery in parables to reveal profound truths, though their strong symbolism can lead to diverse interpretations requiring careful study.",
-          "His parables were straightforward teachings with only one clear meaning.",
-          "They were intentionally vague to confuse His critics and need not be interpreted literally.",
-          "The parables were outdated stories that lost relevance immediately after His ministry."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Explain the significance of Jesus' teaching on the narrow and wide gates in the context of salvation.",
-        "options": [
-          "It emphasizes that the path to salvation requires deliberate, disciplined discipleship, in contrast to the easy, self-serving paths that lead to destruction.",
-          "It reveals that salvation is universally available without any effort.",
-          "It implies that most people will inevitably find salvation because the gate is wide.",
-          "It only pertains to social conduct rather than one's eternal destiny."
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "How does the text portray Jesus as both fully human and fully divine, and why is this important for Christian theology?",
-        "options": [
-          "By showing that Jesus experienced real human emotions and suffering while also performing divine acts, the text affirms His ability to empathize with humanity and perfectly reveal God's nature.",
-          "It portrays Him solely as a divine figure with no true human experiences.",
-          "It emphasizes only His humanity, thereby diminishing His divine attributes.",
-          "It suggests that His dual nature was a later doctrinal formulation rather than a foundational truth."
-        ],
-        "correctAnswer": 0
-      }
-    ]
-  },
-
-  {
-    "category": "health principles 1",
-    "questions": [
-      {
-        "question": "Which of these dimensions of health relates most closely to the individual's relationship with nature and his most profound faith-based beliefs?",
-        "options": [
-          "Spiritual dimension",
-          "Physical dimension",
-          "Social dimension",
-          "Emotional dimension"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Which of the following vitamins is directly involved in facilitating wound healing?",
-        "options": [
-          "Vitamin C",
-          "Vitamin D",
-          "Vitamin K",
-          "Vitamin E"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "The end product of carbohydrate digestion important to the body is;",
-        "options": [
-          "Glucose",
-          "Amino acids",
-          "Fatty acids",
-          "Glycerol"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Proteins are useful in the body as;",
-        "options": [
-          "They build and repair tissues",
-          "They are primarily stored as fat",
-          "They function only as enzymes",
-          "They serve exclusively as hormones"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "One of the following cells confer immunity",
-        "options": [
-          "White blood cells",
-          "Red blood cells",
-          "Platelets",
-          "Neurons"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Which of the following is the major vehicle for transporting all materials such as salt, nutrients, and waste products within the system?",
-        "options": [
-          "Blood",
-          "Lymph",
-          "Cerebrospinal fluid",
-          "Interstitial fluid"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "The process by which particular traits or characteristics are transmitted from parents to their offspring is",
-        "options": [
-          "Inheritance",
-          "Evolution",
-          "Mitosis",
-          "Metamorphosis"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "A living organism is characterized by the following EXCEPT",
-        "options": [
-          "Metabolism",
-          "Growth",
-          "Reproduction",
-          "Inability to adapt to changes"
-        ],
-        "correctAnswer": 3
-      },
-      {
-        "question": "Which one of the following is NOT associated with lipid/fat digestion?",
-        "options": [
-          "Emulsification",
-          "Lipase activity",
-          "Amylase activity",
-          "Bile secretion"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "The digestion of protein begins in the",
-        "options": [
-          "Stomach",
-          "Mouth",
-          "Small intestine",
-          "Large intestine"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "The water-soluble vitamins are designated because they dissolve well in?",
-        "options": [
-          "Water",
-          "Fat",
-          "Alcohol",
-          "Acid"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "The following may provide rich sources of protein EXCEPT",
-        "options": [
-          "Meats",
-          "Legumes",
-          "Fruits",
-          "Dairy products"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Which of the following may be an appropriate source of protein for a vegetarian diet?",
-        "options": [
-          "Tofu",
-          "Chicken",
-          "Fish",
-          "Beef"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "The issue of health is not a new concept.",
-        "options": [
-          "True",
-          "False",
-          "Depends on cultural context",
-          "No one really knows"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "The Biblical foundations of health and wellbeing involve",
-        "options": [
-          "Stewardship of the body as a temple",
-          "Reliance solely on modern medicine",
-          "Strict adherence to ritual sacrifice",
-          "Prioritizing economic wealth above physical care"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Health care services include the following EXCEPT",
-        "options": [
-          "Preventative care",
-          "Surgical procedures",
-          "Cosmetic enhancements",
-          "Emergency treatment"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Taking appropriate amounts of all nutrients in the correct proportion to meet the requirement of the body cells is regarded as",
-        "options": [
-          "A balanced diet",
-          "Malnutrition",
-          "Overeating",
-          "Undernutrition"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Which ONE of these describes the social dimension of health?",
-        "options": [
-          "Quality of interpersonal relationships and community support",
-          "Physical fitness and bodily strength",
-          "Genetic heritage",
-          "Metabolic efficiency"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "In drug abuse, cellular changes which develop enabling the individual to function normally only as the drug is present may be regarded as",
-        "options": [
-          "Tolerance",
-          "Dependence",
-          "Withdrawal",
-          "Sensitization"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "The following are substances with abuse potential, which of them is a stimulant?",
-        "options": [
-          "Heroin",
-          "Cocaine",
-          "Alcohol",
-          "Marijuana"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "Indian hemp is also known as",
-        "options": [
-          "Dogbane",
-          "Cannabis",
-          "Hempcrete",
-          "Marijuana"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "When Indian hemp is smoked one of the following is the effect produced",
-        "options": [
-          "It produces a mild sedative effect",
-          "It induces intense euphoria",
-          "It causes vivid hallucinations",
-          "It has no noticeable psychoactive effect"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Which of the following drugs may be abused?",
-        "options": [
-          "Aspirin",
-          "Cocaine",
-          "Vitamin C",
-          "Water"
-        ],
-        "correctAnswer": 1
-      },
-      {
-        "question": "Any drug that has abuse potential must produce its effects",
-        "options": [
-          "Rapidly",
-          "Slowly",
-          "Unnoticeably",
-          "Only when injected"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Who among the following is in particular at greater risk of HIV infection?",
-        "options": [
-          "Men who have sex with men (MSM)",
-          "Non-injecting heterosexual women",
-          "Elderly individuals",
-          "Infants"
-        ],
-        "correctAnswer": 0
-      }
-    ]
-  },
-
-  {
-    "category": "health principles 2",
-    "questions": [
-      {
-        "question": "These constitute high-risk behavior EXCEPT",
-        "options": [
-          "Excessive alcohol consumption",
-          "Smoking",
-          "Regular physical exercise",
-          "Unprotected sexual intercourse"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Our behavior is an important factor in health because",
-        "options": [
-          "It can either promote or hinder healthy lifestyles",
-          "It directly alters our genetic makeup",
-          "It solely determines infectious disease risk",
-          "It has no impact on overall health"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "One of the methods for treating alcoholism may involve the use of",
-        "options": [
-          "Medications such as naltrexone or acamprosate",
-          "Ancient bloodletting techniques",
-          "Exclusive reliance on herbal teas",
-          "Only homeopathic remedies"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Which of the following systems will help in homeostatic control within the body?",
-        "options": [
-          "The endocrine system",
-          "The lymphatic system",
-          "The digestive system",
-          "The reproductive system"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Part of the human system that pumps and channels blood to and from the body is",
-        "options": [
-          "The circulatory (cardiovascular) system",
-          "The respiratory system",
-          "The nervous system",
-          "The skeletal system"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Functionally specialized cells grouped together are known as",
-        "options": [
-          "Tissues",
-          "Organs",
-          "Organ systems",
-          "Cell clusters"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Which of the following is not an example of Vitamins B complex?",
-        "options": [
-          "Thiamine",
-          "Riboflavin",
-          "Folic Acid",
-          "Ascorbic Acid"
-        ],
-        "correctAnswer": 3
-      },
-      {
-        "question": "____________ is the body system that fights against infectious organisms that cause diseases.",
-        "options": [
-          "The immune system",
-          "The endocrine system",
-          "The nervous system",
-          "The digestive system"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Part of the human system that processes food",
-        "options": [
-          "The digestive system",
-          "The respiratory system",
-          "The circulatory system",
-          "The excretory system"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Genetic material is located within the cell",
-        "options": [
-          "In the nucleus",
-          "In the cytoplasm",
-          "In the mitochondria only",
-          "In the lysosomes"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "The normal blood pressure is",
-        "options": [
-          "120/80 mm Hg",
-          "140/90 mm Hg",
-          "100/60 mm Hg",
-          "160/100 mm Hg"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "The following are functions of the skeleton EXCEPT",
-        "options": [
-          "Providing support",
-          "Protecting vital organs",
-          "Producing blood cells",
-          "Digesting food"
-        ],
-        "correctAnswer": 3
-      },
-      {
-        "question": "The ________ is the outermost layer of skin",
-        "options": [
-          "Epidermis",
-          "Dermis",
-          "Hypodermis",
-          "Subcutaneous tissue"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Blood carrying oxygen is called _______",
-        "options": [
-          "Oxygenated blood",
-          "Deoxygenated blood",
-          "Venous blood",
-          "Lymph"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "Which of the following are not components of blood",
-        "options": [
-          "Plasma",
-          "Red blood cells",
-          "Nerve cells",
-          "White blood cells"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Parts of the brain consist of the following EXCEPT",
-        "options": [
-          "Cerebrum",
-          "Cerebellum",
-          "Spinal cord",
-          "Brainstem"
-        ],
-        "correctAnswer": 2
-      },
-      {
-        "question": "The following are methods of preserving foods",
-        "options": [
-          "Canning",
-          "Freezing",
-          "Fermentation",
-          "Photosynthesis"
-        ],
-        "correctAnswer": 3
-      },
-      {
-        "question": "The strong whitish cord that connects the bone to the bone is called________",
-        "options": [
-          "Ligament",
-          "Tendon",
-          "Cartilage",
-          "Muscle"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "The human skeleton consists of _________ bones bound together by tough and relatively inelastic connective tissues",
-        "options": [
-          "206",
-          "208",
-          "210",
-          "212"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "The cardiovascular system has three types of blood vessels, EXCEPT",
-        "options": [
-          "Arteries",
-          "Veins",
-          "Capillaries",
-          "Lymphatic vessels"
-        ],
-        "correctAnswer": 3
-      },
-      {
-        "question": "Different types of bone are these except",
-        "options": [
-          "Long bones",
-          "Short bones",
-          "Flat bones",
-          "Elastic bones"
-        ],
-        "correctAnswer": 3
-      },
-      {
-        "question": "Chlamydiaceae is a ________ disease",
-        "options": [
-          "Bacterial",
-          "Viral",
-          "Fungal",
-          "Parasitic"
-        ],
-        "correctAnswer": 0
-      },
-      {
-        "question": "All these are vectors of the following diseases except",
-        "options": [
-          "Mosquitoes",
-          "Ticks",
-          "Fleas",
-          "Bacteria"
-        ],
-        "correctAnswer": 3
-      },
-      {
-        "question": "Which of these is not possible ways by which HIV/AIDs can be transmitted?",
-        "options": [
-          "Unprotected sexual intercourse",
-          "Sharing needles",
-          "Mosquito bites",
-          "Blood transfusion with infected blood"
-        ],
-        "correctAnswer": 2
-      }
-    ]
-  },
-
-  {
-    category: "busen108",
-    questions: [
-      {
-        question: "What does HTML stand for?",
-        options: [
-          "Hyper Text Markup Language",
-          "High-level Text Manipulation Language",
-          "Hyperlink and Text Management Language",
-          "Home Tool Markup Language",
-        ],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which of the following is the root element of an HTML page?",
-        options: ["<head>", "<body>", "<html>", "<title>"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which HTML tag is used to define an unordered list?",
-        options: ["<ol>", "<ul>", "<li>", "<dl>"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which HTML tag is used to define an ordered list?",
-        options: ["<ul>", "<ol>", "<li>", "<dd>"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which HTML tag is used to create a hyperlink?",
-        options: ["<link>", "<hyperlink>", "<a>", "<href>"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What attribute is used to specify the URL of a hyperlink?",
-        options: ["src", "href", "url", "link"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which HTML tag is used to display an image?",
-        options: ["<image>", "<src>", "<img>", "<picture>"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What attribute is used to specify the source of an image?",
-        options: ["href", "url", "src", "link"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which HTML tag defines a table?",
-        options: ["<grid>", "<table>", "<row>", "<data>"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which HTML tag defines a row in a table?",
-        options: ["<row>", "<td>", "<th>", "<tr>"],
-        correctAnswer: 3,
-      },
-      {
-        question: "What does CSS stand for?",
-        options: [
-          "Creative Style Sheets",
-          "Computer Style Sheets",
-          "Cascading Style Sheets",
-          "Colorful Style System",
-        ],
-        correctAnswer: 2,
-      },
-      {
-        question:
-          "Which CSS property is used to change the text color of an element?",
-        options: ["font-color", "text-color", "color", "foreground-color"],
-        correctAnswer: 2,
-      },
-      {
-        question:
-          "Which CSS property is used to change the background color of an element?",
-        options: [
-          "background-color",
-          "color-background",
-          "bg-color",
-          "element-background",
-        ],
-        correctAnswer: 0,
-      },
-      {
-        question:
-          "How do you insert an external CSS file into your HTML document?",
-        options: [
-          '<style src="styles.css">',
-          '<link rel="stylesheet" type="text/css" href="styles.css">',
-          '<css file="styles.css">',
-          '@import url("styles.css"); (within `<style>` tags)',
-        ],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which CSS selector targets all `<p>` elements on a page?",
-        options: [".p", "#p", "p", "* p"],
-        correctAnswer: 2,
-      },
-      {
-        question:
-          'Which CSS selector targets an element with the ID "myElement"?',
-        options: [".myElement", "#myElement", "element.myElement", "myElement"],
-
-        correctAnswer: 1,
-      },
-      {
-        question:
-          'Which CSS selector targets all elements with the class "container"?',
-        options: ["#container", ".container", "container", "* container"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which CSS property controls the size of the text?",
-        options: ["text-size", "font-size", "size", "text-style"],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which CSS property is used to make text bold?",
-        options: [
-          "font-weight: bold;",
-          "text-style: bold;",
-          "bold-text: yes;",
-          "text-weight: bold;",
-        ],
-        correctAnswer: 0,
-      },
-      {
-        question:
-          "Which CSS property is used to add space inside an element's border?",
-        options: ["margin", "border", "padding", "spacing"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What does JS stand for?",
-        options: [
-          "Java Style",
-          "JavaScript",
-          "Joint Scripting",
-          "Just Scripting",
-        ],
-        correctAnswer: 1,
-      },
-      {
-        question: "Which keyword is used to declare a variable in JavaScript?",
-        options: ["variable", "var", "let", "const"],
-        correctAnswer: 2,
-      },
-      {
-        question:
-          "Which of the following is a primitive data type in JavaScript?",
-        options: ["Array", "Object", "Boolean", "Function"],
-        correctAnswer: 2,
-      },
-      {
-        question: "How do you write a single-line comment in JavaScript?",
-        options: [
-          "// This is a comment",
-          "/* This is a comment */",
-          "-- This is a comment",
-          "#This is a comment",
-        ],
-        correctAnswer: 0,
-      },
-      {
-        question:
-          "Which operator is used for strict equality in JavaScript (checks both value and type)?",
-        options: ["==", "=", "===", "!="],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the output of `2 + '2'` in JavaScript?",
-        options: ["4 (number)", "22 (string)", "error", "NaN"],
-        correctAnswer: 1,
-      },
-      {
-        question:
-          "Which built-in JavaScript function is used to display output in the console?",
-        options: ["alert()", "prompt()", "console.log()", "document.write()"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is an array in JavaScript?",
-        options: [
-          "A single variable that can store multiple data types.",
-          "An ordered collection of elements, which can be of different data types.",
-          "A data structure that stores key-value pairs.",
-          "A function that returns multiple values.",
-        ],
-        correctAnswer: 1,
-      },
-      {
-        question:
-          "How do you access the first element of an array named `myArray`?",
-        options: ["myArray[1]", "myArray.first()", "myArray(0)", "myArray[0]"],
-        correctAnswer: 2,
-      },
-      {
-        question: "Which of the following is a loop structure in JavaScript?",
-        options: [
-          "if statement",
-          "switch statement",
-          "for loop",
-          "function declaration",
-        ],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the purpose of a web browser?",
-        options: [
-          "To create web pages.",
-          "To store website files.",
-          "To display web pages to users.",
-          "To manage website databases.",
-        ],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is a URL (Uniform Resource Locator)?",
-        options: [
-          "The language used to write web pages.",
-          "The design and layout of a website.",
-          "The address of a resource on the internet.",
-          "A program that runs on a web server.",
-        ],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the role of a web server?",
-        options: [
-          "To design the user interface of a website.",
-          "To store, process, and deliver website files to browsers.",
-          "To handle client-side scripting.",
-          "To manage the website's domain name.",
-        ],
-        correctAnswer: 1,
-      },
-      {
-        question:
-          "What is the difference between the front-end and the back-end of a website?",
-        options: [
-          "Front-end is what the user sees, back-end is the server-side logic.",
-          "Front-end handles data storage, back-end handles user interaction.",
-          "Front-end is written in JavaScript, back-end is written in HTML/CSS.",
-          "There is no difference.",
-        ],
-        correctAnswer: 0,
-      },
-      {
-        question: "Which of the following is primarily a front-end technology?",
-        options: ["Python", "Node.js", "HTML", "MySQL"],
-        correctAnswer: 2,
-      },
-      {
-        question:
-          "Which of the following is often used for back-end development?",
-        options: ["CSS", "JavaScript", "HTML", "React"],
-        correctAnswer: 1,
-      },
-      {
-        question: "What does HTTP stand for?",
-        options: [
-          "Hyper Text Transfer Protocol",
-          "High-level Text Transmission Process",
-          "Hyperlink Transferring Protocol",
-          "Home Text Processing Protocol",
-        ],
-        correctAnswer: 0,
-      },
-      {
-        question: "What is a DNS (Domain Name System)?",
-        options: [
-          "A system for designing website layouts.",
-          "A system that translates domain names into IP addresses.",
-          "A language for styling web pages.",
-          "A type of web server software.",
-        ],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is a web API (Application Programming Interface)?",
-        options: [
-          "A graphical user interface for web development tools.",
-          "A set of rules and protocols that allow different software applications to communicate with each other over the web.",
-          "A specific programming language used for web development.",
-          "A method for securing web pages with passwords.",
-        ],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is responsive web design?",
-        options: [
-          "Designing websites that load very quickly.",
-          "Designing websites that adapt their layout to different screen sizes and devices.",
-          "Designing websites with a lot of animations and interactive elements.",
-          "Designing websites that use only text and no images.",
-        ],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is a function in JavaScript?",
-        options: [
-          "A type of variable that can store multiple values.",
-          "A block of code designed to perform a specific task.",
-          "A way to style HTML elements.",
-          "A method for handling user input.",
-        ],
-        correctAnswer: 1,
-      },
-      {
-        question:
-          "How do you call (execute) a function named `myFunction` in JavaScript?",
-        options: [
-          "call myFunction;",
-          "execute myFunction();",
-          "myFunction();",
-          "run myFunction;",
-        ],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the purpose of the `document` object in JavaScript?",
-        options: [
-          "To represent the browser window.",
-          "To represent the HTML DOM (Document Object Model) of the page.",
-          "To handle user events like clicks and mouse movements.",
-          "To store website cookies.",
-        ],
-        correctAnswer: 1,
-      },
-      {
-        question:
-          "Which method is commonly used to find an HTML element by its ID in JavaScript?",
-        options: [
-          "document.getElementByName()",
-          "document.getElementByClass()",
-          "document.getElementById()",
-          'document.querySelector("#myId")',
-        ],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is an event listener in JavaScript?",
-        options: [
-          "A function that is called when a specific HTML element is created.",
-          "A mechanism that waits for a specific event (like a click) to occur and then executes a function.",
-          "A variable that stores information about user interactions.",
-          "A way to style elements based on user actions.",
-        ],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is a framework in web development?",
-        options: [
-          "A reusable set of pre-written code and rules that provides a structure for building software applications.",
-          "A collection of pre-written code and tools that provides a structure for building web applications.",
-          "A specific programming language used for complex websites.",
-          "A type of web server.",
-        ],
-        correctAnswer: 0,
-      },
-      {
-        question:
-          "Which of the following is a popular JavaScript framework/library for front-end development?",
-        options: ["Django", "Ruby on Rails", "React", "Spring"],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is version control (e.g., using Git)?",
-        options: [
-          "A way to optimize website loading speed.",
-          "A system for tracking changes to code over time.",
-          "A method for deploying websites to a server.",
-          "A tool for designing user interfaces.",
-        ],
-        correctAnswer: 1,
-      },
-      {
-        question: "What is a database used for in web development?",
-        options: [
-          "To store and manage website files (HTML, CSS, JavaScript).",
-          "To handle user authentication and security.",
-          "To store and retrieve structured data, such as user information or product details.",
-          "To define the visual appearance of a website.",
-        ],
-        correctAnswer: 2,
-      },
-      {
-        question: "What is the purpose of testing in web development?",
-        options: [
-          "To make the website look more appealing.",
-          "To ensure the website functions correctly and is free of errors.",
-          "To optimize website performance for search engines.",
-          "To gather user feedback on the website's design.",
-        ],
-        correctAnswer: 1,
-      },
-      {
-        "question": "A network within a home or small office is typically a:",
-        "options": ["WAN", "LAN", "MAN", "PAN"],
-        "correctAnswer": 1
-      },
-      {
-        "question": "Connecting devices using Bluetooth creates a:",
-        "options": ["LAN", "WAN", "MAN", "PAN"],
-        "correctAnswer": 3
-      },
-      {
-        "question": "A network that connects multiple cities is classified as a:",
-        "options": ["LAN", "MAN", "WAN", "VPN"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Which network type uses a secure, encrypted connection over a public network?",
-        "options": ["LAN", "WAN", "MAN", "VPN"],
-        "correctAnswer": 3
-      },
-      {
-        "question": "In a bus topology, what happens if the main cable breaks?",
-        "options": ["Only one workstation is affected", "The entire network can fail", "Data is rerouted automatically", "A new connection is established"],
-        "correctAnswer": 1
-      },
-      {
-        "question": "What is a primary disadvantage of a star topology?",
-        "options": ["High cost of cabling", "Difficult to add new nodes", "Reliance on the central hub/switch", "Low fault tolerance"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "In a ring topology, how is data typically transmitted?",
-        "options": ["Bidirectionally", "Randomly", "Unidirectionally", "Simultaneously to all nodes"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Which topology offers multiple paths for data transmission between nodes?",
-        "options": ["Star", "Bus", "Ring", "Mesh"],
-        "correctAnswer": 3
-      },
-      {
-        "question": "A hierarchical network structure is characteristic of which topology?",
-        "options": ["Mesh", "Ring", "Tree", "Bus"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "The physical layer of the OSI model is concerned with:",
-        "options": ["Logical addressing", "Data framing", "Signal encoding", "Application protocols"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "MAC addressing is handled at which OSI layer?",
-        "options": ["Network", "Transport", "Data Link", "Physical"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Which OSI layer is responsible for end-to-end reliable data transfer?",
-        "options": ["Network", "Session", "Transport", "Application"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Establishing, maintaining, and terminating sessions occurs at the:",
-        "options": ["Transport Layer", "Network Layer", "Session Layer", "Presentation Layer"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Data encryption and decryption are typically handled at the:",
-        "options": ["Session Layer", "Presentation Layer", "Application Layer", "Transport Layer"],
-        "correctAnswer": 1
-      },
-      {
-        "question": "Which OSI layer provides services directly to the end-user?",
-        "options": ["Transport", "Network", "Presentation", "Application"],
-        "correctAnswer": 3
-      },
-      {
-        "question": "The 'client-side' of web development is also known as:",
-        "options": ["Backend", "Server-side", "Frontend", "Database management"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Which of these is NOT primarily a backend technology?",
-        "options": ["Python", "Node.js", "PHP", "HTML"],
-        "correctAnswer": 3
-      },
-      {
-        "question": "What is the purpose of an IP address?",
-        "options": ["To identify a physical network cable", "To uniquely identify a device on a network", "To define the style of a web page", "To translate domain names"],
-        "correctAnswer": 1
-      },
-      {
-        "question": "What does API stand for in the context of web development?",
-        "options": ["Advanced Programming Interface", "Application Protocol Interface", "Application Programming Interface", "Automated Program Interaction"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "React and Angular are examples of:",
-        "options": ["Backend databases", "Server-side languages", "Frontend frameworks/libraries", "Network protocols"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "A collection of pre-written code that helps simplify development is called a:",
-        "options": ["Framework", "Protocol", "Library", "Compiler"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Making a website work well on desktops, tablets, and phones is the goal of:",
-        "options": ["Server-side rendering", "Progressive enhancement", "Responsive design", "Mobile-first development"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "WordPress and Drupal are examples of:",
-        "options": ["JavaScript frameworks", "CSS preprocessors", "Content Management Systems", "Backend languages"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "What is the primary function of Git?",
-        "options": ["Package management", "Task automation", "Version control", "Code compilation"],
-        "correctAnswer": 2
-      },
-      {
-        "question": "Which of the following is used to store and manage structured data for a website?",
-        "options": ["Web server", "Browser cache", "Database", "Text editor"],
-        "correctAnswer": 2
-      }
-    ],
-  },
-  
-];
 
 export const quizData = {
-  CSS: [
+  FRONTEND:[
+    {
+      question: "What does HTML stand for?",
+      options: [
+        "Hyper Text Markup Language",
+        "High-level Text Manipulation Language",
+        "Hyperlink and Text Management Language",
+        "Home Tool Markup Language",
+      ],
+      correct: 0,
+    },
+    {
+      question: "Which of the following is the root element of an HTML page?",
+      options: ["<head>", "<body>", "<html>", "<title>"],
+      correct: 2,
+    },
+    {
+      question: "Which HTML tag is used to define an unordered list?",
+      options: ["<ol>", "<ul>", "<li>", "<dl>"],
+      correct: 1,
+    },
+    {
+      question: "Which HTML tag is used to define an ordered list?",
+      options: ["<ul>", "<ol>", "<li>", "<dd>"],
+      correct: 1,
+    },
+    {
+      question: "Which HTML tag is used to create a hyperlink?",
+      options: ["<link>", "<hyperlink>", "<a>", "<href>"],
+      correct: 2,
+    },
+    {
+      question: "What attribute is used to specify the URL of a hyperlink?",
+      options: ["src", "href", "url", "link"],
+      correct: 1,
+    },
+    {
+      question: "Which HTML tag is used to display an image?",
+      options: ["<image>", "<src>", "<img>", "<picture>"],
+      correct: 2,
+    },
+    {
+      question: "What attribute is used to specify the source of an image?",
+      options: ["href", "url", "src", "link"],
+      correct: 2,
+    },
+    {
+      question: "Which HTML tag defines a table?",
+      options: ["<grid>", "<table>", "<row>", "<data>"],
+      correct: 1,
+    },
+    {
+      question: "Which HTML tag defines a row in a table?",
+      options: ["<row>", "<td>", "<th>", "<tr>"],
+      correct: 3,
+    },
     {
       question: "What does CSS stand for?",
-      options: ["Cascading Style Sheets", "Computer Style Sheets", "Creative Style Sheets", "Colorful Style Sheets"],
-      correct: 0
+      options: [
+        "Creative Style Sheets",
+        "Computer Style Sheets",
+        "Cascading Style Sheets",
+        "Colorful Style System",
+      ],
+      correct: 2,
     },
     {
-      question: "Which property is used to change the background color?",
-      options: ["color", "background-color", "bgcolor", "background"],
-      correct: 1
+      question:
+        "Which CSS property is used to change the text color of an element?",
+      options: ["font-color", "text-color", "color", "foreground-color"],
+      correct: 2,
     },
     {
-      question: "How do you add a comment in CSS?",
-      options: ["/* comment */", "// comment", "<!-- comment -->", "comment"],
-      correct: 0
+      question:
+        "Which CSS property is used to change the background color of an element?",
+      options: [
+        "background-color",
+        "color-background",
+        "bg-color",
+        "element-background",
+      ],
+      correct: 0,
     },
     {
-      question: "Which CSS property controls the text size?",
-      options: ["text-size", "font-size", "text-style", "font-style"],
-      correct: 1
+      question:
+        "How do you insert an external CSS file into your HTML document?",
+      options: [
+        '<style src="styles.css">',
+        '<link rel="stylesheet" type="text/css" href="styles.css">',
+        '<css file="styles.css">',
+        '@import url("styles.css"); (within `<style>` tags)',
+      ],
+      correct: 1,
     },
     {
-      question: "How do you make the text bold?",
-      options: ["font: bold", "font-weight: bold", "style: bold", "text: bold"],
-      correct: 1
+      question: "Which CSS selector targets all `<p>` elements on a page?",
+      options: [".p", "#p", "p", "* p"],
+      correct: 2,
     },
     {
-      question: "Which property is used to change the font of an element?",
-      options: ["font-family", "font-style", "font-weight", "font-size"],
-      correct: 0
+      question:
+        'Which CSS selector targets an element with the ID "myElement"?',
+      options: [".myElement", "#myElement", "element.myElement", "myElement"],
+
+      correct: 1,
     },
     {
-      question: "How do you select an element with id 'demo'?",
-      options: ["#demo", ".demo", "demo", "*demo"],
-      correct: 0
+      question:
+        'Which CSS selector targets all elements with the class "container"?',
+      options: ["#container", ".container", "container", "* container"],
+      correct: 1,
     },
     {
-      question: "How do you select elements with class 'test'?",
-      options: [".test", "#test", "test", "*test"],
-      correct: 0
+      question: "Which CSS property controls the size of the text?",
+      options: ["text-size", "font-size", "size", "text-style"],
+      correct: 1,
     },
     {
-      question: "Which property is used to create space between the element's border and content?",
-      options: ["margin", "padding", "border", "spacing"],
-      correct: 1
+      question: "Which CSS property is used to make text bold?",
+      options: [
+        "font-weight: bold;",
+        "text-style: bold;",
+        "bold-text: yes;",
+        "text-weight: bold;",
+      ],
+      correct: 0,
     },
     {
-      question: "Which value of the 'display' property makes an element a block element?",
-      options: ["inline", "block", "flex", "grid"],
-      correct: 1
+      question:
+        "Which CSS property is used to add space inside an element's border?",
+      options: ["margin", "border", "padding", "spacing"],
+      correct: 2,
+    },
+    {
+      question: "What does JS stand for?",
+      options: [
+        "Java Style",
+        "JavaScript",
+        "Joint Scripting",
+        "Just Scripting",
+      ],
+      correct: 1,
+    },
+    {
+      question: "Which keyword is used to declare a variable in JavaScript?",
+      options: ["variable", "var", "let", "const"],
+      correct: 2,
+    },
+    {
+      question:
+        "Which of the following is a primitive data type in JavaScript?",
+      options: ["Array", "Object", "Boolean", "Function"],
+      correct: 2,
+    },
+    {
+      question: "How do you write a single-line comment in JavaScript?",
+      options: [
+        "// This is a comment",
+        "/* This is a comment */",
+        "-- This is a comment",
+        "#This is a comment",
+      ],
+      correct: 0,
+    },
+    {
+      question:
+        "Which operator is used for strict equality in JavaScript (checks both value and type)?",
+      options: ["==", "=", "===", "!="],
+      correct: 2,
+    },
+    {
+      question: "What is the output of `2 + '2'` in JavaScript?",
+      options: ["4 (number)", "22 (string)", "error", "NaN"],
+      correct: 1,
+    },
+    {
+      question:
+        "Which built-in JavaScript function is used to display output in the console?",
+      options: ["alert()", "prompt()", "console.log()", "document.write()"],
+      correct: 2,
+    },
+    {
+      question: "What is an array in JavaScript?",
+      options: [
+        "A single variable that can store multiple data types.",
+        "An ordered collection of elements, which can be of different data types.",
+        "A data structure that stores key-value pairs.",
+        "A function that returns multiple values.",
+      ],
+      correct: 1,
+    },
+    {
+      question:
+        "How do you access the first element of an array named `myArray`?",
+      options: ["myArray[1]", "myArray.first()", "myArray(0)", "myArray[0]"],
+      correct: 2,
+    },
+    {
+      question: "Which of the following is a loop structure in JavaScript?",
+      options: [
+        "if statement",
+        "switch statement",
+        "for loop",
+        "function declaration",
+      ],
+      correct: 2,
+    },
+    {
+      question: "What is the purpose of a web browser?",
+      options: [
+        "To create web pages.",
+        "To store website files.",
+        "To display web pages to users.",
+        "To manage website databases.",
+      ],
+      correct: 2,
+    },
+    {
+      question: "What is a URL (Uniform Resource Locator)?",
+      options: [
+        "The language used to write web pages.",
+        "The design and layout of a website.",
+        "The address of a resource on the internet.",
+        "A program that runs on a web server.",
+      ],
+      correct: 2,
+    },
+    {
+      question: "What is the role of a web server?",
+      options: [
+        "To design the user interface of a website.",
+        "To store, process, and deliver website files to browsers.",
+        "To handle client-side scripting.",
+        "To manage the website's domain name.",
+      ],
+      correct: 1,
+    },
+    {
+      question:
+        "What is the difference between the front-end and the back-end of a website?",
+      options: [
+        "Front-end is what the user sees, back-end is the server-side logic.",
+        "Front-end handles data storage, back-end handles user interaction.",
+        "Front-end is written in JavaScript, back-end is written in HTML/CSS.",
+        "There is no difference.",
+      ],
+      correct: 0,
+    },
+    {
+      question: "Which of the following is primarily a front-end technology?",
+      options: ["Python", "Node.js", "HTML", "MySQL"],
+      correct: 2,
+    },
+    {
+      question:
+        "Which of the following is often used for back-end development?",
+      options: ["CSS", "JavaScript", "HTML", "React"],
+      correct: 1,
+    },
+    {
+      question: "What does HTTP stand for?",
+      options: [
+        "Hyper Text Transfer Protocol",
+        "High-level Text Transmission Process",
+        "Hyperlink Transferring Protocol",
+        "Home Text Processing Protocol",
+      ],
+      correct: 0,
+    },
+    {
+      question: "What is a DNS (Domain Name System)?",
+      options: [
+        "A system for designing website layouts.",
+        "A system that translates domain names into IP addresses.",
+        "A language for styling web pages.",
+        "A type of web server software.",
+      ],
+      correct: 1,
+    },
+    {
+      question: "What is a web API (Application Programming Interface)?",
+      options: [
+        "A graphical user interface for web development tools.",
+        "A set of rules and protocols that allow different software applications to communicate with each other over the web.",
+        "A specific programming language used for web development.",
+        "A method for securing web pages with passwords.",
+      ],
+      correct: 1,
+    },
+    {
+      question: "What is responsive web design?",
+      options: [
+        "Designing websites that load very quickly.",
+        "Designing websites that adapt their layout to different screen sizes and devices.",
+        "Designing websites with a lot of animations and interactive elements.",
+        "Designing websites that use only text and no images.",
+      ],
+      correct: 1,
+    },
+    {
+      question: "What is a function in JavaScript?",
+      options: [
+        "A type of variable that can store multiple values.",
+        "A block of code designed to perform a specific task.",
+        "A way to style HTML elements.",
+        "A method for handling user input.",
+      ],
+      correct: 1,
+    },
+    {
+      question:
+        "How do you call (execute) a function named `myFunction` in JavaScript?",
+      options: [
+        "call myFunction;",
+        "execute myFunction();",
+        "myFunction();",
+        "run myFunction;",
+      ],
+      correct: 2,
+    },
+    {
+      question: "What is the purpose of the `document` object in JavaScript?",
+      options: [
+        "To represent the browser window.",
+        "To represent the HTML DOM (Document Object Model) of the page.",
+        "To handle user events like clicks and mouse movements.",
+        "To store website cookies.",
+      ],
+      correct: 1,
+    },
+    {
+      question:
+        "Which method is commonly used to find an HTML element by its ID in JavaScript?",
+      options: [
+        "document.getElementByName()",
+        "document.getElementByClass()",
+        "document.getElementById()",
+        'document.querySelector("#myId")',
+      ],
+      correct: 2,
+    },
+    {
+      question: "What is an event listener in JavaScript?",
+      options: [
+        "A function that is called when a specific HTML element is created.",
+        "A mechanism that waits for a specific event (like a click) to occur and then executes a function.",
+        "A variable that stores information about user interactions.",
+        "A way to style elements based on user actions.",
+      ],
+      correct: 1,
+    },
+    {
+      question: "What is a framework in web development?",
+      options: [
+        "A reusable set of pre-written code and rules that provides a structure for building software applications.",
+        "A collection of pre-written code and tools that provides a structure for building web applications.",
+        "A specific programming language used for complex websites.",
+        "A type of web server.",
+      ],
+      correct: 0,
+    },
+    {
+      question:
+        "Which of the following is a popular JavaScript framework/library for front-end development?",
+      options: ["Django", "Ruby on Rails", "React", "Spring"],
+      correct: 2,
+    },
+    {
+      question: "What is version control (e.g., using Git)?",
+      options: [
+        "A way to optimize website loading speed.",
+        "A system for tracking changes to code over time.",
+        "A method for deploying websites to a server.",
+        "A tool for designing user interfaces.",
+      ],
+      correct: 1,
+    },
+    {
+      question: "What is a database used for in web development?",
+      options: [
+        "To store and manage website files (HTML, CSS, JavaScript).",
+        "To handle user authentication and security.",
+        "To store and retrieve structured data, such as user information or product details.",
+        "To define the visual appearance of a website.",
+      ],
+      correct: 2,
+    },
+    {
+      question: "What is the purpose of testing in web development?",
+      options: [
+        "To make the website look more appealing.",
+        "To ensure the website functions correctly and is free of errors.",
+        "To optimize website performance for search engines.",
+        "To gather user feedback on the website's design.",
+      ],
+      correct: 1,
+    },
+    {
+      "question": "A network within a home or small office is typically a:",
+      "options": ["WAN", "LAN", "MAN", "PAN"],
+      "correct": 1
+    },
+    {
+      "question": "Connecting devices using Bluetooth creates a:",
+      "options": ["LAN", "WAN", "MAN", "PAN"],
+      "correct": 3
+    },
+    {
+      "question": "A network that connects multiple cities is classified as a:",
+      "options": ["LAN", "MAN", "WAN", "VPN"],
+      "correct": 2
+    },
+    {
+      "question": "Which network type uses a secure, encrypted connection over a public network?",
+      "options": ["LAN", "WAN", "MAN", "VPN"],
+      "correct": 3
+    },
+    {
+      "question": "In a bus topology, what happens if the main cable breaks?",
+      "options": ["Only one workstation is affected", "The entire network can fail", "Data is rerouted automatically", "A new connection is established"],
+      "correct": 1
+    },
+    {
+      "question": "What is a primary disadvantage of a star topology?",
+      "options": ["High cost of cabling", "Difficult to add new nodes", "Reliance on the central hub/switch", "Low fault tolerance"],
+      "correct": 2
+    },
+    {
+      "question": "In a ring topology, how is data typically transmitted?",
+      "options": ["Bidirectionally", "Randomly", "Unidirectionally", "Simultaneously to all nodes"],
+      "correct": 2
+    },
+    {
+      "question": "Which topology offers multiple paths for data transmission between nodes?",
+      "options": ["Star", "Bus", "Ring", "Mesh"],
+      "correct": 3
+    },
+    {
+      "question": "A hierarchical network structure is characteristic of which topology?",
+      "options": ["Mesh", "Ring", "Tree", "Bus"],
+      "correct": 2
+    },
+    {
+      "question": "The physical layer of the OSI model is concerned with:",
+      "options": ["Logical addressing", "Data framing", "Signal encoding", "Application protocols"],
+      "correct": 2
+    },
+    {
+      "question": "MAC addressing is handled at which OSI layer?",
+      "options": ["Network", "Transport", "Data Link", "Physical"],
+      "correct": 2
+    },
+    {
+      "question": "Which OSI layer is responsible for end-to-end reliable data transfer?",
+      "options": ["Network", "Session", "Transport", "Application"],
+      "correct": 2
+    },
+    {
+      "question": "Establishing, maintaining, and terminating sessions occurs at the:",
+      "options": ["Transport Layer", "Network Layer", "Session Layer", "Presentation Layer"],
+      "correct": 2
+    },
+    {
+      "question": "Data encryption and decryption are typically handled at the:",
+      "options": ["Session Layer", "Presentation Layer", "Application Layer", "Transport Layer"],
+      "correct": 1
+    },
+    {
+      "question": "Which OSI layer provides services directly to the end-user?",
+      "options": ["Transport", "Network", "Presentation", "Application"],
+      "correct": 3
+    },
+    {
+      "question": "The 'client-side' of web development is also known as:",
+      "options": ["Backend", "Server-side", "Frontend", "Database management"],
+      "correct": 2
+    },
+    {
+      "question": "Which of these is NOT primarily a backend technology?",
+      "options": ["Python", "Node.js", "PHP", "HTML"],
+      "correct": 3
+    },
+    {
+      "question": "What is the purpose of an IP address?",
+      "options": ["To identify a physical network cable", "To uniquely identify a device on a network", "To define the style of a web page", "To translate domain names"],
+      "correct": 1
+    },
+    {
+      "question": "What does API stand for in the context of web development?",
+      "options": ["Advanced Programming Interface", "Application Protocol Interface", "Application Programming Interface", "Automated Program Interaction"],
+      "correct": 2
+    },
+    {
+      "question": "React and Angular are examples of:",
+      "options": ["Backend databases", "Server-side languages", "Frontend frameworks/libraries", "Network protocols"],
+      "correct": 2
+    },
+    {
+      "question": "A collection of pre-written code that helps simplify development is called a:",
+      "options": ["Framework", "Protocol", "Library", "Compiler"],
+      "correct": 2
+    },
+    {
+      "question": "Making a website work well on desktops, tablets, and phones is the goal of:",
+      "options": ["Server-side rendering", "Progressive enhancement", "Responsive design", "Mobile-first development"],
+      "correct": 2
+    },
+    {
+      "question": "WordPress and Drupal are examples of:",
+      "options": ["JavaScript frameworks", "CSS preprocessors", "Content Management Systems", "Backend languages"],
+      "correct": 2
+    },
+    {
+      "question": "What is the primary function of Git?",
+      "options": ["Package management", "Task automation", "Version control", "Code compilation"],
+      "correct": 2
+    },
+    {
+      "question": "Which of the following is used to store and manage structured data for a website?",
+      "options": ["Web server", "Browser cache", "Database", "Text editor"],
+      "correct": 2
     }
   ],
   JAVASCRIPT: [
     {
-      question: "What is JavaScript?",
-      options: ["A programming language", "A markup language", "A styling language", "A database"],
-      correct: 0
+      "question": "What is JavaScript primarily used for?",
+      "options": [
+        "Styling web pages",
+        "Creating interactive web experiences",
+        "Structuring web content",
+        "Managing databases"
+      ],
+      "correct": 1,
+      "level": "beginner"
     },
     {
-      question: "How do you declare a variable in JavaScript?",
-      options: ["var", "let", "const", "All of the above"],
-      correct: 3
+      "question": "Which keyword is used to declare a variable that cannot be reassigned?",
+      "options": [
+        "var",
+        "let",
+        "const",
+        "static"
+      ],
+      "correct": 2,
+      "level": "beginner"
     },
     {
-      question: "What is the correct way to write an array?",
-      options: ["var colors = (1:'red', 2:'green', 3:'blue')", "var colors = ['red', 'green', 'blue']", "var colors = 'red', 'green', 'blue'", "var colors = {1:'red', 2:'green', 3:'blue'}"],
-      correct: 1
+      "question": "What will be the output?\n```javascript\nconsole.log(typeof null);\n```",
+      "options": [
+        "\"null\"",
+        "\"object\"",
+        "\"undefined\"",
+        "\"number\""
+      ],
+      "correct": 1,
+      "level": "beginner"
     },
     {
-      question: "How do you create a function in JavaScript?",
-      options: ["function myFunction()", "function = myFunction()", "function:myFunction()", "function myFunction"],
-      correct: 0
+      "question": "How do you correctly log 'Hello' to the console?",
+      "options": [
+        "print('Hello');",
+        "log.console('Hello');",
+        "console.log('Hello');",
+        "System.out.println('Hello');"
+      ],
+      "correct": 2,
+      "level": "beginner"
     },
     {
-      question: "How do you call a function named 'myFunction'?",
-      options: ["call myFunction()", "myFunction()", "call function myFunction", "function myFunction()"],
-      correct: 1
+      "question": "Which operator is used for strict equality (checks both value and type)?",
+      "options": [
+        "==",
+        "===",
+        "=",
+        "!="
+      ],
+      "correct": 1,
+      "level": "beginner"
     },
     {
-      question: "How do you write an IF statement in JavaScript?",
-      options: ["if i == 5 then", "if i = 5", "if (i == 5)", "if i = 5 then"],
-      correct: 2
+      "question": "What is the result of `\"5\" + 2` in JavaScript?",
+      "options": [
+        "\"7\"",
+        "7",
+        "\"52\"",
+        "Error"
+      ],
+      "correct": 2,
+      "level": "beginner"
     },
     {
-      question: "How do you write an IF statement for executing some code if 'i' is NOT equal to 5?",
-      options: ["if i <> 5", "if (i != 5)", "if i =! 5 then", "if (i <> 5)"],
-      correct: 1
+      "question": "How do you access the first element of an array named `myArray`?",
+      "options": [
+        "myArray[1]",
+        "myArray.first()",
+        "myArray[0]",
+        "myArray.get(0)"
+      ],
+      "correct": 2,
+      "level": "beginner"
     },
     {
-      question: "How does a WHILE loop start?",
-      options: ["while i = 1 to 10", "while (i <= 10)", "while (i <= 10; i++)", "while (i <= 10) {i++}"],
-      correct: 1
+      "question": "What is the purpose of the `return` statement in a function?",
+      "options": [
+        "To stop the function execution and return a value.",
+        "To print a value to the console.",
+        "To declare a new variable.",
+        "To loop through an array."
+      ],
+      "correct": 0,
+      "level": "beginner"
     },
     {
-      question: "How do you add a comment in JavaScript?",
-      options: ["<!--This is a comment-->", "//This is a comment", "/*This is a comment*/", "Both B and C"],
-      correct: 3
+      "question": "Which of these is NOT a valid way to define a function in JavaScript?",
+      "options": [
+        "function myFunction() {}",
+        "const myFunction = () => {}",
+        "myFunction = function() {}",
+        "def myFunction():"
+      ],
+      "correct": 3,
+      "level": "beginner"
     },
     {
-      question: "How do you insert a comment that has more than one line?",
-      options: ["/*This comment has more than one line*/", "//This comment has more than one line//", "<!--This comment has more than one line-->", "//This comment has more than one line"],
-      correct: 0
+      "question": "What will be the output?\n```javascript\nlet a = 10;\nif (a > 5) {\n  a = 20;\n}\nconsole.log(a);\n```",
+      "options": [
+        "10",
+        "20",
+        "Error",
+        "undefined"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "How can you convert a string to an integer in JavaScript?",
+      "options": [
+        "parseInt()",
+        "toString()",
+        "parseFloat()",
+        "toFixed()"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the correct syntax for a `for` loop that iterates from 0 to 4?",
+      "options": [
+        "for (i = 0; i < 5; i++)",
+        "for (i <= 5; i++)",
+        "for i = 0 to 4",
+        "loop (i from 0 to 4)"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "What does `NaN` stand for in JavaScript?",
+      "options": [
+        "Not a Name",
+        "New and Null",
+        "Not a Number",
+        "Negative Acknowledgment"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which array method adds one or more elements to the end of an array and returns the new length?",
+      "options": [
+        "unshift()",
+        "pop()",
+        "push()",
+        "shift()"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the output?\n```javascript\nlet x = 'hello';\nlet y = x.length;\nconsole.log(y);\n```",
+      "options": [
+        "5",
+        "6",
+        "undefined",
+        "Error"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the purpose of `document.getElementById()`?",
+      "options": [
+        "To create a new HTML element.",
+        "To select an HTML element by its class name.",
+        "To select an HTML element by its ID.",
+        "To style an HTML element."
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which event occurs when the user clicks on an HTML element?",
+      "options": [
+        "onchange",
+        "onmouseover",
+        "onclick",
+        "onkeydown"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the correct way to include an external JavaScript file?",
+      "options": [
+        "<script href=\"script.js\"></script>",
+        "<script src=\"script.js\"></script>",
+        "<link rel=\"javascript\" href=\"script.js\">",
+        "<js src=\"script.js\"></js>"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What will `console.log(10 % 3)` output?",
+      "options": [
+        "3.33",
+        "3",
+        "1",
+        "0"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which symbol is used for multi-line comments in JavaScript?",
+      "options": [
+        "//",
+        "/**/",
+        "",
+        "##"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the value of `true || false`?",
+      "options": [
+        "true",
+        "false",
+        "undefined",
+        "Error"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the value of `false && true`?",
+      "options": [
+        "true",
+        "false",
+        "undefined",
+        "Error"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What does `undefined` mean in JavaScript?",
+      "options": [
+        "A variable has been declared but has not yet been assigned a value.",
+        "A variable has been explicitly set to `null`.",
+        "A variable is not defined anywhere.",
+        "An error occurred."
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "How do you create an object literal with properties `name` and `age`?",
+      "options": [
+        "let person = [name: 'Alice', age: 30];",
+        "let person = {name: 'Alice', age: 30};",
+        "let person = new Object('Alice', 30);",
+        "let person = (name: 'Alice', age: 30);"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What will be the output?\n```javascript\nlet count = 0;\nwhile (count < 3) {\n  console.log(count);\n  count++;\n}\n```",
+      "options": [
+        "0 1 2",
+        "1 2 3",
+        "0 1 2 3",
+        "Error"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the difference between `null` and `undefined`?",
+      "options": [
+        "`null` is an object, `undefined` is a primitive type.",
+        "`null` means absence of value, `undefined` means a variable has not been assigned a value.",
+        "They are exactly the same.",
+        "`null` is used for numbers, `undefined` for strings."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the output?\n```javascript\nfunction greet() {\n  return 'Hi';\n}\nconsole.log(greet());\n```",
+      "options": [
+        "greet()",
+        "Hi",
+        "undefined",
+        "Error"
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is a `closure` in JavaScript?",
+      "options": [
+        "A type of loop.",
+        "A function having access to its outer function's scope even after the outer function has finished executing.",
+        "A way to close a web page.",
+        "A built-in method for array iteration."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What does the `this` keyword refer to in JavaScript?",
+      "options": [
+        "The global object (e.g., `window` in browsers).",
+        "The function itself.",
+        "The object that owns the currently executing code.",
+        "The parent element in the DOM."
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is `hoisting` in JavaScript?",
+      "options": [
+        "A method to lift elements in the DOM.",
+        "A process where variable and function declarations are moved to the top of their scope during compilation.",
+        "A way to sort arrays.",
+        "A type of asynchronous operation."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the difference between `==` and `===` operators?",
+      "options": [
+        "`==` compares value and type, `===` compares only value.",
+        "`==` compares only value, `===` compares value and type.",
+        "`==` is used for numbers, `===` for strings.",
+        "There is no practical difference."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the output?\n```javascript\nlet arr = [1, 2, 3];\narr.splice(1, 1);\nconsole.log(arr);\n```",
+      "options": [
+        "[1, 3]",
+        "[1, 2]",
+        "[2, 3]",
+        "[1, 2, 3]"
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "What does `event bubbling` refer to in the DOM?",
+      "options": [
+        "Events are handled first by the innermost element, then by its parent, and so on.",
+        "Events are handled by the outermost element first, then by its children.",
+        "Events are ignored by parent elements.",
+        "A method to create new events."
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the purpose of `localStorage` in web development?",
+      "options": [
+        "To store data on the server.",
+        "To store small amounts of data temporarily during a session.",
+        "To store data persistently in the browser across sessions.",
+        "To create client-side databases."
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is a `callback function`?",
+      "options": [
+        "A function that calls itself recursively.",
+        "A function passed as an argument to another function, to be executed later.",
+        "A function that always returns `null`.",
+        "A function that is only called once."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the output?\n```javascript\nconst numbers = [1, 2, 3];\nconst doubled = numbers.map(num => num * 2);\nconsole.log(doubled);\n```",
+      "options": [
+        "[1, 4, 9]",
+        "[2, 4, 6]",
+        "[1, 2, 3, 1, 2, 3]",
+        "Error"
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is `destructuring` in JavaScript?",
+      "options": [
+        "Breaking down a string into characters.",
+        "A way to extract values from arrays or properties from objects into distinct variables.",
+        "Deleting variables from memory.",
+        "Changing the structure of a function."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the purpose of the `bind()` method?",
+      "options": [
+        "To link two JavaScript files.",
+        "To create a new function that, when called, has its `this` keyword set to the provided value.",
+        "To attach an event listener.",
+        "To combine two arrays."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the output?\n```javascript\nconst person = { name: 'Bob', age: 25 };\nconst { name, city } = person;\nconsole.log(city);\n```",
+      "options": [
+        "\"Bob\"",
+        "25",
+        "undefined",
+        "Error"
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is a `Promise` in JavaScript?",
+      "options": [
+        "A guarantee that a function will run without errors.",
+        "An object representing the eventual completion or failure of an asynchronous operation.",
+        "A type of loop for asynchronous code.",
+        "A statement for conditional execution."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the difference between `let` and `var` in terms of scope?",
+      "options": [
+        "`let` has function scope, `var` has block scope.",
+        "`let` has block scope, `var` has function scope.",
+        "They both have global scope.",
+        "`var` is for constants, `let` is for variables."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the output of `!!\"hello\"`?",
+      "options": [
+        "true",
+        "false",
+        "\"hello\"",
+        "Error"
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is `event delegation`?",
+      "options": [
+        "Assigning multiple event listeners to a single element.",
+        "Handling events on a parent element instead of individual child elements.",
+        "Ignoring specific events on a page.",
+        "Creating custom events."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the output?\n```javascript\nconst numbers = [1, 2, 3];\nconst sum = numbers.reduce((acc, current) => acc + current, 0);\nconsole.log(sum);\n```",
+      "options": [
+        "123",
+        "6",
+        "0",
+        "Error"
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which of these is used for asynchronous programming in modern JavaScript?",
+      "options": [
+        "Callbacks",
+        "Promises",
+        "Async/Await",
+        "All of the above"
+      ],
+      "correct": 3,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the spread operator (`...`) used for?",
+      "options": [
+        "To multiply numbers.",
+        "To condense multiple arguments into an array.",
+        "To expand iterable (like an array) into individual elements.",
+        "Both B and C"
+      ],
+      "correct": 3,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the output of the following?\n```javascript\nlet a = [1, 2];\nlet b = [...a, 3, 4];\nconsole.log(b);\n```",
+      "options": [
+        "[1, 2, 3, 4]",
+        "[[1, 2], 3, 4]",
+        "Error",
+        "undefined"
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the purpose of `setTimeout`?",
+      "options": [
+        "To execute a function immediately.",
+        "To stop the execution of a script.",
+        "To execute a function once after a specified delay.",
+        "To execute a function repeatedly at intervals."
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the difference between `querySelector` and `querySelectorAll`?",
+      "options": [
+        "`querySelector` returns all matching elements, `querySelectorAll` returns the first.",
+        "`querySelector` returns the first matching element, `querySelectorAll` returns all matching elements.",
+        "`querySelector` is for IDs, `querySelectorAll` is for classes.",
+        "They are aliases for each other."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is a `polyfill` in JavaScript?",
+      "options": [
+        "A type of data structure.",
+        "Code that implements a feature that is not natively supported by a browser.",
+        "A tool for optimizing JavaScript code.",
+        "A way to combine multiple JavaScript files."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the output?\n```javascript\nconst obj1 = { a: 1 };\nconst obj2 = { b: 2 };\nconst obj3 = { ...obj1, ...obj2, c: 3 };\nconsole.log(obj3);\n```",
+      "options": [
+        "{ a: 1, b: 2, c: 3 }",
+        "{ a: 1, c: 3 }",
+        "{ b: 2, c: 3 }",
+        "Error"
+      ],
+      "correct": 0,
+      "level": "intermediate"
     }
   ],
   HTML: [
@@ -3749,56 +1139,1616 @@ export const quizData = {
       correct: 1
     }
   ],
-  FRONTEND: [
+  CPP: [
     {
-      question: "What is React?",
-      options: ["A database", "A programming language", "A JavaScript library", "A CSS framework"],
-      correct: 2
+      "question": "What is the correct syntax to print 'Hello, World!' in C++?",
+      "options": [
+        "cout << \"Hello, World!\";",
+        "printf(\"Hello, World!\");",
+        "Console.WriteLine(\"Hello, World!\");",
+        "print(\"Hello, World!\");"
+      ],
+      "correct": 0,
+      "level": "beginner"
     },
     {
-      question: "What is JSX?",
-      options: ["A database", "A programming language", "A syntax extension for JavaScript", "A CSS framework"],
-      correct: 2
+      "question": "Which header file is typically included for input/output operations in C++?",
+      "options": [
+        "<stdio.h>",
+        "<string>",
+        "<iostream>",
+        "<vector>"
+      ],
+      "correct": 2,
+      "level": "beginner"
     },
     {
-      question: "What is the virtual DOM?",
-      options: ["A real DOM element", "A lightweight copy of the real DOM", "A database", "A programming language"],
-      correct: 1
+      "question": "Which of the following is NOT a fundamental data type in C++?",
+      "options": [
+        "int",
+        "float",
+        "string",
+        "char"
+      ],
+      "correct": 2,
+      "level": "beginner"
     },
     {
-      question: "How do you create a React component?",
-      options: ["function MyComponent()", "class MyComponent", "const MyComponent = () =>", "All of the above"],
-      correct: 3
+      "question": "What is the result of `10 / 3` in C++ (integer division)?",
+      "options": [
+        "3.33",
+        "3",
+        "4",
+        "1"
+      ],
+      "correct": 1,
+      "level": "beginner"
     },
     {
-      question: "How do you pass data to a child component?",
-      options: ["Using props", "Using state", "Using context", "Using refs"],
-      correct: 0
+      "question": "What is the purpose of the `main` function in a C++ program?",
+      "options": [
+        "It's an optional function.",
+        "It's where global variables are declared.",
+        "It's the entry point of the program execution.",
+        "It's used for defining classes."
+      ],
+      "correct": 2,
+      "level": "beginner"
     },
     {
-      question: "What is the correct way to write a conditional rendering in React?",
-      options: ["if(condition) return <div>Hello</div>", "{condition && <div>Hello</div>}", "if condition: return <div>Hello</div>", "All of the above"],
-      correct: 1
+      "question": "Which operator is used to get the remainder of a division?",
+      "options": [
+        "/",
+        "*",
+        "%",
+        "+"
+      ],
+      "correct": 2,
+      "level": "beginner"
     },
     {
-      question: "How do you handle events in React?",
-      options: ["onClick={handleClick}", "onclick={handleClick}", "onClick={handleClick()}", "onclick={handleClick()}"],
-      correct: 0
+      "question": "How do you declare an integer variable named `age` and initialize it to 25?",
+      "options": [
+        "int age = 25;",
+        "age = int 25;",
+        "integer age = 25;",
+        "declare int age = 25;"
+      ],
+      "correct": 0,
+      "level": "beginner"
     },
     {
-      question: "What is the purpose of useState in React?",
-      options: ["To create global variables", "To manage component state", "To create functions", "To import components"],
-      correct: 1
+      "question": "What will be the output of the following C++ code snippet?\n```cpp\n#include <iostream>\nint main() {\n    int x = 5;\n    std::cout << x++;\n    return 0;\n}\n```",
+      "options": [
+        "5",
+        "6",
+        "Compilation Error",
+        "Undefined Behavior"
+      ],
+      "correct": 0,
+      "level": "beginner"
     },
     {
-      question: "What is the purpose of useEffect in React?",
-      options: ["To create effects", "To handle side effects", "To create animations", "To handle events"],
-      correct: 1
+      "question": "Which loop structure guarantees that its body will execute at least once?",
+      "options": [
+        "for loop",
+        "while loop",
+        "do-while loop",
+        "if statement"
+      ],
+      "correct": 2,
+      "level": "beginner"
     },
     {
-      question: "How do you render a list in React?",
-      options: ["Using map()", "Using forEach()", "Using for loop", "Using while loop"],
-      correct: 0
+      "question": "What is the correct way to write a single-line comment in C++?",
+      "options": [
+        "",
+        "/* comment */",
+        "// comment",
+        "# comment"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What does `std::cin` represent in C++?",
+      "options": [
+        "Standard output stream",
+        "Standard input stream",
+        "Standard error stream",
+        "Standard file stream"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these is used to define a constant variable in C++?",
+      "options": [
+        "volatile",
+        "mutable",
+        "const",
+        "static"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What is an array in C++?",
+      "options": [
+        "A collection of different data types.",
+        "A collection of variables of the same data type stored in contiguous memory locations.",
+        "A special type of function.",
+        "A user-defined data type."
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the index of the first element in a C++ array?",
+      "options": [
+        "1",
+        "0",
+        "Any integer",
+        "The size of the array"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What will be the output of the following C++ code snippet?\n```cpp\n#include <iostream>\nint main() {\n    int a = 10;\n    if (a > 5 && a < 15) {\n        std::cout << \"Inside\";\n    } else {\n        std::cout << \"Outside\";\n    }\n    return 0;\n}\n```",
+      "options": [
+        "Inside",
+        "Outside",
+        "Compilation Error",
+        "Nothing"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "How do you define a simple function in C++ that takes no arguments and returns `void`?",
+      "options": [
+        "function myFunction() {}",
+        "void myFunction() {}",
+        "myFunction void() {}",
+        "define myFunction() {}"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the purpose of the `return 0;` statement in the `main` function?",
+      "options": [
+        "It signifies an error occurred.",
+        "It indicates successful program execution.",
+        "It pauses the program.",
+        "It restarts the program."
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which operator is used for logical OR in C++?",
+      "options": [
+        "&",
+        "|",
+        "&&",
+        "||"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the output of `std::cout << (5 + 3 * 2);`?",
+      "options": [
+        "16",
+        "11",
+        "13",
+        "8"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of the following is true about C++ comments?",
+      "options": [
+        "They are executed by the compiler.",
+        "They improve program performance.",
+        "They are ignored by the compiler.",
+        "They are mandatory for all lines of code."
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What does `\n` represent in a C++ string literal?",
+      "options": [
+        "A tab character",
+        "A newline character",
+        "A null terminator",
+        "A backspace character"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the default value of a global integer variable if not initialized?",
+      "options": [
+        "Garbage value",
+        "0",
+        "1",
+        "Undefined"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of the following creates a compile-time error?\n```cpp\nint main() {\n    int 123num = 10;\n    return 0;\n}\n```",
+      "options": [
+        "Missing semicolon",
+        "Variable name starting with a digit",
+        "Incorrect return type",
+        "No error"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the purpose of the `using namespace std;` statement?",
+      "options": [
+        "To include all standard libraries.",
+        "To avoid typing `std::` before standard library elements.",
+        "To define a new namespace.",
+        "To import functions from other files."
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which header file defines the `std::string` class?",
+      "options": [
+        "<iostream>",
+        "<cstring>",
+        "<string>",
+        "<algorithm>"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the difference between `pass by value` and `pass by reference` for function arguments?",
+      "options": [
+        "Pass by value copies the argument, pass by reference uses the original variable.",
+        "Pass by value uses pointers, pass by reference uses copies.",
+        "There is no difference.",
+        "Pass by value is faster."
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the output of the following C++ code snippet?\n```cpp\n#include <iostream>\nint main() {\n    int x = 10;\n    int* ptr = &x;\n    *ptr = 20;\n    std::cout << x;\n    return 0;\n}\n```",
+      "options": [
+        "10",
+        "20",
+        "Address of x",
+        "Compilation Error"
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What does the `const` keyword signify when used with a member function of a class?",
+      "options": [
+        "The function cannot be overloaded.",
+        "The function can only access public members.",
+        "The function does not modify the object's state.",
+        "The function returns a constant value."
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which of the following is true about a `constructor` in C++?",
+      "options": [
+        "It must have a return type.",
+        "It cannot be overloaded.",
+        "It is called automatically when an object is created.",
+        "It is used to destroy an object."
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is `polymorphism` in C++ (specifically, runtime polymorphism)?",
+      "options": [
+        "The ability to define multiple functions with the same name.",
+        "The ability of an object to take on many forms (e.g., through virtual functions and inheritance).",
+        "The process of combining data and functions into a single unit.",
+        "The mechanism of creating new classes from existing classes."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the purpose of the `virtual` keyword in C++?",
+      "options": [
+        "To create a global function.",
+        "To enable runtime polymorphism.",
+        "To declare a constant variable.",
+        "To prevent inheritance."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is a `reference` in C++?",
+      "options": [
+        "A pointer to a memory address.",
+        "An alias (another name) for an existing variable.",
+        "A copy of a variable.",
+        "A dynamic array."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the output of the following C++ code snippet?\n```cpp\n#include <iostream>\nclass MyClass {\npublic:\n    MyClass() { std::cout << \"Constructor\\n\"; }\n    ~MyClass() { std::cout << \"Destructor\\n\"; }\n};\nint main() {\n    MyClass obj;\n    return 0;\n}\n```",
+      "options": [
+        "Constructor\nDestructor",
+        "Constructor",
+        "Destructor",
+        "No output"
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which operator is used to access members of a class through a pointer to an object?",
+      "options": [
+        ". (dot operator)",
+        ":: (scope resolution operator)",
+        "-> (arrow operator)",
+        "& (address-of operator)"
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is `encapsulation` in Object-Oriented Programming?",
+      "options": [
+        "The ability to create new classes from existing classes.",
+        "The process of combining data and the functions that operate on that data into a single unit (a class).",
+        "The ability of an object to take on many forms.",
+        "The process of hiding implementation details."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What does `static` mean when applied to a member variable of a class?",
+      "options": [
+        "The variable can only be accessed within the class.",
+        "The variable is constant and cannot be changed.",
+        "The variable belongs to the class itself, not to individual objects.",
+        "The variable is allocated on the heap."
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the output of the following C++ code snippet?\n```cpp\n#include <iostream>\nvoid swap(int &a, int &b) {\n    int temp = a;\n    a = b;\n    b = temp;\n}\nint main() {\n    int x = 5, y = 10;\n    swap(x, y);\n    std::cout << x << \" \" << y;\n    return 0;\n}\n```",
+      "options": [
+        "5 10",
+        "10 5",
+        "Compilation Error",
+        "Garbage values"
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which keyword is used to explicitly prevent a class from being inherited?",
+      "options": [
+        "final",
+        "sealed",
+        "noinherit",
+        "private"
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is an `abstract class` in C++?",
+      "options": [
+        "A class that cannot have any member variables.",
+        "A class that cannot be inherited from.",
+        "A class that contains at least one pure virtual function and cannot be instantiated.",
+        "A class used only for utility functions."
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the purpose of `new` and `delete` operators in C++?",
+      "options": [
+        "For file I/O operations.",
+        "For dynamic memory allocation and deallocation.",
+        "For creating and destroying objects on the stack.",
+        "For string manipulation."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the output of the following C++ code snippet?\n```cpp\n#include <iostream>\n#include <vector>\nint main() {\n    std::vector<int> v = {1, 2, 3, 4, 5};\n    std::cout << v[2];\n    return 0;\n}\n```",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "Compilation Error"
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which of the following correctly describes `function overloading`?",
+      "options": [
+        "Defining multiple functions with the same name but different return types.",
+        "Defining multiple functions with the same name but different parameters.",
+        "Defining a function that calls itself.",
+        "Defining a function within another function."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the `this` pointer in C++?",
+      "options": [
+        "A pointer to the parent class object.",
+        "A pointer to the global object.",
+        "A pointer to the current object itself.",
+        "A pointer to a static member."
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is a `friend function` in C++?",
+      "options": [
+        "A function that is inherited by derived classes.",
+        "A function that can access private and protected members of a class.",
+        "A function that is part of a different class.",
+        "A function that cannot be overloaded."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the output of the following C++ code snippet?\n```cpp\n#include <iostream>\nclass Base {\npublic:\n    void show() { std::cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void show() { std::cout << \"Derived\"; }\n};\nint main() {\n    Base* b_ptr = new Derived();\n    b_ptr->show();\n    delete b_ptr;\n    return 0;\n}\n```",
+      "options": [
+        "Base",
+        "Derived",
+        "Compilation Error",
+        "Runtime Error"
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the purpose of `operator overloading` in C++?",
+      "options": [
+        "To create new operators.",
+        "To change the precedence of operators.",
+        "To allow operators to work with user-defined types (classes).",
+        "To speed up arithmetic operations."
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "When is a `destructor` called in C++?",
+      "options": [
+        "When an object is created.",
+        "When an object goes out of scope or is explicitly deleted.",
+        "When a member function is called.",
+        "At the beginning of the program."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the output of the following C++ code snippet?\n```cpp\n#include <iostream>\nint main() {\n    int arr[] = {10, 20, 30};\n    int* ptr = arr;\n    std::cout << *(ptr + 1);\n    return 0;\n}\n```",
+      "options": [
+        "10",
+        "20",
+        "30",
+        "Address of 20"
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which of the following is an example of `inheritance`?",
+      "options": [
+        "Combining data and functions into a class.",
+        "A class deriving properties and behaviors from another class.",
+        "Using the same function name for different data types.",
+        "Hiding the internal details of a class."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is a `pure virtual function`?",
+      "options": [
+        "A virtual function that cannot be overridden.",
+        "A virtual function with a default implementation.",
+        "A virtual function with no implementation, declared with `= 0;`.",
+        "A static member function."
+      ],
+      "correct": 2,
+      "level": "intermediate"
     }
-  ]
+  ],
+  CSS :[
+    {
+      "question": "Which CSS property is used to change the text color of an element?",
+      "options": [
+        "background-color",
+        "color",
+        "font-color",
+        "text-style"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of the following is the correct way to link an external stylesheet?",
+      "options": [
+        "<style src=\"style.css\">",
+        "<link rel=\"stylesheet\" href=\"style.css\">",
+        "<stylesheet>style.css</stylesheet>",
+        "<link href=\"style.css\">"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which CSS selector targets elements with a specific `id`?",
+      "options": [
+        ".class",
+        "#id",
+        "element",
+        "*"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the CSS property used to set the background color of an element?",
+      "options": [
+        "color",
+        "bg-color",
+        "background-color",
+        "background"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which property is used to change the font size of text?",
+      "options": [
+        "text-size",
+        "font-size",
+        "text-height",
+        "font-height"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What does the `margin` property do in CSS?",
+      "options": [
+        "Adds space inside the element's border.",
+        "Adds space outside the element's border.",
+        "Sets the width of the element.",
+        "Changes the background of the element."
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What will be the text color of the paragraph?\n```html\n<p style=\"color: blue;\">Hello</p>\n```\n```css\np { color: red; }\n```",
+      "options": [
+        "Red",
+        "Blue",
+        "Black (default)",
+        "Green"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which CSS property controls the spacing between lines of text?",
+      "options": [
+        "letter-spacing",
+        "word-spacing",
+        "line-height",
+        "text-spacing"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "How do you make text bold using CSS?",
+      "options": [
+        "font-weight: bold;",
+        "text-decoration: bold;",
+        "font-style: bold;",
+        "bold: true;"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the correct order of the box model (from inside to outside)?",
+      "options": [
+        "Content, Margin, Padding, Border",
+        "Content, Border, Padding, Margin",
+        "Content, Padding, Border, Margin",
+        "Margin, Border, Padding, Content"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which CSS property is used to center text horizontally?",
+      "options": [
+        "align-items: center;",
+        "justify-content: center;",
+        "text-align: center;",
+        "float: center;"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What does `display: none;` do to an element?",
+      "options": [
+        "Hides the element but takes up space.",
+        "Hides the element and removes it from the document flow.",
+        "Makes the element transparent.",
+        "Changes its position to absolute."
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What will be the width of the div?\n```css\ndiv { width: 100px; padding: 10px; border: 1px solid black; }\n``` (Default `box-sizing: content-box;`)",
+      "options": [
+        "100px",
+        "110px",
+        "120px",
+        "122px"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Which CSS property is used to set the image background of an element?",
+      "options": [
+        "background-image",
+        "image-background",
+        "src-image",
+        "background-url"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the default value of the `position` property?",
+      "options": [
+        "relative",
+        "absolute",
+        "static",
+        "fixed"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which property is used to control the transparency of an element?",
+      "options": [
+        "visibility",
+        "display",
+        "opacity",
+        "filter"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "How do you add a shadow to text using CSS?",
+      "options": [
+        "box-shadow",
+        "text-shadow",
+        "shadow-text",
+        "font-shadow"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the CSS property for italicizing text?",
+      "options": [
+        "text-style: italic;",
+        "font-style: italic;",
+        "font-weight: italic;",
+        "text-decoration: italic;"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the purpose of `border-radius`?",
+      "options": [
+        "To set the border color.",
+        "To add a shadow to the border.",
+        "To round the corners of an element's border.",
+        "To set the width of the border."
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which value of the `display` property makes an element behave like a block-level element but lays out its content like an inline element?",
+      "options": [
+        "block",
+        "inline",
+        "inline-block",
+        "none"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the effect of `float: left;`?",
+      "options": [
+        "Moves the element to the left relative to its normal position.",
+        "Aligns the element to the left, allowing other content to wrap around it.",
+        "Changes the text alignment to left.",
+        "Makes the element disappear."
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What does `rem` unit stand for?",
+      "options": [
+        "Root element margin",
+        "Relative unit for media",
+        "Root em",
+        "Responsive pixel"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which property is used to change the background image size?",
+      "options": [
+        "background-size",
+        "image-size",
+        "bg-image-size",
+        "size"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "How can you specify a fallback font in CSS?",
+      "options": [
+        "font-family: Arial, sans-serif;",
+        "font-fallback: Arial;",
+        "font-type: Arial, default;",
+        "font: Arial fallback;"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "What CSS property would you use to remove the underline from a link?",
+      "options": [
+        "text-style: none;",
+        "text-decoration: none;",
+        "link-underline: none;",
+        "decoration: none;"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the primary purpose of CSS Flexbox?",
+      "options": [
+        "To position elements precisely using coordinates.",
+        "To create complex grid-based layouts.",
+        "To arrange items in a one-dimensional layout (row or column).",
+        "To add interactive animations to elements."
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which CSS property is used to control the stacking order of positioned elements?",
+      "options": [
+        "order",
+        "stack-index",
+        "z-index",
+        "layer"
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the background color of the div?\n```html\n<div class=\"box\" id=\"myBox\" style=\"background-color: yellow;\"></div>\n```\n```css\n.box { background-color: blue; }\n#myBox { background-color: green; }\n```",
+      "options": [
+        "Blue",
+        "Green",
+        "Yellow",
+        "Default (transparent)"
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which CSS property is used to create a transition effect for properties over a duration?",
+      "options": [
+        "animation",
+        "transform",
+        "transition",
+        "timing"
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the difference between `::before` and `:before` in CSS?",
+      "options": [
+        "`::before` is for elements, `:before` is for classes.",
+        "`::before` is for pseudo-elements (CSS3), `:before` is for pseudo-classes (CSS2).",
+        "`::before` is for pseudo-elements, `:before` is for backwards compatibility with pseudo-elements.",
+        "There is no difference."
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which CSS property ensures that padding and border are included in the element's total width and height?",
+      "options": [
+        "sizing",
+        "box-sizing: border-box;",
+        "box-sizing: content-box;",
+        "layout-sizing"
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the final color of the paragraph given the following?\n```css\np { color: red !important; }\ndiv p { color: blue; }\nbody p { color: green; }\n```",
+      "options": [
+        "Red",
+        "Blue",
+        "Green",
+        "Black"
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which value of the `position` property removes an element from the normal document flow and positions it relative to its nearest positioned ancestor?",
+      "options": [
+        "static",
+        "relative",
+        "absolute",
+        "fixed"
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the purpose of `@media` queries?",
+      "options": [
+        "To embed media files (audio/video) into a webpage.",
+        "To apply different styles based on device characteristics (e.g., screen size, orientation).",
+        "To define animations.",
+        "To include external fonts."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is `flex-grow: 1;` used for in Flexbox?",
+      "options": [
+        "To set the initial size of the item.",
+        "To make the item take up available space proportional to its grow factor.",
+        "To shrink the item if necessary.",
+        "To align the item to the start of the container."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the output of the following CSS if the viewport width is 700px?\n```css\n.container {\n  width: 50vw;\n}\n```",
+      "options": [
+        "50px",
+        "100px",
+        "350px",
+        "700px"
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which pseudo-class targets an element when the user's mouse cursor is over it?",
+      "options": [
+        ":active",
+        ":focus",
+        ":hover",
+        ":visited"
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the effect of `transform: rotate(90deg);`?",
+      "options": [
+        "Moves the element 90 pixels to the right.",
+        "Rotates the element 90 degrees clockwise.",
+        "Skews the element 90 degrees.",
+        "Changes the element's transparency."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which of the following is a CSS `combinator`?",
+      "options": [
+        "::",
+        ">",
+        "!",
+        "#"
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the output?\n```html\n<div class=\"parent\">\n  <p>Child Text</p>\n</div>\n```\n```css\n.parent p { color: blue; }\n.parent > p { color: red; }\n```",
+      "options": [
+        "Blue",
+        "Red",
+        "Black",
+        "Error"
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the `calc()` function in CSS used for?",
+      "options": [
+        "To perform mathematical calculations for CSS property values.",
+        "To define custom functions.",
+        "To create animations.",
+        "To calculate element positions dynamically."
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which property is used to define explicit grid rows and columns in CSS Grid Layout?",
+      "options": [
+        "grid-template-areas",
+        "grid-gap",
+        "grid-template-rows / grid-template-columns",
+        "grid-auto-rows"
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the effect of `overflow: hidden;`?",
+      "options": [
+        "Adds scrollbars if content overflows.",
+        "Crops content that overflows its container.",
+        "Makes overflowing content visible outside the container.",
+        "Prevents content from overflowing."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the width of `div.item` if the container has `display: flex;`?\n```css\n.container {\n  display: flex;\n  width: 300px;\n}\n.item {\n  flex-basis: 100px;\n  flex-grow: 1;\n}\n``` (Assuming only one item)",
+      "options": [
+        "100px",
+        "200px",
+        "300px",
+        "Error"
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the purpose of the `:nth-child()` pseudo-class?",
+      "options": [
+        "To select the last child of an element.",
+        "To select elements that are the Nth child of their parent.",
+        "To select elements based on their type.",
+        "To select the first child of an element."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which of these is a valid way to define a custom property (CSS Variable)?",
+      "options": [
+        "my-color: blue;",
+        "--my-color: blue;",
+        "$my-color: blue;",
+        "let my-color = blue;"
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the purpose of `object-fit` when dealing with images inside a container?",
+      "options": [
+        "To align the image horizontally.",
+        "To control how an `<img>` or `<video>` should be resized to fit its container.",
+        "To add a border around the image.",
+        "To animate the image."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the height of the element if the viewport height is 1000px?\n```css\ndiv { height: 50vh; }\n```",
+      "options": [
+        "50px",
+        "1000px",
+        "500px",
+        "Error"
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    }
+  ],
+  PYTHON :[
+    {
+      "question": "Which of these is used to start a block of code (e.g., in `if` statements or loops) in Python?",
+      "options": [
+        "{}",
+        "[]",
+        ":",
+        "()"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the data type of `3.14` in Python?",
+      "options": [
+        "int",
+        "str",
+        "float",
+        "double"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What will be the output of the following Python code?\n```python\nprint(10 // 3)\n```",
+      "options": [
+        "3.33",
+        "3",
+        "1",
+        "Error"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "How do you check the data type of a variable `my_var` in Python?",
+      "options": [
+        "get_type(my_var)",
+        "type(my_var)",
+        "my_var.type()",
+        "typeof my_var"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of the following is a mutable data type in Python?",
+      "options": [
+        "String",
+        "Tuple",
+        "List",
+        "Integer"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What will be the output?\n```python\nmessage = 'Hello'\nprint(message[0])\n```",
+      "options": [
+        "H",
+        "e",
+        "Error",
+        "Undefined"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "How do you add an item to the end of a list named `my_list`?",
+      "options": [
+        "my_list.add(item)",
+        "my_list.insert(item)",
+        "my_list.append(item)",
+        "my_list + item"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the purpose of `elif` in an `if-elif-else` chain?",
+      "options": [
+        "It marks the end of the `if` statement.",
+        "It is executed if the previous `if` or `elif` conditions were false.",
+        "It creates a loop.",
+        "It defines a new function."
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What will be the output?\n```python\ncount = 0\nwhile count < 2:\n    print('Loop')\n    count += 1\n```",
+      "options": [
+        "Loop",
+        "Loop\nLoop",
+        "Loop\nLoop\nLoop",
+        "Error"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "How do you create an empty dictionary in Python?",
+      "options": [
+        "my_dict = []",
+        "my_dict = ()",
+        "my_dict = {}",
+        "my_dict = dict()"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these is a correct way to unpack a tuple `(1, 2)` into variables `a` and `b`?",
+      "options": [
+        "a, b = (1, 2)",
+        "a = (1, 2)[0]; b = (1, 2)[1]",
+        "Both A and B",
+        "Neither A nor B"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What will be the output?\n```python\nprint(abs(-5))\n```",
+      "options": [
+        "-5",
+        "5",
+        "Error",
+        "0"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which operator is used for logical AND?",
+      "options": [
+        "&",
+        "and",
+        "&&",
+        "OR"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the purpose of the `range()` function?",
+      "options": [
+        "To generate a random number.",
+        "To create a list of numbers.",
+        "To generate a sequence of numbers.",
+        "To specify a range of acceptable inputs."
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What will be the output?\n```python\nresult = 7 > 5 or 3 < 1\nprint(result)\n```",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "Undefined"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "How do you remove an item from a list by its value?",
+      "options": [
+        "my_list.delete(value)",
+        "my_list.remove(value)",
+        "my_list.pop(value)",
+        "my_list.discard(value)"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the result of `len('Python')`?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "Error"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which module in Python is commonly used for mathematical functions?",
+      "options": [
+        "system",
+        "math",
+        "calc",
+        "numbers"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the output if `x = 5` and you run `print(x == '5')`?",
+      "options": [
+        "True",
+        "False",
+        "Error",
+        "Undefined"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these is a valid Python variable name?",
+      "options": [
+        "1var",
+        "my-var",
+        "_my_var",
+        "for"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What will be the output?\n```python\nname = 'Alice'\nage = 30\nprint(f'{name} is {age} years old.')\n```",
+      "options": [
+        "Alice is 30 years old.",
+        "name is age years old.",
+        "Error",
+        "Alice is age years old."
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "How do you convert a string `s` to an integer?",
+      "options": [
+        "int(s)",
+        "str_to_int(s)",
+        "s.to_int()",
+        "parse_int(s)"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the purpose of `pass` statement?",
+      "options": [
+        "It is used to terminate a loop.",
+        "It is a null operation; nothing happens when it executes.",
+        "It skips the current iteration of a loop.",
+        "It raises an exception."
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these is a correct way to call a function named `calculate` with arguments `x` and `y`?",
+      "options": [
+        "call calculate(x, y)",
+        "calculate(x, y)",
+        "calculate[x, y]",
+        "run calculate x, y"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "What will be the output?\n```python\nitems = ['apple', 'banana', 'cherry']\nfor item in items:\n    if item == 'banana':\n        break\n    print(item)\n```",
+      "options": [
+        "apple\nbanana\ncherry",
+        "apple\nbanana",
+        "apple",
+        "Error"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the main difference between `==` and `is` in Python?",
+      "options": [
+        "`==` compares identity, `is` compares value.",
+        "`==` compares value, `is` compares identity (memory location).",
+        "There is no difference, they are interchangeable.",
+        "`is` is for numbers, `==` for strings."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the output of the following?\n```python\nnums = [1, 2, 3, 4, 5]\nnew_nums = [n * 2 for n in nums if n % 2 == 0]\nprint(new_nums)\n```",
+      "options": [
+        "[2, 4, 6, 8, 10]",
+        "[2, 4]",
+        "[4, 8]",
+        "[]"
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is a `classmethod` in Python?",
+      "options": [
+        "A method that operates on an instance of the class.",
+        "A method that receives the class itself as the first argument, implicitly bound to the class.",
+        "A method that does not receive any implicit first argument.",
+        "A method that can only be called from outside the class."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which built-in function is used to apply a function to all items in an input list and return a new list?",
+      "options": [
+        "filter()",
+        "reduce()",
+        "map()",
+        "apply()"
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is a `generator expression` in Python?",
+      "options": [
+        "A type of list comprehension that creates a list.",
+        "A concise way to create an iterator without defining a full generator function.",
+        "An expression used to generate random numbers.",
+        "A syntax for defining class methods."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the output?\n```python\ndef get_square(num):\n    return num * num\n\nsquares = map(get_square, [1, 2, 3])\nprint(list(squares))\n```",
+      "options": [
+        "[1, 2, 3]",
+        "[1, 4, 9]",
+        "[2, 4, 6]",
+        "Error"
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What does the `yield` keyword do in Python?",
+      "options": [
+        "It returns a value and exits the function permanently.",
+        "It pauses function execution and returns a value, allowing the function to resume later.",
+        "It raises an exception.",
+        "It defines a global variable."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "How do you handle multiple specific exceptions in a single `except` block?",
+      "options": [
+        "except (TypeError, ValueError):",
+        "except TypeError, ValueError:",
+        "except TypeError and ValueError:",
+        "except all:"
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the purpose of `__str__` method in a class?",
+      "options": [
+        "To convert an object to a string for debugging purposes.",
+        "To define the official string representation of an object, intended for user-friendly output.",
+        "To compare two objects.",
+        "To create a new instance of the class."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is `PEP 8` in Python?",
+      "options": [
+        "A specific Python version.",
+        "A package installer.",
+        "The official style guide for Python code.",
+        "A built-in data type."
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the output?\n```python\ndata = {'a': 1, 'b': 2, 'c': 3}\nfor key, value in data.items():\n    print(f'{key}={value}')\n```",
+      "options": [
+        "a=1\nb=2\nc=3",
+        "a\nb\nc",
+        "1\n2\n3",
+        "Error"
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which of these best describes a `set` in Python?",
+      "options": [
+        "An ordered collection of unique items.",
+        "An unordered collection of unique items.",
+        "An ordered collection of items, allowing duplicates.",
+        "A mapping of keys to values."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the output of the following?\n```python\nclass Parent:\n    def greeting(self):\n        print('Hello from Parent')\n\nclass Child(Parent):\n    def greeting(self):\n        print('Hello from Child')\n\nobj = Child()\nobj.greeting()\n```",
+      "options": [
+        "Hello from Parent",
+        "Hello from Child",
+        "Error",
+        "None"
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the purpose of `with open(...) as f:` statement?",
+      "options": [
+        "It's a faster way to open files.",
+        "It automatically handles closing the file, even if errors occur.",
+        "It only allows reading from the file.",
+        "It encrypts the file content."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the output?\n```python\nimport math\nprint(math.floor(4.7))\n```",
+      "options": [
+        "4.0",
+        "4",
+        "5",
+        "4.7"
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is `mypy` primarily used for in Python development?",
+      "options": [
+        "Running unit tests.",
+        "Checking for type errors in Python code.",
+        "Optimizing Python code for performance.",
+        "Managing project dependencies."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is `pickle` module used for?",
+      "options": [
+        "For managing data in a database.",
+        "For serializing and deserializing Python objects to/from a byte stream.",
+        "For creating graphical user interfaces.",
+        "For performing mathematical calculations."
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the output?\n```python\ndef modify_list(lst):\n    lst.append(4)\n\nmy_list = [1, 2, 3]\nmodify_list(my_list)\nprint(my_list)\n```",
+      "options": [
+        "[1, 2, 3]",
+        "[1, 2, 3, 4]",
+        "Error",
+        "None"
+      ],
+      "correct": 1,
+      "level": "intermediate"
+    },
+    {
+      "question": "Which magic method is called when you use the `+` operator on instances of a class?",
+      "options": [
+        "__add__",
+        "__plus__",
+        "__sum__",
+        "__concat__"
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "What will be the output?\n```python\nnumbers = [10, 20, 30]\nindex_of_20 = numbers.index(20)\nprint(index_of_20)\n```",
+      "options": [
+        "1",
+        "2",
+        "0",
+        "Error"
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is `venv` in Python?",
+      "options": [
+        "A tool for creating virtual reality applications.",
+        "A way to manage multiple Python versions on one system.",
+        "A tool for creating isolated Python environments.",
+        "A framework for web development."
+      ],
+      "correct": 2,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the concept of 'duck typing' in Python?",
+      "options": [
+        "If it looks like a duck and quacks like a duck, it's a duck (focus on behavior, not type).",
+        "A strict type checking system.",
+        "A method for optimizing code performance.",
+        "A way to define interfaces."
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    },
+    {
+      "question": "What is the result of `\"Python\".replace('o', 'O')`?",
+      "options": [
+        "PythOn",
+        "PythOn",
+        "PythOn",
+        "PythOn"
+      ],
+      "correct": 0,
+      "level": "intermediate"
+    }
+  ],
 };

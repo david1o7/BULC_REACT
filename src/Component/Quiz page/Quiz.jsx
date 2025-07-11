@@ -10,7 +10,7 @@ const Quiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
   const [score, setScore] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(15);
+  const [timeLeft, setTimeLeft] = useState(25);
   const [timerActive, setTimerActive] = useState(false);
 
   // Timer effect
@@ -43,7 +43,7 @@ const Quiz = () => {
     setCurrentQuestionIndex(0);
     setUserAnswers([]);
     setScore(0);
-    setTimeLeft(15);
+    setTimeLeft(25);
     setTimerActive(true);
   };
 
@@ -56,7 +56,7 @@ const Quiz = () => {
   const handleNextQuestion = () => {
     if (currentQuestionIndex < getCurrentQuestions().length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setTimeLeft(15);
+      setTimeLeft(25);
     } else {
       // Quiz completed
       calculateScore();
@@ -134,7 +134,7 @@ const Quiz = () => {
           <div className="config-option">
             <h4 className="option-title">NO. OF QUESTIONS</h4>
             <div className="question-options">
-              {[5, 10, 15, 20, 25].map((count) => (
+              {[5, 10, 15, 20, 25, 50].map((count) => (
                 <button
                   key={count}
                   className={`question-option ${numberOfQuestions === count ? 'active' : ''}`}

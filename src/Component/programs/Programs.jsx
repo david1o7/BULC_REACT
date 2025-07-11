@@ -29,8 +29,10 @@ const Programs = () => {
        <div className="program">
         <img src={program_3} alt="" />
          <div className="caption">
+           <Link to="/cgpa">
             <img src={program_icon_3} alt="" />
-            <p>Coding Dictionary</p>
+            <p>CGPA Calc</p>
+            </Link>
         </div>
       </div>
     </div>

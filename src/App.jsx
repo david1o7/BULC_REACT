@@ -5,6 +5,7 @@ import ContactPage from "./Component/contact page/ContactPage.jsx";
 import Quiz from "./Component/Quiz page/Quiz.jsx";
 import Team from "./Component/Team/Team.jsx"
 import AboutUs from "./Component/About page/AboutUs.jsx";
+import CgpaCalc from "./Component/CGPA/CgpaCalc.jsx";
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />}/>
         <Route path="/team" element={<Team/>}/>
         <Route path="/about" element={<AboutUs/>}/>
+        <Route path="/cgpa" element={<CgpaCalc/>}/>
       </Routes>
     </Router>
   );

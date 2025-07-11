@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Hero.css"
 import dark_arrow from "../../assets/edusity_assets/dark-arrow.png"
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -17,7 +17,7 @@ const Hero = () => {
                   <p className='text'>WELCOME TO <span style={{color : "rgb(29, 188, 27)"}}> <b>BULC</b></span> &trade;</p>
                 </div>
               <br />
-           <Link to="/contact"> <button className='btn'>Explore more <img src={dark_arrow} alt="" /></button> </Link>
+           <Link to="program" smooth={true} offset={-260} duration={500}> <button className='btn'>Explore more <img src={dark_arrow} alt="" /></button> </Link>
         </div>
       
     </div>
