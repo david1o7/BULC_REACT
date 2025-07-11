@@ -4,8 +4,7 @@ import next_icon from "../../assets/edusity_assets/next-icon.png"
 import back_icon from "../../assets/edusity_assets/back-icon.png"
 import user_1 from "../../assets/edusity_assets/David1.jpg"
 import user_2 from "../../assets/edusity_assets/noel1.jpg"
-import user_3 from "../../assets/edusity_assets/user-3.png"
-import user_4 from "../../assets/edusity_assets/user-4.png"
+
 
 const TeamMembers = () => {
     
@@ -61,7 +60,6 @@ const TeamMembers = () => {
                         </p>
                     </div>
                 </li>
-
             </ul>
         </div>
     </div>

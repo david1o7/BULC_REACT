@@ -6,6 +6,7 @@ import program_3 from "../../assets/edusity_assets/program-3.png"
 import program_icon_1 from "../../assets/edusity_assets/program-icon-1.png"
 import program_icon_2 from "../../assets/edusity_assets/program-icon-2.png"
 import program_icon_3 from "../../assets/edusity_assets/program-icon-3.png"
+import { Link } from "react-router-dom"; 
 
 const Programs = () => {
   return (
@@ -14,14 +15,15 @@ const Programs = () => {
         <img src={program_1} alt="" />
         <div className="caption">
             <img src={program_icon_1} alt="" />
-            <p>Course Mini Sunnaries</p>
+            <p>Course Mini Summaries</p>
         </div>
       </div>
        <div className="program">
         <img src={program_2} alt="" />
          <div className="caption">
+            <Link to="/quiz">
             <img src={program_icon_2} alt="" />
-            <p>Mini Quizzes</p>
+            <p>Quizzes</p></Link>
         </div>
       </div>
        <div className="program">
