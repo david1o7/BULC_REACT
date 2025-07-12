@@ -283,73 +283,73 @@ const CgpaCalc = () => {
       {activeSection === 'overall' && (
         <div className="section-content">
           <h2>Calculate Overall CGPA</h2>
-          {semesters.map(sem => (
-            <div key={sem.id} className="semester-input-group">
-              <h3>Semester {sem.id}</h3>
-              <div className="input-fields">
-                <input
-                  type="number"
-                  step="0.01"
-                  placeholder="GPA (e.g., 4.5)"
-                  value={sem.gpa}
+      {semesters.map(sem => (
+        <div key={sem.id} className="semester-input-group">
+          <h3>Semester {sem.id}</h3>
+          <div className="input-fields">
+            <input
+              type="number"
+              step="0.01"
+              placeholder="GPA (e.g., 4.5)"
+              value={sem.gpa}
                   onChange={(e) => handleOverallInputChange(sem.id, 'gpa', e.target.value)}
-                  min="0"
-                  max="5"
-                />
-                <input
-                  type="number"
-                  step="1"
-                  placeholder="Units (e.g., 18)"
-                  value={sem.units}
+              min="0"
+              max="5"
+            />
+            <input
+              type="number"
+              step="1"
+              placeholder="Units (e.g., 18)"
+              value={sem.units}
                   onChange={(e) => handleOverallInputChange(sem.id, 'units', e.target.value)}
-                  min="0"
-                />
-              </div>
-              {semesters.length > 1 && (
-                <button className="remove-semester-btn" onClick={() => removeSemester(sem.id)}>
-                  Remove
-                </button>
-              )}
-              {sem.gpa && sem.units && !isNaN(parseFloat(sem.gpa)) && !isNaN(parseFloat(sem.units)) && (
-                <div className="gpa-progress-bar-container">
-                  <div
-                    className="gpa-progress-bar"
-                    style={{
-                      width: `${(parseFloat(sem.gpa) / 5) * 100}%`,
-                      backgroundColor: getGpaColor(parseFloat(sem.gpa))
-                    }}
-                  >
-                    {parseFloat(sem.gpa).toFixed(2)}
-                  </div>
-                </div>
-              )}
-            </div>
-          ))}
-
-          <div className="actions">
-            <button className="add-semester-btn" onClick={addSemester}>
-              Add Semester
+              min="0"
+            />
+          </div>
+          {semesters.length > 1 && (
+            <button className="remove-semester-btn" onClick={() => removeSemester(sem.id)}>
+              Remove
             </button>
+          )}
+           {sem.gpa && sem.units && !isNaN(parseFloat(sem.gpa)) && !isNaN(parseFloat(sem.units)) && (
+            <div className="gpa-progress-bar-container">
+              <div
+                className="gpa-progress-bar"
+                style={{
+                  width: `${(parseFloat(sem.gpa) / 5) * 100}%`,
+                  backgroundColor: getGpaColor(parseFloat(sem.gpa))
+                }}
+              >
+                {parseFloat(sem.gpa).toFixed(2)}
+              </div>
+            </div>
+          )}
+        </div>
+      ))}
+
+      <div className="actions">
+        <button className="add-semester-btn" onClick={addSemester}>
+          Add Semester
+        </button>
             <button className="calculate-btn" onClick={calculateOverallCgpa}>
               Calculate Overall CGPA
-            </button>
-          </div>
+        </button>
+      </div>
 
-          {cgpa !== null && (
-            <div className="results-section">
+      {cgpa !== null && (
+        <div className="results-section">
               <h2>Your Overall CGPA: <span style={{ color: getGpaColor(parseFloat(cgpa)) }}>{cgpa}</span></h2>
               <p>Total Units Accumulated: {totalUnitsAccumulated}</p>
-              <div className="cgpa-overall-progress">
-                <div
-                  className="cgpa-progress-bar-overall"
-                  style={{
-                    width: `${(parseFloat(cgpa) / 5) * 100}%`,
-                    backgroundColor: getGpaColor(parseFloat(cgpa))
-                  }}
-                >
-                  CGPA Progress ({cgpa})
-                </div>
-              </div>
+          <div className="cgpa-overall-progress">
+            <div
+              className="cgpa-progress-bar-overall"
+              style={{
+                width: `${(parseFloat(cgpa) / 5) * 100}%`,
+                backgroundColor: getGpaColor(parseFloat(cgpa))
+              }}
+            >
+              CGPA Progress ({cgpa})
+            </div>
+          </div>
             </div>
           )}
         </div>

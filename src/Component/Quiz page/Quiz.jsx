@@ -186,7 +186,7 @@ const Quiz = () => {
                 );
               })}
             </ul>
-          </div>
+          </div>  
 
           <div className="quiz-footer">
             <p className="question-status">

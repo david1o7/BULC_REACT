@@ -14,8 +14,10 @@ const Programs = () => {
       <div className="program">
         <img src={program_1} alt="" />
         <div className="caption">
-            <img src={program_icon_1} alt="" />
-            <p>Course Mini Summaries</p>
+          <Link to="/dictionary">
+            <img id='side' src={program_icon_1} alt="" />
+            <p>code dictionary</p>
+            </Link>
         </div>
       </div>
        <div className="program">
@@ -30,8 +32,8 @@ const Programs = () => {
         <img src={program_3} alt="" />
          <div className="caption">
            <Link to="/cgpa">
-            <img src={program_icon_3} alt="" />
-            <p>CGPA Calc</p>
+            <img id='side' src={program_icon_3} alt="" />
+            <p>CGPA Calculator</p>
             </Link>
         </div>
       </div>
