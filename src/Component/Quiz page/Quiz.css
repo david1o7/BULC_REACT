@@ -11,7 +11,29 @@
     height: 100vh;
     width: auto;
 }
+/* Quiz.css additions */
 
+.answer-option.correct {
+  background-color: #d4edda; /* Light green */
+  border-color: #28a745; /* Darker green */
+  color: #155724; /* Green text */
+}
+
+.answer-option.incorrect {
+  background-color: #f8d7da; /* Light red */
+  border-color: #dc3545; /* Darker red */
+  color: #721c24; /* Red text */
+}
+
+.answer-option.selected {
+  border: 2px solid #007bff; /* Highlight selected answer with blue border */
+  background-color: #e9f5ff; /* Light blue background */
+}
+
+.answer-option:disabled {
+  cursor: not-allowed; /* Indicate that buttons are disabled */
+  opacity: 0.7; /* Dim disabled buttons */
+}
 .body {
   display: flex;
   padding: 15px;

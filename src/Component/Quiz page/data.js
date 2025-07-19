@@ -2751,4 +2751,721 @@ export const quizData = {
       "level": "intermediate"
     }
   ],
+  JesusTheMessiah :[
+    {
+      "question": "The Intertestamental period between OT & NT was how many years?",
+      "options": [
+        "200 years",
+        "700 Years",
+        "400 Years",
+        "300 Years"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The entire Palestine was made up of about how many provinces?",
+      "options": [
+        "10",
+        "40",
+        "80",
+        "50"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "The lake of Gennesaret was famous for its --- ?",
+      "options": [
+        "Farming",
+        "Trade",
+        "Fishing",
+        "Religion"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The region where Jesus was born is called?",
+      "options": [
+        "Jerusalem",
+        "Judea",
+        "Bethlehem",
+        "Nazareth"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which City is the Capital of Jewish Nation?",
+      "options": [
+        "Jerusalem",
+        "Egypt",
+        "Judea",
+        "Palestine"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "In the Role of Trinity in the plan of redemption, God the Son ________?",
+      "options": [
+        "Saves",
+        "Protects",
+        "Yields",
+        "Gives"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "One of the following is a special means of God’s Revelation to us today?",
+      "options": [
+        "Holy spirit",
+        "Nature",
+        "Angels",
+        "Holy Bible"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "The Bible as a means of God’s Revelation can be proved in ?",
+      "options": [
+        "2 Peter 1:21",
+        "John 14:8",
+        "John 14:9",
+        "Genesis 1:2"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "One of the following makes Jesus Christ Unique?",
+      "options": [
+        "He fell from heaven",
+        "He could talk to God",
+        "He had Powers",
+        "Numerous Prophecies point to Him in the Old Testament"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "All These Shows that Jesus Christ is God except?",
+      "options": [
+        "A member of the Trinity",
+        "He can forgive Sins",
+        "He could walk on water",
+        "He receives worship"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Revelation through Christ is?",
+      "options": [
+        "Holy",
+        "Perfect",
+        "Personal",
+        "B & C"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The first promise in the Bible is recorded in ______?",
+      "options": [
+        "Gen. 1 : 15",
+        "Gen 3:15",
+        "John 3:16",
+        "C&B"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "“The prophecy about the birth of Jesus was foretold in ---- and ------?",
+      "options": [
+        "Isa. 7:14 & Isa. 9:6",
+        "Isa. 14:7 & Isa. 7:14",
+        "Dan. 7;14 & Isa. 8:20",
+        "All of the above"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "One of the following does not identify who Jesus Christ is ?",
+      "options": [
+        "The Head of the disciples",
+        "The Son of God",
+        "God",
+        "The creator"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "_________ is not among the meaning of the Image in King Nebuchadnezzar dream.",
+      "options": [
+        "Head of gold",
+        "Breast/Arm of silver",
+        "Stomach of diamond",
+        "Legs of Iron"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The evidences of the fullness of time does not includes ?",
+      "options": [
+        "Political Preparation",
+        "Economic Preparation",
+        "Social Preparation",
+        "Religious preparation"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The principle that man can save himself by his own works is the foundation of?",
+      "options": [
+        "The Sadducees",
+        "Heathens",
+        "Scribes",
+        "Jews"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "_________ is the Right, appropriate time for an event to occur?",
+      "options": [
+        "Occasion",
+        "When God says",
+        "The Fullness of Time",
+        "BU Run"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Koine Dialektos means?",
+      "options": [
+        "Language",
+        "Common dialect",
+        "Greek dialect",
+        "Dialect"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "According to the Economic preparation for the Fullness of time ___ of every 5 persons were slaves?",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "0"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "When was The Fullness of Time?",
+      "options": [
+        "The death of Jesus",
+        "The Resurrection of Jesus",
+        "The Birth of Jesus",
+        "Angels Gabriel Announcement"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Through the symbols of Great darkness and Smoking furnace God Revealed?",
+      "options": [
+        "Great Suffering",
+        "Wickedness in The world",
+        "Bondage of Israel in Egypt",
+        "Death in The World"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The Saviour’s Coming was first Foretold in _____?",
+      "options": [
+        "The Bible",
+        "Garden of Eden",
+        "Heaven",
+        "Earth"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "One of The Following is Not a Reason why Christ came to Earth?",
+      "options": [
+        "To lift Humanity",
+        "To Expel Demons That tempt Man",
+        "To catch cruise",
+        "To reconcile Man back to God."
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "What was the common language spoken at the Roman period?",
+      "options": [
+        "Hebrews",
+        "Greek",
+        "Roman",
+        "Aramaic"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "How many regions was Palestine divided into?",
+      "options": [
+        "10",
+        "14",
+        "7",
+        "2"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The gospel tells these about Jesus except?",
+      "options": [
+        "His Ministry",
+        "His Relationship",
+        "His Second coming",
+        "His Death"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "The synoptic gospel consists of ______",
+      "options": [
+        "Matthew, John and Mark",
+        "Luke, Matthew and John",
+        "Mark, Luke and Matthew",
+        "Matthew, Mark and John"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "One of these is not an epistle in the Bible?",
+      "options": [
+        "Acts of Apostles",
+        "Galatians",
+        "James",
+        "Titus"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "Which Herod participated most in the events recorded in the Gospels?",
+      "options": [
+        "Herod Philip",
+        "Herod Archelaus",
+        "Herod the Great",
+        "Herod Antipas"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Which religious group did not believe in life after death or in angels or spirits?",
+      "options": [
+        "The Pharisees",
+        "The Essenes",
+        "The Sadducees",
+        "The Scribes"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The two people that were given magician names are?",
+      "options": [
+        "Joseph and Daniel",
+        "Daniel and Elijah",
+        "Pharaoh and Moses",
+        "Caleb and Joshua"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The language Jesus spoke was?",
+      "options": [
+        "Greek",
+        "Latin",
+        "Aramaic",
+        "Hebrew"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The major religious festivals during Jesus on Earth were these except?",
+      "options": [
+        "Passover",
+        "Easter",
+        "Pentecost",
+        "Tabernacles"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "One of these is not a brother of Jesus?",
+      "options": [
+        "James",
+        "Judas",
+        "Joseph",
+        "John"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Jesus was baptized in the year?",
+      "options": [
+        "AD 27",
+        "AD 31",
+        "AD 34",
+        "457BC"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The following are prerequisites to baptism except?",
+      "options": [
+        "Repentance",
+        "Fasting",
+        "Instruction",
+        "Faith"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Baptism means ____, ______ and ______",
+      "options": [
+        "Life, Death and Burial",
+        "Life, Death and Resurrection",
+        "Death, Burial and Ascension",
+        "Death, Burial and Resurrection"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "These bible texts spoke about the baptism of Jesus except?",
+      "options": [
+        "Luke 3:21-22",
+        "Mark 1:9-11",
+        "John 2:3-5",
+        "Matthew 3:13-17"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The second temptation of Jesus Christ was about ________?",
+      "options": [
+        "Presumption",
+        "Appetite",
+        "Materialism",
+        "Compromise"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "Jesus response to the second temptation was ______?",
+      "options": [
+        "Man shall not live by bread alone",
+        "Get behind me Satan",
+        "You shall worship the lord your God, and him only shall you serve",
+        "You shall not tempt the Lord your God"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "It was during the reign of ________ that the family of Jesus returned from hiding in Egypt",
+      "options": [
+        "Herod Achelous",
+        "Herod the Great",
+        "Herod Antipas",
+        "Herod Philip"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The Greek word for Baptism is?",
+      "options": [
+        "Baptizom",
+        "Baptiasm",
+        "Baptizo",
+        "Baptism"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "One of these does not describe the works of the Scribes?",
+      "options": [
+        "Writing",
+        "Record keeping",
+        "Teaching of the Law",
+        "Temple keeping"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "In the religious context, the process of collecting books recognized as authoritative scripture is called_______",
+      "options": [
+        "Inspiration",
+        "Canonization",
+        "Bible collection",
+        "Revelation"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which books of the Bible describes the apocalyptic book and historical book of the New testament respectively?",
+      "options": [
+        "Acts of the Apostles, Revelation",
+        "Revelation, Matthew",
+        "Revelation, Acts of the Apostles",
+        "Matthew, Acts of Apostles"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The Kingdom of God also referred to as ------?",
+      "options": [
+        "Kingdom of Earth",
+        "Kingdom of power",
+        "Kingdom of the saints",
+        "Kingdom of Glory"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "“Behold, a young woman shall conceive and bear a son, and shall call his name Immanuel”. This text can be found in what book of the Bible?",
+      "options": [
+        "Isaiah 7:14",
+        "Matthew 1:21",
+        "Isaiah 1:21",
+        "Matthew 7:14"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these best describe the dual nature of Jesus Christ when on earth?",
+      "options": [
+        "Jesus was more of God than human",
+        "Jesus was more of human than God",
+        "Jesus was hundred percent God and hundred percent human",
+        "Jesus was fifty percent God and fifty percent human"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which bible text is popularly referred to as the first gospel?",
+      "options": [
+        "Genesis 1:1",
+        "Genesis 2:15",
+        "Genesis 3:15",
+        "John 3:16"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The following are the three factors that contributed to the political preparation pointing to the fullness of time except?",
+      "options": [
+        "Translation of the Old Testament into Greek",
+        "Common Language",
+        "Good Road System",
+        "Roman Peace"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The gifts the wise men presented to are?",
+      "options": [
+        "Gold, Silver and Bronze",
+        "Gold, Silver and Frankincense",
+        "Gold, Frankincense and Myrrh",
+        "Gold, Silver and Myrrh"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which Herod wanted to kill Jesus at his birth?",
+      "options": [
+        "Herod Antipas",
+        "Herod Philip",
+        "Herod the Great",
+        "Herod Archelaus"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The period of impurity of the mother of a female child is ________",
+      "options": [
+        "40days",
+        "80days",
+        "60days",
+        "20days"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which two notable people in the Old Testament played the role of Magi?",
+      "options": [
+        "Abraham and Isaac",
+        "Joseph and David",
+        "Daniel and Jacob",
+        "Daniel and Joseph"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "The three prerequisite to Baptism does not includes?",
+      "options": [
+        "Acceptance",
+        "Faith",
+        "Instruction",
+        "Repentance"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The Greek term, baptizo means to ____",
+      "options": [
+        "Pour",
+        "Immerse",
+        "Sprinkle",
+        "Bath"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Jesus was crucified in the year _____",
+      "options": [
+        "AD 27",
+        "AD 29",
+        "AD 31",
+        "AD 33"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The Kingdom of God possess five essential elements except?",
+      "options": [
+        "Kingship",
+        "Authority",
+        "Sovereignty",
+        "humans"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "John 3:5: “…unless one is born of ____ and the _____, he cannot enter the kingdom of God”",
+      "options": [
+        "Fire, Spirit",
+        "Water, Fire",
+        "God, Spirit",
+        "Water, Spirit"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "What is the symbol of God’s sovereign reign?",
+      "options": [
+        "The word of God",
+        "The Spirit of God",
+        "The Kingdom of God",
+        "The Name of God"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "One of these does not characterize the Jewish view of the kingdom of God?",
+      "options": [
+        "An earthly Kingdom",
+        "Guarantees present and eternal rest",
+        "Citizen qualifies by nationality",
+        "Established through military might"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "The future consummation of the Kingdom of God which takes place at the second coming of Christ is also referred to as the _________",
+      "options": [
+        "Kingdom of Glory",
+        "Kingdom of Grace",
+        "Kingdom of Hope",
+        "Kingdom of Gratitude"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The two major phases of realization of the Kingdom of God are?",
+      "options": [
+        "Past and Present",
+        "Present and Future",
+        "Past and Future",
+        "None of the Above"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these contains the five essential elements of a kingdom?",
+      "options": [
+        "Humans, Power and Authority, Sovereignty, Territory and Kingship",
+        "Sovereignty, Power and Authority, Kingship, Service and Territory",
+        "Power and Authority, Buildings, Service, Humans and Territory",
+        "Kingship, Service, Sovereignty, Humans and Buildings"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    }
+  ],
 };
