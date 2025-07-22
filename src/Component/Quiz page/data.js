@@ -3563,7 +3563,7 @@ export const quizData = {
         "Bile",
         "Polysaccharides",
         "Fatty acid",
-        "Polysaccharides"
+        "Polynomial"
       ],
       "correct": 1,
       "level": "beginner"
@@ -3609,7 +3609,7 @@ export const quizData = {
         "Fish and milk only",
         "Diet having meat substitute, milk and eggs only"
       ],
-      "correct": 0,
+      "correct": 3,
       "level": "beginner"
     },
     {
@@ -4071,7 +4071,7 @@ export const quizData = {
         "4 years",
         "5 years"
       ],
-      "correct": 3,
+      "correct": 1,
       "level": "beginner"
     },
     {
@@ -4152,7 +4152,7 @@ export const quizData = {
       "level": "beginner"
     },
     {
-      "question": "Which of these represents the accurate ratio for maintaining good health in the acid-alkaline diet",
+      "question": "Which of these represents the accurate ratio for maintaining good health in the alkaline:acid diet",
       "options": [
         "60% : 40%",
         "20% : 80%",
@@ -4170,7 +4170,7 @@ export const quizData = {
         "Vitamin B deficiency",
         "Protein deficiency"
       ],
-      "correct": 3,
+      "correct": 2,
       "level": "beginner"
     },
     {
@@ -4486,7 +4486,7 @@ export const quizData = {
       "options": [
         "Side",
         "Middle",
-        "Side",
+        "bottom",
         "Front"
       ],
       "correct": 0,
@@ -4518,7 +4518,7 @@ export const quizData = {
       "question": "Flesh foods were first introduced",
       "options": [
         "After the flood",
-        "After the flood",
+        "behind a flood",
         "Before the flood",
         "During the flood"
       ],
