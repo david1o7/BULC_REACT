@@ -3468,4 +3468,1106 @@ export const quizData = {
       "level": "beginner"
     }
   ],
+  Health_Principles:[
+    {
+      "question": "Which of these dimensions of health relates most closely to the individual’s relationship with nature and his most profound faith-based beliefs?",
+      "options": [
+        "Physical",
+        "Emotional",
+        "Spiritual",
+        "Social"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of the following vitamins is directly involved in facilitating wound healing?",
+      "options": [
+        "Thiamine",
+        "Ascorbic acid",
+        "Pyridoxine",
+        "Alpha tocopherol"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "The end product of carbohydrate digestion important to the body is;",
+      "options": [
+        "Maltose",
+        "Glucose",
+        "Starch",
+        "Amino Acid"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Proteins are useful in the body as;",
+      "options": [
+        "Primarily energy providing nutrients",
+        "Providing insulation",
+        "Energy given",
+        "Body building nutrients"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "One of the following cells confer immunity",
+      "options": [
+        "Heterocytes",
+        "Lymphatics",
+        "Basophytes",
+        "Lymphocytes"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of the following is the major vehicle for transporting all materials such as salt, nutrients waste product within the system?",
+      "options": [
+        "Protein",
+        "Sugar",
+        "Urine",
+        "Water"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "The process by which particular trait or characteristics are transmitted from parents to their offspring is",
+      "options": [
+        "Pigmentation and Heredity/Biology",
+        "Pigmentation",
+        "Heredity/ Biology",
+        "Companionship"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "A Living organism is characterized by the following EXCEPT",
+      "options": [
+        "Growth",
+        "Movement",
+        "Reproduction",
+        "Floating"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Which one of the following is a NOT associated with Lipid/Fat digestion?",
+      "options": [
+        "Bile",
+        "Polysaccharides",
+        "Fatty acid",
+        "Polysaccharides"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "The digestion of protein begins in the",
+      "options": [
+        "Stomach",
+        "Small intestine",
+        "Mouth",
+        "Stomach"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The water-soluble vitamins are designated because they dissolve well in?",
+      "options": [
+        "None of the above",
+        "Fats and oil",
+        "All of the above",
+        "Oil"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The following may provide rich sources of protein EXCEPT",
+      "options": [
+        "Tofu",
+        "Maize",
+        "Fish",
+        "Legumes"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of the following may be appropriate source of protein for a vegetarian diet?",
+      "options": [
+        "All of the above",
+        "Meat only",
+        "Fish and milk only",
+        "Diet having meat substitute, milk and eggs only"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The issue of health is not a new concept. The Biblical foundations of health and wellbeing involve",
+      "options": [
+        "Quarantine practices documented in Leviticus",
+        "Sanitation communicated to the Jews in the bible",
+        "All of the above",
+        "Social interactions and civil order which guided the Jews as they crossed the wilderness"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Health care services include the following EXCEPT",
+      "options": [
+        "Clerical services",
+        "Nursing care",
+        "Laboratory diagnostics",
+        "Clerical services"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "Taking appropriate amounts of all nutrients in the correct proportion to meet the requirement of the body cells is regarded as",
+      "options": [
+        "Food",
+        "All of the Above",
+        "Balanced diet",
+        "Nutrient"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which ONE of these describes the social dimension of health",
+      "options": [
+        "Level of poverty",
+        "Strife for meaning",
+        "Relationships between individuals",
+        "The sentiments expressed by an individual about health"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "In drug abuse, cellular changes which develops enabling the individual to function normally only as the drug is present may be regarded as",
+      "options": [
+        "Drug misuse",
+        "Physical dependence",
+        "Compulsive use pattern",
+        "Tolerance"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "The following are substances with abuse potential, which of them is a stimulant?",
+      "options": [
+        "Opium",
+        "Amphetamine",
+        "Morphine",
+        "Heroine"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Indian hemp is also known as",
+      "options": [
+        "Ganja",
+        "All of the Above",
+        "Weed",
+        "Pot"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "When Indian hemp is smoked one of the following is the effects produced",
+      "options": [
+        "Sedation",
+        "All of the Above",
+        "Hallucination",
+        "No effects at all"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of the following drugs may be abused?",
+      "options": [
+        "All of the above",
+        "Ampiclox",
+        "Paracetamol",
+        "Opium"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Any drug that has abuse potential must produce its effects",
+      "options": [
+        "Stomach only",
+        "General effect in the body",
+        "In the brain",
+        "Liver"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Who among the following is in particular at greater risk of HIV infection?",
+      "options": [
+        "Those drinking alcohol",
+        "Cocaine inhalers",
+        "Injection drug users who share needles",
+        "Those smoking Indian Hemp in groups."
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "These constitute high-risk behaviour EXCEPT",
+      "options": [
+        "Smoking",
+        "Multiple sex partners",
+        "Exercise",
+        "High salt diet"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Our behaviour is an important factor in health because",
+      "options": [
+        "Our value depends on our behaviour",
+        "It determines how we view issues",
+        "It determines where we come from",
+        "What we do or fail to do impact on us"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "One of the methods for treating alcoholism may involve the use of",
+      "options": [
+        "None of the above",
+        "Drugs such as antabuse",
+        "Have cold shower many times a day",
+        "Give more alcohol under strict supervision"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of the following systems will help in homeostatic control within the body?",
+      "options": [
+        "Integumentary System",
+        "Skeletal System",
+        "Endocrine System",
+        "Circulatory"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Part of the human system that pumps and channels blood to and from the body is?",
+      "options": [
+        "Digestive system",
+        "Endocrine system",
+        "Integumentary System",
+        "Circulatory system"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Functionally specialized cells grouped together are known as",
+      "options": [
+        "Organelles",
+        "Tissues",
+        "Organs",
+        "Organ systems"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of the following is not an example of Vitamins B complex?",
+      "options": [
+        "Thalamus",
+        "Ascorbic acid",
+        "Niacin",
+        "Riboflavin"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "_____________ is the body system that fights against infectious organisms that cause diseases.",
+      "options": [
+        "Antibody",
+        "Antigens",
+        "Immune system",
+        "Immunity"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Part of the human system that processes food",
+      "options": [
+        "Immune system",
+        "Digestive system",
+        "Endocrine system",
+        "Circulatory system"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Genetic material is located within the cell",
+      "options": [
+        "Nucleus",
+        "Cytoplasm",
+        "Vacuole",
+        "Nucleus"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The normal blood pressure is",
+      "options": [
+        "130/90mmHg",
+        "133/93mmHg",
+        "150/90mmHg",
+        "120/80mmHg"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "The following are functions of the skeleton EXCEPT",
+      "options": [
+        "Maintenance of the shape of the body",
+        "Providing support for the body",
+        "Controlling the growth rate in man",
+        "Protection of the delicate internal organs"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The _________ is the outermost layer of skin",
+      "options": [
+        "Epicentric",
+        "The epidermis",
+        "Dermis",
+        "Dermatitis"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Blood carrying oxygen is called _______",
+      "options": [
+        "Oxy hematocrit",
+        "Oxy heamoglobin",
+        "Oxy genated blood",
+        "Oxy heamatitics"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of the following are not components of blood",
+      "options": [
+        "Red blood corpuscle (RBC)",
+        "Erythrocyte (RBC)",
+        "Plasma",
+        "Oxy heamoglobin"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Parts of the brain consist of the following EXCEPT",
+      "options": [
+        "Cerebrum",
+        "Leg",
+        "Cerebellum",
+        "Pons varolii"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "The following are methods of preserving foods",
+      "options": [
+        "Salting",
+        "All of these",
+        "Addition of vinegar or accepted chemicals",
+        "Drying"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "The strong whitish cord that connects the bone to the bone is called________",
+      "options": [
+        "Triumph",
+        "Tendon",
+        "Ligament",
+        "Tissue"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The human skeleton consists of _________ bones bound together by tough and relatively inelastic connective tissues",
+      "options": [
+        "180",
+        "280",
+        "204",
+        "206"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "The cardiovascular system has three types of blood vessels, EXCEPT",
+      "options": [
+        "Capillaries",
+        "Arterioles",
+        "Arteries",
+        "Conduit pipe"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Different types of bone are these except",
+      "options": [
+        "Regular",
+        "Short bone",
+        "Long bone",
+        "Flat bones"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "Chlamydiaceae is a ________ disease",
+      "options": [
+        "Arthropods",
+        "Water borne disease",
+        "Air borne disease",
+        "Sexually transmitted disease"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "All these are vectors of the following diseases except",
+      "options": [
+        "HIV/AIDS= Mosquito",
+        "Malaria =Mosquitoes",
+        "River blindness=Sandfly/blackfly",
+        "Malaria =Mosquitoes"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these is not possible ways by which HIV/AIDs can be transmitted?",
+      "options": [
+        "By direct contact e.g., hand shaking and eating together",
+        "unprotected sexual intercourse",
+        "Mother to child transmission",
+        "Sharing of clippers,"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The smallest structural and functional unit of a living organism is the",
+      "options": [
+        "Cell",
+        "Brain",
+        "Cellulose",
+        "Heart"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "A bean-shaped organ of the human system which filters blood and removes waste from the body",
+      "options": [
+        "Heart",
+        "Liver",
+        "Pancreas",
+        "Kidney"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of the following does not form a layer of the heart?",
+      "options": [
+        "Myocardium",
+        "Epidermis",
+        "Endocardium",
+        "Epicardium"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "In the cardiac cycle the period of relaxation and dilation is referred to as",
+      "options": [
+        "All of the above",
+        "Diastolic",
+        "Circadian rhythm",
+        "Systolic"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "The part of the brain responsible for memory amongst other reasoning functions is the",
+      "options": [
+        "Cerebellum",
+        "Pons Varoli",
+        "Cerebrum",
+        "Medulla Oblongata"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which lobe of the brain contains the brain’s visual processing system?",
+      "options": [
+        "Parietal",
+        "Occipital",
+        "Frontal",
+        "Temporal"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "The human brain reaches its full size at about what age?",
+      "options": [
+        "7 years",
+        "6 years",
+        "4 years",
+        "5 years"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "In a typical animal cell, the cytosol serves which of these functions",
+      "options": [
+        "Cover the cell",
+        "Power generator",
+        "Holds other organelles in place",
+        "Synthesizes proteins"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The skin has a pH of between",
+      "options": [
+        "6.0 - 7.2",
+        "4.6 - 8.0",
+        "4.0 - 6.5",
+        "7.6 - 8.8"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which best describes why the vagina’s pH should be maintained below 4.7",
+      "options": [
+        "Prevents bad odour",
+        "All of the Above",
+        "Neutralizes microbes",
+        "Limits overgrowth of opportunistic microbes"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these is not a risk factor for acid-alkaline imbalance of the body?",
+      "options": [
+        "High protein diet in the form of meats, dairy and eggs",
+        "Consuming fresh fruits daily",
+        "Low consumption of vegetables and fruits",
+        "Consuming processed food and beverages"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these conditions is not associated with an acid-alkaline imbalance?",
+      "options": [
+        "Adequate assimilation of minerals and nutrients",
+        "Lethargy",
+        "Osteoporosis",
+        "Premature aging"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these is an acidic vegetable?",
+      "options": [
+        "Carrots",
+        "Cauliflower",
+        "Cabbage",
+        "Lentils"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these is an alkaline cereal grain?",
+      "options": [
+        "Oat meal",
+        "Wheat",
+        "Millet",
+        "White rice"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these represents the accurate ratio for maintaining good health in the acid-alkaline diet",
+      "options": [
+        "60% : 40%",
+        "20% : 80%",
+        "40% : 60%",
+        "80% : 20%"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these is most likely to occur to a person on a predominantly plant-based diet",
+      "options": [
+        "Iron deficiency",
+        "Fatty acid deficiency",
+        "Vitamin B deficiency",
+        "Protein deficiency"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "A lacto-vegetarian",
+      "options": [
+        "A and C only",
+        "Excludes meat, seafood, poultry and dairy products and includes eggs",
+        "Excludes meat, eggs, seafood and poultry and includes milk products",
+        "Consumes milk products"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these characteristics of cancerous cells is FALSE?",
+      "options": [
+        "Cancer cells stay immature",
+        "Cancer cells stick together",
+        "Cancer cells do not stop reproducing",
+        "Cancer cells do not obey signals from other cells"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "The following are false statements about Leukemia EXCEPT",
+      "options": [
+        "It starts in the immune system",
+        "It begins in the bone marrow",
+        "It begins in the CNS",
+        "It begins in the bone and cartilage"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of the following is a major symptom of Diabetes?",
+      "options": [
+        "Polydipsia",
+        "All of the above",
+        "Weight loss",
+        "Glycosuria"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Mangoes, papaya, carrots, liver and kidney are all major sources of",
+      "options": [
+        "Vitamin C",
+        "Vitamin B",
+        "Vitamin E",
+        "Vitamin A"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Soluble fibers best function to aid the body in",
+      "options": [
+        "Promoting regularity of bowel movement",
+        "All of the Above",
+        "Preventing constipation",
+        "Maintaining even blood sugar"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "The digestion of carbohydrates begins in",
+      "options": [
+        "The large intestine",
+        "The stomach",
+        "The small intestine",
+        "The mouth"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "The following are true of all animals in the safe non-toxic range EXCEPT",
+      "options": [
+        "They chew the cud but do not necessarily split the hoof",
+        "They are herbivores",
+        "They are in the lower level of the food chain",
+        "They have split hoof and chew the cud"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "During the course of an average reproductive lifespan roughly_______eggs are produced",
+      "options": [
+        "500",
+        "300",
+        "400",
+        "200"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The minimum time required for playing volley ball to maximize fitness is",
+      "options": [
+        "45 minutes",
+        "20 minutes",
+        "40 minutes",
+        "30 minutes"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "The minimum time required to engage in skipping exercise is",
+      "options": [
+        "20 minutes",
+        "30 minutes",
+        "10 minutes",
+        "15 minutes"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "The following are field related activities except",
+      "options": [
+        "Volleyball",
+        "Triple jump",
+        "Discus",
+        "Shotput"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The interrelationship of an agent, host and the environment in the causation of disease can be explained by",
+      "options": [
+        "Socio-environmental model",
+        "Germ theory",
+        "Multifactorial causation theory",
+        "Epidemiological triangle theory"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Which of these is regarded as a chronic disease condition?",
+      "options": [
+        "Malaria",
+        "Cholera",
+        "Tuberculosis",
+        "Osteoporosis"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "Infectious diseases are commonly prevented by",
+      "options": [
+        "Prescribed antibiotics",
+        "Regular hand washing",
+        "All of the above",
+        "Hygienic food preparation"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The under listed behaviors are detrimental to human health.",
+      "options": [
+        "Unwholesome entertainment",
+        "Drinking water",
+        "a and b only",
+        "Smoking,"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "The following are part of the nine images of health. Health as:",
+      "options": [
+        "functionality, empowerment",
+        "a balance of state, sense of well-being",
+        "All of the above",
+        "growth, transcendence"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The gifts given by God to man to enjoy his existence include all EXCEPT",
+      "options": [
+        "Life",
+        "Companionship",
+        "Sabbath",
+        "Speech"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "The ‘S’ in NEWSTART stands for",
+      "options": [
+        "Sabbath",
+        "Sense",
+        "Sunlight",
+        "Solitude"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Limitations of the WHO definition of health includes all EXCEPT",
+      "options": [
+        "Measurement is difficult",
+        "The definition is not ideal",
+        "The definition is realistic",
+        "The dimensions are inadequate"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "That which provides us the motivation to reach out and strive for meaning and purpose in life is described by",
+      "options": [
+        "Physical dimension",
+        "Spiritual dimension",
+        "Psychological",
+        "Emotional dimension"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    },
+    {
+      "question": "Being fit physically is explained by the image of health",
+      "options": [
+        "Health as functionality",
+        "Balance of State",
+        "Health as an antithesis of disease",
+        "Goodness of fit"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "Man’s ability to have and maintain relationships can be described by",
+      "options": [
+        "Emotional dimension",
+        "Spiritual dimension",
+        "Physical dimension",
+        "Social dimension"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "A key part of our internal environment that determines our health is referred",
+      "options": [
+        "Health services",
+        "Social factor",
+        "Physical environment",
+        "Genetic factor"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "___________is a protein produced when the body detects harmful substances",
+      "options": [
+        "Antibody",
+        "Lymphocyte",
+        "B-cells",
+        "Antigen"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The excessive use of alcohol produces a condition known as______________",
+      "options": [
+        "Withdrawal",
+        "Toxemia",
+        "Alcoholism",
+        "Intoxication"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The process of combining majorly plant-based food sources to increase biological value is best referred to as",
+      "options": [
+        "Protein combination",
+        "Compliment",
+        "Biological value increase",
+        "Complementation"
+      ],
+      "correct": 3,
+      "level": "beginner"
+    },
+    {
+      "question": "The_______________ is the major site for alcohol metabolism",
+      "options": [
+        "Liver",
+        "Kidney",
+        "Liver",
+        "Pancreas"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The part of the tongue responsible for sour taste sensation is the",
+      "options": [
+        "Side",
+        "Middle",
+        "Side",
+        "Front"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The immune system is made up of the following EXCEPT",
+      "options": [
+        "Thymus",
+        "Lymph vessels",
+        "Pancreas",
+        "White blood cells"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "The provision of services in order to promote health through prevention of human contact with harmful wastes is referred to as _____",
+      "options": [
+        "Sanitizing",
+        "health education",
+        "Environmental sanitation",
+        "Human cleaning"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Flesh foods were first introduced",
+      "options": [
+        "After the flood",
+        "After the flood",
+        "Before the flood",
+        "During the flood"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "The totality of processes by which humans grow, repair and maintain body tissues through the ingestion and utilization of food is referred to as__________",
+      "options": [
+        "Nutrition",
+        "Digestion",
+        "Food intake",
+        "Nutrient digestion"
+      ],
+      "correct": 0,
+      "level": "beginner"
+    },
+    {
+      "question": "This organelle is vital for the release of energy and aerobic respiration in humans",
+      "options": [
+        "Reticulum",
+        "Vacuole",
+        "Mitochondrion",
+        "Chloroplast"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Inappropriate use of prescribed or non-prescribed drugs is referred to as",
+      "options": [
+        "Drug addiction",
+        "Prescription drug misuse",
+        "Drug misuse",
+        "Drug abuse"
+      ],
+      "correct": 2,
+      "level": "beginner"
+    },
+    {
+      "question": "Heroine, morphine, and alcoholic beverages are all examples of",
+      "options": [
+        "Hypno sedative",
+        "Depressants",
+        "Opiates",
+        "Opioids"
+      ],
+      "correct": 1,
+      "level": "beginner"
+    }
+  ],
 };
