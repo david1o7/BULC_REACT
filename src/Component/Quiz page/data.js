@@ -4570,4 +4570,1362 @@ export const quizData = {
       "level": "beginner"
     }
   ],
+  Nigeria_People :[
+    {
+      "question": "What is the approximate number of ethnic groups in Nigeria?",
+      "options": [
+        "Over 100",
+        "Exactly 250",
+        "Over 250",
+        "Less than 50"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Over 250"
+    },
+    {
+      "question": "Which of the following are NOT listed as major ethnic groups in Nigeria?",
+      "options": [
+        "Hausa, Yoruba, Igbo",
+        "Bini, Efik, Fulani",
+        "Kanuri, Nupe, Tiv",
+        "Angas, Bolewa, Borgu"
+      ],
+      "correct": 3,
+      "level": "general",
+      "answer_text": "Angas, Bolewa, Borgu"
+    },
+    {
+      "question": "Nigeria is geographically located between which latitudes?",
+      "options": [
+        "0°N and 10°N",
+        "4°N and 14°N",
+        "5°N and 15°N",
+        "10°N and 20°N"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "4°N and 14°N"
+    },
+    {
+      "question": "Which major ethnic group is primarily located in the North-West geopolitical zone?",
+      "options": [
+        "Yoruba",
+        "Igbo",
+        "Hausa",
+        "Tiv"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Hausa"
+    },
+    {
+      "question": "What percentage of Nigeria's population is constituted by the Hausa-Fulani according to the document?",
+      "options": [
+        "21%",
+        "18%",
+        "10%",
+        "29%"
+      ],
+      "correct": 3,
+      "level": "general",
+      "answer_text": "29%"
+    },
+    {
+      "question": "The origin of the Hausa/Fulani is traced to which mythical hero?",
+      "options": [
+        "Oduduwa",
+        "Bayajidda",
+        "Takuruku",
+        "Ginuwa"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Bayajidda"
+    },
+    {
+      "question": "Which Islamic legal system governs the Hausa/Fulani emirate structures?",
+      "options": [
+        "Sharia law",
+        "Common law",
+        "Customary law",
+        "Napoleonic code"
+      ],
+      "correct": 0,
+      "level": "general",
+      "answer_text": "Islamic law"
+    },
+    {
+      "question": "What significant event marked the intergroup relations of the Hausa/Fulani in the 19th century?",
+      "options": [
+        "The Scramble for Africa",
+        "The Sokoto Jihad",
+        "The Benin Expedition",
+        "The Arochukwu Expedition"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "The Fulani-led Sokoto Jihad"
+    },
+    {
+      "question": "The origin of the Yoruba people is linked to which historical figure and place?",
+      "options": [
+        "Bayajidda in Kano",
+        "Oduduwa in Ile-Ife",
+        "Takuruku in Benue",
+        "Ginuwa in Western Niger Delta"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Oduduwa in Ile-Ife"
+    },
+    {
+      "question": "Which of these festivals is NOT mentioned as a Yoruba celebration reinforcing social cohesion?",
+      "options": [
+        "Oro",
+        "Egungun",
+        "Osun-Osogbo",
+        "Kwagh-hir"
+      ],
+      "correct": 3,
+      "level": "general",
+      "answer_text": "Kwagh-hir"
+    },
+    {
+      "question": "Who played significant roles in the governance of the Old Oyo Empire alongside the Obas?",
+      "options": [
+        "Emirs and Waziri",
+        "King Makers (Oyemesi) and the Ogboni cult",
+        "Councils and assemblies",
+        "Local chiefs and elders"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "King Makers (Oyemesi) and the Ogboni cult"
+    },
+    {
+      "question": "Which of the following is NOT a characteristic of Igbo socio-economic practices?",
+      "options": [
+        "Vibrant masquerade festivals",
+        "Yam cultivation",
+        "Emphasis on communalism and extended families",
+        "Entrepreneurial spirit in trade"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Emphasis on communalism and extended families"
+    },
+    {
+      "question": "What type of governance system characterized pre-colonial Igbo societies?",
+      "options": [
+        "Centralized monarchy",
+        "Emirate structures",
+        "Decentralized through councils and assemblies",
+        "Feudal hierarchy"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Decentralized through councils and assemblies"
+    },
+    {
+      "question": "The Tiv people primarily reside in which Nigerian state?",
+      "options": [
+        "Cross River State",
+        "Delta State",
+        "Benue State",
+        "Kogi State"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Benue State"
+    },
+    {
+      "question": "What is a key feature of Ijaw socio-economic practices, reflecting their strong affinity with water?",
+      "options": [
+        "Long-distance trade",
+        "Metalwork and palm oil production",
+        "Boat-building, wood carvings, and fishing",
+        "Millet cultivation and peanuts"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Boat-building, wood carvings, and fishing"
+    },
+    {
+      "question": "The Kanuri people established a powerful empire along which trade routes?",
+      "options": [
+        "Trans-Atlantic slave trade routes",
+        "Trans-Saharan trade routes",
+        "Indian Ocean trade routes",
+        "Silk Road"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Trans-Saharan trade routes"
+    },
+    {
+      "question": "Who is the supreme leader in the centralized monarchical structure of the Kanuri?",
+      "options": [
+        "Oba",
+        "Emir",
+        "Mai",
+        "Ata"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Mai"
+    },
+    {
+      "question": "The Itsekiri people trace their origins to a prince from which kingdom?",
+      "options": [
+        "Oyo Kingdom",
+        "Benin Kingdom",
+        "Sokoto Caliphate",
+        "Nri Kingdom"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Benin Kingdom"
+    },
+    {
+      "question": "Who governs the Itsekiri people with a council of chiefs?",
+      "options": [
+        "Obong of Calabar",
+        "Ata of Igala",
+        "Olu of Warri",
+        "Onojie"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Olu of Warri"
+    },
+    {
+      "question": "The Efik people are found in which Nigerian state?",
+      "options": [
+        "Akwa Ibom State",
+        "Cross River State",
+        "Rivers State",
+        "Bayelsa State"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Cross River State"
+    },
+    {
+      "question": "What historical economic activity were the Efik known for with Europeans?",
+      "options": [
+        "Agriculture",
+        "Leatherwork",
+        "Significant trading",
+        "Metalwork"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Significant trading history"
+    },
+    {
+      "question": "Who leads the monarchical system of the Igala people?",
+      "options": [
+        "Obong of Calabar",
+        "Olu of Warri",
+        "Ata of Igala",
+        "Onojie"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Ata of Igala"
+    },
+    {
+      "question": "The Ekoi people maintain strong intergroup relations with the Efik and Ibibio through which society?",
+      "options": [
+        "Ogboni cult",
+        "Ekpe society",
+        "Kwagh-hir",
+        "Age-grade groups"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Ekpe society"
+    },
+    {
+      "question": "The Esan people primarily engage in what occupation?",
+      "options": [
+        "Fishing",
+        "Hunting",
+        "Farming",
+        "Long-distance trade"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Farming"
+    },
+    {
+      "question": "What is the key focus of African traditional ethics according to the document?",
+      "options": [
+        "Individual achievement",
+        "Material wealth",
+        "Morality in human actions and communal well-being",
+        "Technological advancement"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Morality in human actions and communal well-being"
+    },
+    {
+      "question": "Which of the following is NOT a societal value mentioned in the context of traditional ethics?",
+      "options": [
+        "Loyalty",
+        "Honesty",
+        "Selfishness",
+        "Respect for elders"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Selfishness"
+    },
+    {
+      "question": "How is good character defined in traditional African ethics?",
+      "options": [
+        "Accumulation of riches",
+        "Abstaining from vices and exhibiting virtues",
+        "Showing off power",
+        "Dominating others"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Abstaining from vices and exhibiting virtues"
+    },
+    {
+      "question": "What concept promotes the idea that individuals exist in relation to others, fostering solidarity and mutual support?",
+      "options": [
+        "Individualism",
+        "Isolationism",
+        "Communalism",
+        "Capitalism"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Communalism"
+    },
+    {
+      "question": "In pre-independence Nigerian societies, what was the role of traditional rulers and elders?",
+      "options": [
+        "To impose new laws",
+        "To act as sole judges",
+        "To be custodians of wisdom and justice",
+        "To encourage individualism"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "To be custodians of wisdom and justice"
+    },
+    {
+      "question": "What does the Yoruba culture value as essential for harmony with supernatural forces and societal relations?",
+      "options": [
+        "Wealth",
+        "\"iwa\" (character)",
+        "Power",
+        "Fame"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "\"iwa\" (character)"
+    },
+    {
+      "question": "What are the two broad categories of governance systems in pre-colonial Nigeria?",
+      "options": [
+        "Monarchy and Republic",
+        "Centralized and Decentralized",
+        "Feudal and Democratic",
+        "Socialist and Capitalist"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Centralized and Decentralized"
+    },
+    {
+      "question": "Which of these is an example of a centralized state in pre-colonial Nigeria?",
+      "options": [
+        "Igbo societies",
+        "Tiv societies",
+        "Oyo Kingdom",
+        "Ijaw communities"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Oyo"
+    },
+    {
+      "question": "How was citizenship acquired in pre-colonial Nigeria?",
+      "options": [
+        "Through formal application",
+        "Kinship-based",
+        "By military conquest",
+        "Through religious conversion"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Kinship-based"
+    },
+    {
+      "question": "What was a key civic responsibility of citizens in pre-colonial Nigeria?",
+      "options": [
+        "Paying income tax to the central government",
+        "Participation in Communal Labor",
+        "Attending regular elections",
+        "Serving in a standing army"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Participation in Communal Labor"
+    },
+    {
+      "question": "What roles did women primarily play in Yoruba and Igbo societies?",
+      "options": [
+        "Sole political leaders",
+        "Warriors and defenders",
+        "Significant roles in trade, market organization, and domestic responsibilities",
+        "Religious heads"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Significant roles in trade, market organization, and domestic responsibilities"
+    },
+    {
+      "question": "What was the primary agent of socialization for children in pre-colonial Nigerian families?",
+      "options": [
+        "Age-grade groups",
+        "Religious institutions",
+        "Families",
+        "Marketplaces"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Families"
+    },
+    {
+      "question": "What was the relevance of indigenous languages in pre-colonial Nigerian governance?",
+      "options": [
+        "They were only used for informal communication.",
+        "They were crucial for communication, cultural continuity, and governance.",
+        "They were replaced by foreign languages.",
+        "They had no impact on political wisdom."
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "They were crucial for communication, cultural continuity, and governance."
+    },
+    {
+      "question": "When did British colonization of Lagos officially begin?",
+      "options": [
+        "1851",
+        "1885",
+        "1861",
+        "1900"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "1861"
+    },
+    {
+      "question": "What was the \"pacification policy\" used by the British during their conquest of Nigeria?",
+      "options": [
+        "Diplomatic negotiations",
+        "Deployment of British forces to suppress resistance",
+        "Economic incentives",
+        "Cultural exchange programs"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Deployment of British forces to suppress resistance"
+    },
+    {
+      "question": "Who was exiled for refusing to sign treaties with the British during the resistance movements?",
+      "options": [
+        "King Kosoko of Lagos",
+        "Nana of Itshekiri",
+        "King Jaja of Opobo",
+        "Sultan Atahiru"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "King Jaja of Opobo"
+    },
+    {
+      "question": "What was a major reason for the failure of resistance movements against British conquest?",
+      "options": [
+        "Strong national unity",
+        "British military inferiority",
+        "Internal political conflicts and lack of unity",
+        "Sufficient nationalism"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Internal political conflicts and lack of unity"
+    },
+    {
+      "question": "Who introduced the indirect rule system in Nigeria?",
+      "options": [
+        "Lord Richard",
+        "Sir Hugh Clifford",
+        "Frederick Lord Lugard",
+        "Sir Arthur Richards"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Frederick Lord Lugard"
+    },
+    {
+      "question": "Which area in Nigeria experienced resistance to the indirect rule system, leading to riots and uprisings?",
+      "options": [
+        "Northern Nigeria",
+        "Lagos Colony",
+        "Tiv land and Eastern Nigeria",
+        "Western Region"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Tiv land and Eastern Nigeria"
+    },
+    {
+      "question": "When was the amalgamation of Northern and Southern Nigeria into a single entity?",
+      "options": [
+        "1900",
+        "1914",
+        "1922",
+        "1960"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "1914"
+    },
+    {
+      "question": "What was the nature of the Nigerian Council established by Lord Lugard?",
+      "options": [
+        "Legislative and powerful",
+        "Advisory rather than legislative",
+        "Executive and policy-making",
+        "Judicial and law-enforcing"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Advisory rather than legislative"
+    },
+    {
+      "question": "Which constitution introduced the elective principle, allowing for limited Nigerian representation?",
+      "options": [
+        "Richard Constitution of 1946",
+        "Macpherson Constitution of 1951",
+        "Clifford Constitution of 1922",
+        "Lyttleton Constitution of 1954"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Clifford Constitution of 1922"
+    },
+    {
+      "question": "What was a primary aim of the British colonial economic policy in Nigeria?",
+      "options": [
+        "To promote indigenous industries",
+        "To develop Nigeria's resources for local consumption",
+        "To exploit Nigeria's resources for British benefit",
+        "To establish fair trade practices"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "To exploit Nigeria's resources for British benefit"
+    },
+    {
+      "question": "Which of the following is listed as a positive impact of colonialism on Nigeria?",
+      "options": [
+        "Economic exploitation",
+        "Creation of divisions among ethnic groups",
+        "Fostering the formation of political parties and nationalism",
+        "Widened educational gaps"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Fostering the formation of political parties and nationalism"
+    },
+    {
+      "question": "What is nationalism defined as in the context of Nigeria's independence struggle?",
+      "options": [
+        "The desire for external control",
+        "Identification of a group of people sharing cultural norms and aspirations, advocating for self-governance.",
+        "Promotion of foreign rule",
+        "The imposition of one culture over another"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "The identification of a group of people sharing cultural norms and aspirations, advocating for self-governance."
+    },
+    {
+      "question": "Before British colonialism, Nigeria as a unified entity did not exist. What did the region consist of?",
+      "options": [
+        "A single, large empire",
+        "Various distinct empires, kingdoms, and states",
+        "Only nomadic tribes",
+        "Small, isolated communities with no governance"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Various distinct empires, kingdoms, and states"
+    },
+    {
+      "question": "By 1914, Nigeria was divided into how many regions?",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "Five"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Three"
+    },
+    {
+      "question": "Who was an influential thinker advocating for African self-reliance and cultural pride in the 19th century?",
+      "options": [
+        "Herbert Macaulay",
+        "Edward Wilmot Blyden",
+        "Dr. Nnamdi Azikiwe",
+        "Chief Obafemi Awolowo"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Edward Wilmot Blyden"
+    },
+    {
+      "question": "Which of the following was NOT a factor for nationalist agitations in the 20th century?",
+      "options": [
+        "Racial discrimination in civil service",
+        "Contentment with the Indirect Rule system",
+        "Criticism of colonial constitutions",
+        "Economic exploitation by foreign companies"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Contentment with the Indirect Rule system"
+    },
+    {
+      "question": "What role did the press play in Nigeria's struggle for independence?",
+      "options": [
+        "It supported colonial policies.",
+        "It acted as a watchdog, informing the public and criticizing colonial policies.",
+        "It discouraged unity among Africans.",
+        "It remained neutral."
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "It acted as a watchdog, informing the public and criticizing colonial policies."
+    },
+    {
+      "question": "Who founded the Nigerian National Democratic Party (N.N.D.P)?",
+      "options": [
+        "Dr. Nnamdi Azikiwe",
+        "Alhaji Tafawa Balewa",
+        "Herbert Macaulay",
+        "Chief Obafemi Awolowo"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Herbert Macaulay"
+    },
+    {
+      "question": "Who was the first Prime Minister of Nigeria?",
+      "options": [
+        "Dr. Nnamdi Azikiwe",
+        "Alhaji Tafawa Balewa",
+        "Chief Obafemi Awolowo",
+        "Michael Okpara"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Alhaji Tafawa Balewa"
+    },
+    {
+      "question": "The Aba Women Uprising of 1929 was sparked by what colonial policy?",
+      "options": [
+        "Introduction of new crops",
+        "Taxation policies and economic hardships",
+        "Restriction on trade",
+        "Religious conversions"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Taxation policies and economic hardships"
+    },
+    {
+      "question": "What was a significant impact of the Aba Women Uprising?",
+      "options": [
+        "It led to the expansion of indirect rule.",
+        "It led to the resignation of Warrant Chiefs and highlighted the role of women in the nationalist struggle.",
+        "It resulted in increased taxes.",
+        "It had no lasting effect."
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "It led to the resignation of Warrant Chiefs and highlighted the role of women in the nationalist struggle."
+    },
+    {
+      "question": "How does Frantz Fanon describe colonialism?",
+      "options": [
+        "A beneficial system for development",
+        "A violent and oppressive structure that dehumanizes the colonized",
+        "A cultural exchange program",
+        "A means of promoting equality"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "A violent and oppressive structure that dehumanizes the colonized"
+    },
+    {
+      "question": "When did British colonial rule begin in Lagos?",
+      "options": [
+        "1851",
+        "1861",
+        "1898",
+        "1914"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "1861"
+    },
+    {
+      "question": "Which of these is a positive effect of colonialism mentioned in the document?",
+      "options": [
+        "Cultural suppression",
+        "Economic exploitation",
+        "Western Education",
+        "Disruption of traditional governance"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Western Education"
+    },
+    {
+      "question": "What economic transformation occurred due to colonialism?",
+      "options": [
+        "Shift from cash crops to subsistence agriculture",
+        "Shift from subsistence agriculture to cash crops",
+        "Decrease in international trade",
+        "Decline in infrastructure development"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Shift from subsistence agriculture to cash crops"
+    },
+    {
+      "question": "What negative effect did the indirect rule system have on traditional governance?",
+      "options": [
+        "It strengthened legitimate traditional authorities.",
+        "It enhanced local power dynamics.",
+        "It altered local power dynamics, often undermining legitimate traditional authorities.",
+        "It promoted direct rule."
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "It altered local power dynamics, often undermining legitimate traditional authorities."
+    },
+    {
+      "question": "How did colonial policies exacerbate ethnic tensions in Nigeria?",
+      "options": [
+        "By promoting unity among groups.",
+        "By creating fair competition for resources.",
+        "By exacerbating divisions among ethnic groups.",
+        "By fostering mutual respect."
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "By exacerbating divisions among ethnic groups."
+    },
+    {
+      "question": "What was a consequence of colonial monopolies and price fixing?",
+      "options": [
+        "Enrichment of local farmers",
+        "Promotion of traditional trade networks",
+        "Impoverishment of local farmers and disruption of traditional trade networks",
+        "Economic equality"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Impoverishment of local farmers and disruption of traditional trade networks"
+    },
+    {
+      "question": "What language serves as a lingua franca in Northern Nigeria?",
+      "options": [
+        "Yoruba",
+        "Igbo",
+        "Hausa",
+        "Efik"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Hausa"
+    },
+    {
+      "question": "What was a post-colonial challenge mentioned for the Hausa/Fulani?",
+      "options": [
+        "Increased literacy",
+        "Boko Haram insurgency",
+        "Economic prosperity",
+        "Decline in traditional practices"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Boko Haram insurgency"
+    },
+    {
+      "question": "What event was a direct consequence of the imposition of warrant chiefs in Igbo society?",
+      "options": [
+        "Sokoto Jihad",
+        "Aba Women Riot of 1929",
+        "Scramble for Africa",
+        "Nigerian Civil War"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Aba Women Riot of 1929"
+    },
+    {
+      "question": "What was a positive impact of colonialism on the Igbo?",
+      "options": [
+        "Loss of traditional governance",
+        "Spread of Christianity and Western education",
+        "Economic disruption",
+        "Suppression of masquerade festivals"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Spread of Christianity and Western education"
+    },
+    {
+      "question": "What impact did Western education have on Yoruba society?",
+      "options": [
+        "Decreased literacy",
+        "Limited political engagement",
+        "Increased literacy and political engagement",
+        "Cultural suppression"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Increased literacy and political engagement"
+    },
+    {
+      "question": "What was the economic shift for the Efik due to colonialism?",
+      "options": [
+        "From palm oil production to slave trade",
+        "From slave trade to palm oil production",
+        "From agriculture to industry",
+        "From local trade to subsistence farming"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "From slave trade to palm oil production"
+    },
+    {
+      "question": "According to the document, Nigeria is bordered by which desert in the north?",
+      "options": [
+        "Kalahari Desert",
+        "Sahara Desert",
+        "Libyan Desert",
+        "Namib Desert"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Sahara Desert"
+    },
+    {
+      "question": "The Igbo are known for their technological advancements in which areas?",
+      "options": [
+        "Textile and dyeing",
+        "Metalwork and palm oil production",
+        "Pottery and leatherwork",
+        "Boat-building and fishing"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Metalwork and palm oil production"
+    },
+    {
+      "question": "What is the traditional marriage system for the Hausa/Fulani based on?",
+      "options": [
+        "Customary law",
+        "Islamic law",
+        "Christian doctrines",
+        "Secular principles"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Islamic law"
+    },
+    {
+      "question": "What characterizes the political practices of the Tiv people?",
+      "options": [
+        "Centralized authority under a king",
+        "Council-based governance with no centralized authority",
+        "Emirate structures",
+        "Monarchical system led by an Ata"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Council-based governance with no centralized authority"
+    },
+    {
+      "question": "What significant cultural center is often associated with Igbo origin traditions?",
+      "options": [
+        "Ile-Ife",
+        "Nri",
+        "Kano",
+        "Calabar"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Nri"
+    },
+    {
+      "question": "What type of society is the Hausa/Fulani society described as?",
+      "options": [
+        "Matriarchal and monogamous",
+        "Patriarchal and polygamous",
+        "Egalitarian and individualistic",
+        "Democratic and secular"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Patriarchal and polygamous"
+    },
+    {
+      "question": "What term refers to the period before colonialism, characterized by the imposition of European governance?",
+      "options": [
+        "Post-colonial",
+        "Pre-colonial",
+        "Neo-colonial",
+        "Imperialist"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Pre-colonial"
+    },
+    {
+      "question": "How did traditional education in Nigeria prepare individuals for community life?",
+      "options": [
+        "By emphasizing individualism",
+        "By focusing on abstract theories",
+        "By emphasizing hard work and functionalism",
+        "By promoting isolation"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "By emphasizing hard work and functionalism"
+    },
+    {
+      "question": "What is the consequence of nonconformity to societal norms in traditional Nigerian communities?",
+      "options": [
+        "Promotion to leadership",
+        "Social deviance and potential sanctions",
+        "Financial rewards",
+        "Increased social status"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Social deviance and potential sanctions"
+    },
+    {
+      "question": "The Yoruba kingdoms had a centralized governance under whom?",
+      "options": [
+        "Emirs",
+        "Mai",
+        "Obas",
+        "Elders"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Monarchs (Oba)"
+    },
+    {
+      "question": "What was the main purpose of infrastructure development during British colonial rule in Nigeria?",
+      "options": [
+        "To improve living standards for Nigerians",
+        "To facilitate the extraction of raw materials",
+        "To promote local industries"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": null
+    },
+    {
+      "question": "The traditional leader of the Igala people from Kogi State is the?",
+      "options": [
+        "Ata",
+        "Olu",
+        "Obong",
+        "Gado"
+      ],
+      "correct": 0,
+      "level": "general",
+      "answer_text": "Ata"
+    },
+    {
+      "question": "The term \"ethics\" is derived from the Greek word 'ethos', which means?",
+      "options": [
+        "Rightness or wrongness",
+        "Strong or to be of worth",
+        "Norm, manner, or code of conduct",
+        "Science of morality"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Norm, manner, or code of conduct"
+    },
+    {
+      "question": "The main feature of African traditional society and ethics is?",
+      "options": [
+        "Individualism",
+        "Humanism and communalism",
+        "Divine Monarchy",
+        "A focus on written scripture"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Humanism and communalism"
+    },
+    {
+      "question": "In Bajju tradition, what ritual must be performed if a man sleeps with his brother's wife?",
+      "options": [
+        "An Amuwuan ritual",
+        "A Swem ritual",
+        "An Oro ritual",
+        "An Egungun ritual"
+      ],
+      "correct": 0,
+      "level": "general",
+      "answer_text": "An Amuwuan ritual"
+    },
+    {
+      "question": "The British colonial administration employed what system of governance in Nigeria?",
+      "options": [
+        "Direct rule",
+        "Assimilation policy",
+        "Indirect rule",
+        "Centralized administration"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Indirect rule"
+    },
+    {
+      "question": "Who was the British administrator that introduced indirect rule in Northern Nigeria?",
+      "options": [
+        "Hugh Clifford",
+        "John Macpherson",
+        "Arthur Richard",
+        "Frederick Lord Lugard"
+      ],
+      "correct": 3,
+      "level": "general",
+      "answer_text": "Frederick Lord Lugard"
+    },
+    {
+      "question": "The amalgamation of the Northern and Southern Nigerian protectorates happened in what year?",
+      "options": [
+        "1906",
+        "1914",
+        "1922",
+        "1951"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "1914"
+    },
+    {
+      "question": "Who gave Nigeria its name in 1898?",
+      "options": [
+        "Lord Lugard",
+        "Queen Victoria",
+        "Flora Shaw",
+        "Hugh Clifford"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Flora Shaw"
+    },
+    {
+      "question": "The Aba Women's Riot of 1929 was a major protest against the implementation of indirect rule in which region?",
+      "options": [
+        "Western Nigeria",
+        "Northern Nigeria",
+        "Eastern Nigeria",
+        "The Lagos Colony"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Eastern Nigeria"
+    },
+    {
+      "question": "The Clifford Constitution, one of Nigeria's earliest, was introduced in?",
+      "options": [
+        "1919",
+        "1922",
+        "1946",
+        "1951"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "1922"
+    },
+    {
+      "question": "The constitution introduced by Governor John Macpherson was in what year?",
+      "options": [
+        "1946",
+        "1948",
+        "1951",
+        "1957"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "1951"
+    },
+    {
+      "question": "Who is referred to as the \"father of African Nationalism\" in the document?",
+      "options": [
+        "Chief Anthony Enahoro",
+        "Herbert Macaulay",
+        "Edward Wilmot Blyden",
+        "Nnamdi Azikiwe"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Edward Wilmot Blyden"
+    },
+    {
+      "question": "Which Nigerian nationalist sponsored the motion for independence in 1953?",
+      "options": [
+        "Obafemi Awolowo",
+        "Nnamdi Azikiwe",
+        "Tafawa Balewa",
+        "Chief Anthony Enahoro"
+      ],
+      "correct": 3,
+      "level": "general",
+      "answer_text": "Chief Anthony Enahoro"
+    },
+    {
+      "question": "The Mid-Western Region of Nigeria was created in what year?",
+      "options": [
+        "1960",
+        "1963",
+        "1966",
+        "1973"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "1963"
+    },
+    {
+      "question": "The National Youth Service Corps (NYSC) was established in?",
+      "options": [
+        "1970",
+        "1973",
+        "1976",
+        "1977"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "1973"
+    },
+    {
+      "question": "Which military head of state created 12 states out of Nigeria's four regions?",
+      "options": [
+        "Murtala Mohammed",
+        "Ibrahim Babangida",
+        "Yakubu Gowon",
+        "Sani Abacha"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Yakubu Gowon"
+    },
+    {
+      "question": "General Murtala Mohammed increased the number of states to?",
+      "options": [
+        "12",
+        "19",
+        "21",
+        "30"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "19"
+    },
+    {
+      "question": "The number of states in Nigeria was increased to 36 under which leader?",
+      "options": [
+        "Ibrahim Babangida",
+        "Sani Abacha",
+        "Yakubu Gowon",
+        "Murtala Mohammed"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "Sani Abacha"
+    },
+    {
+      "question": "Petroleum was discovered at Oloibiri in what year, according to the document?",
+      "options": [
+        "1956",
+        "1960",
+        "1966",
+        "1970"
+      ],
+      "correct": 0,
+      "level": "general",
+      "answer_text": "1956"
+    },
+    {
+      "question": "Nigeria's first military coup occurred in?",
+      "options": [
+        "1963",
+        "1966",
+        "1970",
+        "1975"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "1966"
+    },
+    {
+      "question": "The \"War Against Indiscipline\" (WAI) was a national reorientation campaign launched in?",
+      "options": [
+        "1980",
+        "1984",
+        "1999",
+        "2000"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "1984"
+    },
+    {
+      "question": "General Olusegun Obasanjo's administration launched which agricultural program on May 20, 1976?",
+      "options": [
+        "Green Revolution",
+        "War Against Indiscipline",
+        "Operation Feed the Nation",
+        "National Development Plan"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Operation Feed the Nation"
+    },
+    {
+      "question": "President Shehu Shagari launched the \"Green Revolution\" program in what year?",
+      "options": [
+        "1976",
+        "1979",
+        "1980",
+        "1983"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "1980"
+    },
+    {
+      "question": "Where in the Nigerian constitution are the Fundamental Human Rights detailed?",
+      "options": [
+        "Chapter I",
+        "Chapter II",
+        "Chapter IV",
+        "Chapter VI"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Chapter IV"
+    },
+    {
+      "question": "Western-style higher education began in Nigeria with the establishment of the University of Ibadan in?",
+      "options": [
+        "1946",
+        "1948",
+        "1957",
+        "1960"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "1948"
+    },
+    {
+      "question": "Railway construction in Nigeria first started in Lagos in what year?",
+      "options": [
+        "1885",
+        "1898",
+        "1904",
+        "1913"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "1898"
+    },
+    {
+      "question": "According to the document, tin mining began in Nigeria in?",
+      "options": [
+        "1909",
+        "1905",
+        "1904",
+        "1913"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "1904"
+    },
+    {
+      "question": "Coal was first discovered and mined near which city?",
+      "options": [
+        "Jos",
+        "Patani",
+        "Oloibiri",
+        "Enugu"
+      ],
+      "correct": 3,
+      "level": "general",
+      "answer_text": "Enugu"
+    },
+    {
+      "question": "Who took over as governor in 1919 after Lord Lugard retired?",
+      "options": [
+        "Sir Egofor",
+        "R.D. Moore",
+        "Hugh Clifford",
+        "Arthur Richard"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Hugh Clifford"
+    },
+    {
+      "question": "The National Bank of Nigeria was established in which year?",
+      "options": [
+        "1917",
+        "1933",
+        "1948",
+        "1959"
+      ],
+      "correct": 1,
+      "level": "general",
+      "answer_text": "1933"
+    },
+    {
+      "question": "The Ibibio people, who constitute 3.5% of the population, call their supreme being?",
+      "options": [
+        "Chukwu",
+        "Swem",
+        "Abasi",
+        "Olorun"
+      ],
+      "correct": 2,
+      "level": "general",
+      "answer_text": "Abasi"
+    },
+]
+
 };
