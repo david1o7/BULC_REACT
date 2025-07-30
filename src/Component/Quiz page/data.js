@@ -5926,6 +5926,753 @@ export const quizData = {
       "level": "general",
       "answer_text": "Abasi"
     },
-]
+  ],
+  BU_SEN_102 :[
+    {
+      "question": "What is the primary function of a router in a network?",
+      "options": [
+        "To connect devices within a single local area network (LAN).",
+        "To filter network traffic based on MAC addresses.",
+        "To forward data packets between different networks.",
+        "To provide wireless connectivity to devices."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which of the following describes a Local Area Network (LAN)?",
+      "options": [
+        "A network that spans across multiple cities or countries.",
+        "A network that connects devices in a small geographic area, like a home or office.",
+        "A network used for secure communication over a public network.",
+        "A network that uses satellite communication."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What does WAN stand for?",
+      "options": [
+        "Wireless Area Network",
+        "Wide Access Network",
+        "Wide Area Network",
+        "Web Area Network"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which network topology connects all devices to a central hub or switch?",
+      "options": ["Bus", "Ring", "Star", "Mesh"],
+      "correct": 2
+    },
+    {
+      "question": "In a bus topology, how do devices communicate?",
+      "options": [
+        "Through a central switch",
+        "By passing a token around the ring",
+        "All devices share a single communication line",
+        "Directly with each other in a point-to-point manner"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which network device operates at Layer 2 (Data Link Layer) of the OSI model and forwards frames based on MAC addresses?",
+      "options": ["Router", "Hub", "Switch", "Repeater"],
+      "correct": 2
+    },
+    {
+      "question": "What is the purpose of an IP address?",
+      "options": [
+        "To uniquely identify a network interface on a network.",
+        "To provide a human-readable name for a website.",
+        "To encrypt data transmitted over the internet.",
+        "To control the flow of data packets within a single device."
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which version of IP addresses uses 32-bit addresses?",
+      "options": ["IPv6", "IPv4", "IPsec", "IPX"],
+      "correct": 1
+    },
+    {
+      "question": "What is the main advantage of IPv6 over IPv4?",
+      "options": [
+        "Shorter address length",
+        "Increased security features by default",
+        "Larger address space to accommodate more devices",
+        "Faster data transmission speeds"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What does DHCP stand for?",
+      "options": [
+        "Dynamic Host Control Protocol",
+        "Domain Host Configuration Protocol",
+        "Dynamic Host Configuration Protocol",
+        "Data Handling Control Protocol"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the primary function of DHCP?",
+      "options": [
+        "To translate domain names to IP addresses.",
+        "To provide dynamic IP addresses to devices on a network.",
+        "To secure network communication.",
+        "To send email messages."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which protocol is used to translate human-readable domain names into IP addresses?",
+      "options": ["FTP", "DNS", "HTTP", "SMTP"],
+      "correct": 1
+    },
+    {
+      "question": "What does DNS stand for?",
+      "options": [
+        "Domain Network System",
+        "Data Naming Service",
+        "Domain Name System",
+        "Digital Naming Standard"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which protocol is responsible for reliable, ordered, and error-checked delivery of a stream of bytes between applications?",
+      "options": ["UDP", "IP", "TCP", "ICMP"],
+      "correct": 2
+    },
+    {
+      "question": "Which protocol is connectionless and offers faster but less reliable data transmission?",
+      "options": ["TCP", "FTP", "UDP", "HTTP"],
+      "correct": 2
+    },
+    {
+      "question": "What is the standard port number for HTTP?",
+      "options": ["21", "23", "80", "443"],
+      "correct": 2
+    },
+    {
+      "question": "What is the standard port number for HTTPS?",
+      "options": ["80", "443", "22", "25"],
+      "correct": 1
+    },
+    {
+      "question": "What is the main difference between HTTP and HTTPS?",
+      "options": [
+        "HTTP is for text, HTTPS is for images.",
+        "HTTPS uses encryption (SSL/TLS) for secure communication, while HTTP does not.",
+        "HTTP is for web pages, HTTPS is for file transfers.",
+        "HTTPS is faster than HTTP."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which protocol is used for sending email messages?",
+      "options": ["POP3", "IMAP", "SMTP", "FTP"],
+      "correct": 2
+    },
+    {
+      "question": "Which protocol is used for retrieving email messages from a server, typically downloading them to the client and deleting them from the server?",
+      "options": ["SMTP", "IMAP", "POP3", "HTTP"],
+      "correct": 2
+    },
+    {
+      "question": "Which protocol allows email clients to access email on a remote mail server, leaving the messages on the server?",
+      "options": ["POP3", "SMTP", "IMAP", "DNS"],
+      "correct": 2
+    },
+    {
+      "question": "What does FTP stand for?",
+      "options": [
+        "File Transfer Protocol",
+        "Fast Transmission Protocol",
+        "File Tunnelling Protocol",
+        "Fragmented Transfer Protocol"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which protocol is used for transferring files between a client and a server on a computer network?",
+      "options": ["HTTP", "SMTP", "FTP", "TELNET"],
+      "correct": 2
+    },
+    {
+      "question": "What is the purpose of SSH?",
+      "options": [
+        "To transfer files securely.",
+        "To send and receive email.",
+        "To establish a secure remote connection to a computer.",
+        "To resolve domain names."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which layer of the OSI model is responsible for routing data packets between networks?",
+      "options": ["Physical", "Data Link", "Network", "Transport"],
+      "correct": 2
+    },
+    {
+      "question": "Which layer of the OSI model defines the electrical and physical specifications for devices and cables?",
+      "options": ["Data Link", "Physical", "Network", "Transport"],
+      "correct": 1
+    },
+    {
+      "question": "Segmentation and reassembly of data, as well as flow control, are functions of which OSI layer?",
+      "options": ["Network", "Session", "Transport", "Presentation"],
+      "correct": 2
+    },
+    {
+      "question": "Which OSI layer provides services to applications, such as file transfer, email, and remote login?",
+      "options": ["Presentation", "Session", "Application", "Transport"],
+      "correct": 2
+    },
+    {
+      "question": "What is a firewall primarily used for in network security?",
+      "options": [
+        "To boost internet speed.",
+        "To prevent unauthorized access to or from a private network.",
+        "To manage wireless connections.",
+        "To store website data."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a VPN (Virtual Private Network)?",
+      "options": [
+        "A network that connects devices within a single building.",
+        "A technology that creates a secure and encrypted connection over a less secure network like the internet.",
+        "A protocol for sending large files quickly.",
+        "A type of wireless router."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What does MAC address stand for?",
+      "options": [
+        "Media Access Control",
+        "Main Access Connection",
+        "Mobile Authentication Code",
+        "Multiple Address Controller"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "A MAC address is a unique identifier assigned to what?",
+      "options": [
+        "A web page",
+        "A software application",
+        "A network interface controller (NIC)",
+        "A router"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is a protocol in the context of computer networks?",
+      "options": [
+        "A type of network cable.",
+        "A set of rules that govern how data is exchanged between devices.",
+        "A software application for network management.",
+        "A physical device that connects networks."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of a gateway in a network?",
+      "options": [
+        "To amplify network signals.",
+        "To provide a path for data to travel from one network to another, especially between networks using different protocols.",
+        "To filter unwanted emails.",
+        "To assign IP addresses to devices."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which device is used to connect segments of a network, often boosting the signal?",
+      "options": ["Router", "Switch", "Hub", "Gateway"],
+      "correct": 2
+    },
+    {
+      "question": "What is network latency?",
+      "options": [
+        "The maximum amount of data that can be transmitted over a network.",
+        "The delay before a transfer of data begins following an instruction for its transfer.",
+        "The rate at which data is successfully delivered over a communication channel.",
+        "The number of users connected to a network."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is bandwidth in networking?",
+      "options": [
+        "The time it takes for a signal to travel from one point to another.",
+        "The maximum data transfer rate of a network or internet connection.",
+        "The number of errors in data transmission.",
+        "The physical length of a network cable."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a subnet mask used for?",
+      "options": [
+        "To hide the IP address of a device.",
+        "To divide an IP address into network and host portions.",
+        "To encrypt network traffic.",
+        "To assign a domain name."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of the following is a private IP address range?",
+      "options": [
+        "192.168.0.0/16",
+        "8.8.8.8",
+        "172.16.0.0/12",
+        "203.0.113.0/24"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the purpose of a proxy server?",
+      "options": [
+        "To host websites.",
+        "To act as an intermediary for requests from clients seeking resources from other servers.",
+        "To secure Wi-Fi connections.",
+        "To manage database queries."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which protocol is used by web browsers to request and display web pages?",
+      "options": ["FTP", "SMTP", "HTTP", "POP3"],
+      "correct": 2
+    },
+    {
+      "question": "What is the primary goal of Quality of Service (QoS) in networking?",
+      "options": [
+        "To ensure all data packets arrive at their destination.",
+        "To manage network congestion and prioritize certain types of traffic.",
+        "To increase the speed of the internet connection.",
+        "To prevent unauthorized access to the network."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a packet in network communication?",
+      "options": [
+        "A large file being downloaded.",
+        "A small unit of data transmitted over a network.",
+        "A type of network cable.",
+        "A software application."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of checksum in data transmission?",
+      "options": [
+        "To encrypt the data.",
+        "To ensure the data is transmitted quickly.",
+        "To detect errors in data transmission.",
+        "To compress the data."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which protocol provides connectionless, unreliable data transfer across an IP network?",
+      "options": ["TCP", "UDP", "FTP", "SSH"],
+      "correct": 1
+    },
+    {
+      "question": "What is the difference between a hub and a switch?",
+      "options": [
+        "A hub is faster than a switch.",
+        "A hub forwards data to all connected devices, while a switch sends data only to the intended recipient.",
+        "A switch is a Layer 1 device, while a hub is a Layer 2 device.",
+        "Hubs are used for wireless networks, switches are for wired networks."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a client-server architecture?",
+      "options": [
+        "A network where all devices have equal capabilities.",
+        "A model where a central server provides resources and services to client devices.",
+        "A system for peer-to-peer file sharing.",
+        "A type of network topology."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the role of a web browser?",
+      "options": [
+        "To create web pages.",
+        "To store website files.",
+        "To display web pages to users.",
+        "To manage website databases."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which of the following is an example of a web server software?",
+      "options": ["Google Chrome", "Mozilla Firefox", "Apache HTTP Server", "Microsoft Word"],
+      "correct": 2
+    },
+    {
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Text Markup Language",
+        "High-level Text Manipulation Language",
+        "Hyperlink and Text Management Language",
+        "Home Tool Markup Language"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which HTML tag is used to define the title of a document, which appears in the browser tab?",
+      "options": ["<head>", "<body>", "<title>", "<meta>"],
+      "correct": 2
+    },
+    {
+      "question": "Which HTML tag is used to create a paragraph of text?",
+      "options": ["<para>", "<text>", "<p>", "<line>"],
+      "correct": 2
+    },
+    {
+      "question": "What attribute is used to specify an alternative text for an image, for accessibility purposes?",
+      "options": ["title", "description", "alt", "text"],
+      "correct": 2
+    },
+    {
+      "question": "Which HTML tag is used to embed a video on a web page?",
+      "options": ["<vid>", "<movie>", "<media>", "<video>"],
+      "correct": 3
+    },
+    {
+      "question": "What does CSS stand for?",
+      "options": [
+        "Creative Style Sheets",
+        "Computer Style Sheets",
+        "Cascading Style Sheets",
+        "Colorful Style System"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which CSS property is used to control the spacing between letters in a text?",
+      "options": ["line-height", "word-spacing", "letter-spacing", "text-indent"],
+      "correct": 2
+    },
+    {
+      "question": "How can you apply CSS styles directly to an HTML element (inline style)?",
+      "options": [
+        "Using a <style> tag in the <head> section.",
+        "Using a separate .css file.",
+        "Using the 'style' attribute within the HTML tag.",
+        "Using JavaScript to dynamically add styles."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which CSS property is used to set the font family of text?",
+      "options": ["font-type", "text-font", "font-family", "font-style"],
+      "correct": 2
+    },
+    {
+      "question": "Which CSS property is used to add space outside an element's border?",
+      "options": ["padding", "spacing", "margin", "border-spacing"],
+      "correct": 2
+    },
+    {
+      "question": "What does JS stand for?",
+      "options": [
+        "Java Style",
+        "JavaScript",
+        "Joint Scripting",
+        "Just Scripting"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which keyword is used to declare a constant variable in JavaScript?",
+      "options": ["variable", "var", "let", "const"],
+      "correct": 3
+    },
+    {
+      "question": "What is the correct way to write an `if` statement in JavaScript?",
+      "options": [
+        "if (i == 5)",
+        "if i == 5 then",
+        "if i = 5",
+        "if (i == 5) then"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Which built-in JavaScript method is used to remove the last element from an array?",
+      "options": ["shift()", "pop()", "splice()", "removeLast()"],
+      "correct": 1
+    },
+    {
+      "question": "How do you declare a function in JavaScript?",
+      "options": [
+        "function myFunction()",
+        "def myFunction()",
+        "var myFunction = function()",
+        "function:myFunction()"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the purpose of the `DOM` in web development?",
+      "options": [
+        "To store website data on the server.",
+        "To define the styling of web pages.",
+        "To represent the structure of an HTML or XML document as a tree of objects.",
+        "To handle network requests."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which JavaScript method is used to add an event handler to an HTML element?",
+      "options": [
+        "attachEvent()",
+        "addEventListener()",
+        "onEvent()",
+        "handleEvent()"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is 'hoisting' in JavaScript?",
+      "options": [
+        "A security feature that prevents cross-site scripting.",
+        "A process where variable and function declarations are moved to the top of their scope before code execution.",
+        "A method for optimizing image loading.",
+        "A way to animate HTML elements."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of the following is NOT a valid JavaScript data type?",
+      "options": ["string", "number", "float", "boolean"],
+      "correct": 2
+    },
+    {
+      "question": "What is the purpose of `localStorage` in web browsers?",
+      "options": [
+        "To store temporary session data.",
+        "To store data on the client-side that persists even after the browser is closed.",
+        "To store server-side data.",
+        "To manage browser history."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which tool is commonly used for package management in Node.js?",
+      "options": ["npm", "pip", "composer", "gem"],
+      "correct": 0
+    },
+    {
+      "question": "What is a 'callback function' in JavaScript?",
+      "options": [
+        "A function that is called immediately after a page loads.",
+        "A function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.",
+        "A function that handles errors.",
+        "A function that returns a value to the caller."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of `git clone`?",
+      "options": [
+        "To save changes to the local repository.",
+        "To create a new branch.",
+        "To copy an existing Git repository from a remote location.",
+        "To merge changes from one branch to another."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which command is used to stage changes in Git before committing?",
+      "options": ["git commit", "git push", "git add", "git status"],
+      "correct": 2
+    },
+    {
+      "question": "What is the primary role of a 'frontend developer'?",
+      "options": [
+        "Managing databases and server logic.",
+        "Designing the user interface and user experience of a website.",
+        "Writing server-side code and APIs.",
+        "Deploying websites to production servers."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a 'backend framework' typically used for?",
+      "options": [
+        "Creating interactive user interfaces.",
+        "Building the server-side logic, APIs, and database interactions of a web application.",
+        "Styling HTML elements.",
+        "Managing client-side animations."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of these is NOT a common web development paradigm?",
+      "options": [
+        "Single-Page Application (SPA)",
+        "Server-Side Rendering (SSR)",
+        "Modular Programming (MP)",
+        "Progressive Web App (PWA)"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the main advantage of using a CSS preprocessor like Sass or LESS?",
+      "options": [
+        "They make CSS files smaller.",
+        "They allow for dynamic content generation.",
+        "They add features like variables, nesting, and mixins to CSS, making it more powerful and maintainable.",
+        "They convert CSS to JavaScript."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the purpose of 'minification' in web development?",
+      "options": [
+        "To make code easier to read.",
+        "To reduce the size of code files (HTML, CSS, JS) by removing unnecessary characters like whitespace and comments.",
+        "To encrypt web traffic.",
+        "To optimize images for faster loading."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a 'responsive image'?",
+      "options": [
+        "An image that loads quickly.",
+        "An image that changes its content based on user interaction.",
+        "An image that adapts its size and resolution to fit different screen sizes and devices.",
+        "An image with a transparent background."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "What is the purpose of the HTML `<form>` tag?",
+      "options": [
+        "To define a section of content.",
+        "To create a container for images.",
+        "To create an interactive section where users can input and submit data.",
+        "To link to external stylesheets."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which HTML input type is used for sensitive information like passwords?",
+      "options": ["text", "email", "password", "hidden"],
+      "correct": 2
+    },
+    {
+      "question": "What is the purpose of the CSS `display` property?",
+      "options": [
+        "To control the visibility of an element.",
+        "To specify how an element is laid out on the page (e.g., block, inline, flex, grid).",
+        "To set the background image of an element.",
+        "To define the font size."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which JavaScript method is used to convert a JavaScript object or value to a JSON string?",
+      "options": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "Object.toJSON()",
+        "String.fromObject()"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is an AJAX request in web development?",
+      "options": [
+        "A method for sending emails from a web page.",
+        "A technique that allows web pages to send and retrieve data from a server asynchronously without interfering with the display and behavior of the existing page.",
+        "A type of CSS animation.",
+        "A way to validate user input on the client-side."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of a 'module bundler' like Webpack or Parcel?",
+      "options": [
+        "To deploy web applications to servers.",
+        "To optimize database queries.",
+        "To combine and optimize multiple JavaScript, CSS, and other assets into a single or few production-ready bundles.",
+        "To manage server-side routing."
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Which concept allows JavaScript code to be written once and run on different platforms (browser, server, mobile)?",
+      "options": ["Transpilation", "Polyfilling", "Cross-platform compatibility", "Virtual DOM"],
+      "correct": 2
+    },
+    {
+      "question": "What is a 'RESTful API'?",
+      "options": [
+        "An API that only uses HTTP GET requests.",
+        "An architectural style for designing networked applications that uses standard HTTP methods.",
+        "An API that is only accessible locally.",
+        "An API for relational databases."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the main goal of 'performance optimization' in web development?",
+      "options": [
+        "To make the website visually appealing.",
+        "To ensure the website loads quickly and runs smoothly for users.",
+        "To improve website security.",
+        "To make the website compatible with older browsers."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of the following is a CSS framework?",
+      "options": ["jQuery", "React", "Bootstrap", "Django"],
+      "correct": 2
+    },
+    {
+      "question": "What is the purpose of the `aria-label` attribute in HTML?",
+      "options": [
+        "To define the alignment of text.",
+        "To provide a label for an element that is not visually present but is announced by assistive technologies (e.g., screen readers).",
+        "To set the background color.",
+        "To link to external resources."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a 'semantic HTML' tag?",
+      "options": [
+        "A tag that makes text bold.",
+        "A tag that provides meaning about its content to both the browser and the developer (e.g., <header>, <article>).",
+        "A tag used for styling purposes only.",
+        "A tag that defines interactive elements."
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is 'client-side rendering'?",
+      "options": [
+        "Generating HTML on the server before sending it to the browser.",
+        "Rendering web page content directly in the user's web browser using JavaScript.",
+        "Storing data on the server.",
+        "Encrypting data before transmission."
+      ],
+      "correct": 1
+    }
+  ],
 
 };
