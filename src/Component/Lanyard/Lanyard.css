@@ -1,0 +1,494 @@
+
+.lanyard-landing {
+  font-family: Times New Roman, Times, serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.lanyard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.lanyard-content{
+background: #000;
+margin: 0px 60px;
+padding: 20px;
+}
+
+.lanyard-hero-section {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  background: #000;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.lanyard-hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.lanyard-hero-content h1 {
+  margin-top: 50px;
+  border: 1px solid transparent;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.lanyard-hero-content h1 img {
+  width: 80px;
+}
+.lanyard-hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.lanyard-hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.lanyard-cta-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lanyard-cta-button.primary {
+  background: #ff6b6b;
+  color: white;
+}
+
+.lanyard-cta-button.primary:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+}
+
+.lanyard-cta-button.secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.lanyard-cta-button.secondary:hover {
+  background: white;
+  color: #667eea;
+  transform: translateY(-2px);
+}
+
+.lanyard-hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lanyard-showcase {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.lanyard-item {
+  position: absolute;
+  top: 20%;
+  bottom: 20px;
+  left: 35%;
+  transform: rotateX(210deg);
+}
+
+.lanyard-card {
+  width: 80px;
+  height: 70px;
+  background: #173459;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.lanyard-string {
+  width: 4px;
+  height: 300px;
+  background: linear-gradient(to bottom, #000, #357abd);
+  margin: 0 auto;
+  border-radius: 2px;
+  position: relative;
+}
+
+.lanyard-string::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -8px;
+  width: 20px;
+  height: 20px;
+  background: #4a90e2;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.4);
+}
+
+/* Features Section */
+.lanyard-features-section {
+  padding: 80px 0;
+  background: #000;
+}
+
+.lanyard-features-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #fff;
+}
+
+.lanyard-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.lanyard-feature-card {
+  background: #000;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.lanyard-feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.lanyard-feature-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.lanyard-feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.lanyard-feature-card p {
+  color: #fff;
+}
+
+/* Products Section */
+.lanyard-products-section {
+  padding: 80px 0;
+  background: #000;
+}
+
+.lanyard-products-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #fff;
+}
+
+.lanyard-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.lanyard-product-card {
+  background: #000;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.lanyard-product-card:hover {
+  transform: translateY(-5px);
+}
+
+.lanyard-product-card.featured {
+  border-color: #ff6b6b;
+  transform: scale(1.05);
+}
+
+.lanyard-product-image {
+  width: 120px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  border-radius: 8px;
+}
+
+.lanyard-product-image.basic {
+  background: maroon;
+}
+
+.lanyard-product-image.premium {
+  background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+}
+
+.lanyard-product-image.custom {
+  background: linear-gradient(45deg, #50c878, #3cb371);
+}
+
+.lanyard-product-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.lanyard-product-card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.lanyard-price {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.lanyard-order-button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.lanyard-order-button:hover {
+  background: #357abd;
+}
+
+/* Testimonials Section */
+.lanyard-testimonials-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.lanyard-testimonials-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #2c3e50;
+}
+
+.lanyard-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.lanyard-testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.lanyard-stars {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.lanyard-testimonial-card p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.lanyard-customer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.lanyard-customer-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #4a90e2, #357abd);
+}
+
+.lanyard-customer h4 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.lanyard-customer span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* CTA Section */
+.lanyard-cta-section {
+  padding: 80px 0;
+  background: #000;
+  color: white;
+  text-align: center;
+}
+
+.lanyard-cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.lanyard-cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.lanyard-cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Contact Section */
+.lanyard-contact-section {
+  padding: 80px 0;
+  background: #000;
+}
+
+.lanyard-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.lanyard-contact-info h3,
+.lanyard-contact-form h3 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.lanyard-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.lanyard-contact-item .icon {
+  font-size: 1.5rem;
+}
+
+.lanyard-contact-item h4 {
+  margin: 0 0 5px 0;
+  color: #fff;
+}
+
+.lanyard-contact-item p {
+  margin: 0;
+  color: #666;
+}
+
+.lanyard-form-group {
+  margin-bottom: 20px;
+}
+
+.lanyard-form-group input,
+.lanyard-form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.lanyard-form-group input:focus,
+.lanyard-form-group textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.lanyard-form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.lanyard-submit-button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.lanyard-submit-button:hover {
+  background: #357abd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .lanyard-hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .lanyard-hero-content h1 {
+    font-size: 155px;
+  }
+
+  .lanyard-hero-buttons {
+    justify-content: center;
+  }
+
+  .lanyard-features-grid,
+  .lanyard-products-grid,
+  .lanyard-testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lanyard-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .lanyard-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .lanyard-hero-content h1 {
+    font-size: 55px;
+  }
+  .lanyard-hero-content h1 img {
+    width: 50px;
+  }
+  .lanyard-features-section h2,
+  .lanyard-products-section h2,
+  .lanyard-testimonials-section h2,
+  .lanyard-cta-section h2 {
+    font-size: 2rem;
+  }
+} 

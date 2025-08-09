@@ -52,7 +52,7 @@ const Contact = () => {
             <label>Phone Number</label>
             <input type="tel" name='phone' placeholder='Enter your mobile number' required/>
             <label>Write your message here</label>
-            <textarea name="messgae" rows="6" placeholder='Enter your message' required></textarea>
+            <textarea name="message" rows="6" placeholder='Enter your message' required></textarea>
             <button type='submit' className='btn dark-btn' >Submit now <img src={white_arrow} alt="" /></button>
         </form>
         <span>{result}</span>

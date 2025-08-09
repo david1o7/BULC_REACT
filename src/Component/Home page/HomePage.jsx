@@ -9,6 +9,7 @@ import TeamMembers from '../Team memebers/TeamMembers.jsx'
 import Contact from '../Contact/Contact.jsx'
 import Footer from "../footer/Footer.jsx"
 import Videoplayer from "../videofolder/Videoplayer.jsx"
+import SlidingDisplay from '../slides/SlidingDisplay.jsx'
 const HomePage = () => {
   const [playState , setPlayState] = useState(false);
 
@@ -17,6 +18,8 @@ const HomePage = () => {
       <Navbar/>
       <Hero/>
       <div className="container">
+      <Title subTitle="Lanyard styles" title="Slide show"/>
+      <SlidingDisplay/>
       <Title subTitle="OUR PROGRAM" title="What we offer"/>
       <Programs/>
       <About setPlayState = {setPlayState}/>

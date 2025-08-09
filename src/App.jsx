@@ -7,6 +7,8 @@ import Team from "./Component/Team/Team.jsx"
 import AboutUs from "./Component/About page/AboutUs.jsx";
 import CgpaCalc from "./Component/CGPA/CgpaCalc.jsx";
 import CodingDictionary from "./Component/Code dictionary/CodingDict.jsx";
+import Lanyard from "./Component/Lanyard/Lanyard.jsx";
+import SlidingDisplay from "./Component/slides/SlidingDisplay.jsx";
 function App() {
   return (
     <Router>
@@ -22,6 +24,8 @@ function App() {
         <Route path="/about" element={<AboutUs/>}/>
         <Route path="/cgpa" element={<CgpaCalc/>}/>
         <Route path="/dictionary" element={<CodingDictionary/>}></Route>
+        <Route path="/lanyard" element={<Lanyard/>}></Route>
+        <Route path="/slides" element={<SlidingDisplay/>}></Route>
       </Routes>
     </Router>
   );
